@@ -13,10 +13,10 @@ body{
 	font-family:"微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU", Arial, Helvetica, sans-serif;
 	font-size:100%;
 	line-height:20px;
-	color:#565555}
-a:link {text-decoration:underline; color:#00adee}
-a:visited {text-decoration:underline; color:#8c8c8c}
-a:hover {text-decoration:none; color:#F50}
+	color:#504f4f}
+a:link {text-decoration:none; color:#0795c1}
+a:visited {text-decoration:none; color:#aad6e6}
+a:hover {text-decoration:underline; color:#F50}
 form{margin:0; padding:0}
 image{border:0}
 
