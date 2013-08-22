@@ -4,12 +4,21 @@
 	Author: Elmo Wu (by studio xuedesign)
 	Date: 2013/08~2013/09   
 
+***********************************************************************************************
+		1 通用
+		2 首頁
+		    2.1 頂端區塊
+			2.2 主選單設定
+			2.3 完美底部佈局
+			2.4 版權列區塊
+***********************************************************************************************/
+
 
 /* 1. 通用 
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
 body{
-	background: url(../images/bg_index.png);
+	background: url(../images/bg_site.png);
 	font-family:"微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU", Arial, Helvetica, sans-serif;
 	font-size:100%;
 	line-height:20px;
@@ -28,5 +37,88 @@ image{border:0}
 ===============================================================================================*/
 #wrap{
 	display:block;
+	width:100%;
+	background: url(../images/bg_index.png) repeat-x}
+
+/*2.1 頂端區塊---------------------------*/
+header{
+	display:block;
 	width:994px;
-	margin:0 auto}	
+	height:104px;
+	margin:0 auto;
+	background:url(../images/bg_header.png) no-repeat}
+h1 a{
+	display:block;
+	float:left;
+	width:497px;
+	height:104px;
+	text-indent:-9999px;
+	background:url(../images/logo.png) 34px 15px no-repeat}
+.head_left{
+	display:block;
+	float:right;
+	font-size:0.813em;
+	text-align:right;
+	padding:19px 35px 0 0}
+.head_left a:link, footer a:link{ text-decoration:none; color:#FFF}
+.head_left a:visited, footer a:visited{ text-decoration:none; color:#4e586b}
+.head_left a:hover, footer a:hover{ text-decoration:none; color:#f50}	
+.subnav ul{ padding-bottom:10px}
+.subnav li{ display:inline; padding-right:15px}
+.box_search{
+	display:block;
+	width:238px;
+	height:20px;
+	background:#FFF;
+	margin-right:10px;
+	padding:2px 0 0 12px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+	box-shadow:0 2px 5px #ccc inset;
+	-moz-box-shadow:0 2px 5px #999 inset; 
+	-webkit-box-shadow:0 2px 5px #999 inset}
+.keyword{
+	display:block;
+	float:left;
+	width:200px;
+	font-size:0.813em;
+	color:#9c9c9c;
+	border:1px solid #CCC}		
+	
+/*2.3 完美底部佈局---------------------------*/
+html, body, #wrap {height: 100%;}
+body > #wrap {height:auto; min-height: 100%;}
+#wrap_content{padding-bottom:114px}
+.clearfix:after {
+	content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;}
+.clearfix {display: inline-block;} /* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;} /* End hide from IE-mac */
+
+/*2.4 版權列區塊---------------------------*/	
+footer{
+	clear:both;
+	display:block;
+	position: relative;
+	width:100%;
+	height:114px;
+	background:url(../images/bg_footer.png) repeat-x;
+	margin-top:-114px;
+	font-size:0.813em;
+	color:#07acd8}
+.foot_content{ display:block; width:994px; margin:0 auto}
+.copyright{ color:#FFF; text-align:center; line-height:30px; padding-top:3px; letter-spacing:1px}
+.footer_left a:link, .footer_mid{ display:block; float:left}
+.footer_right{ display:block; float:right; width:100px; padding-top:15px}
+.footer_left a{ 
+     width:193px;
+	 height:80px; 
+	 background: url(../images/logo-02.png) 30px 10px no-repeat;
+	 text-indent:-9999px}
+.footer_mid{ padding:10px 0 0 25px}	 
+.pl-25{ padding-left:25px}					
