@@ -36,7 +36,7 @@ blockquote:before, blockquote:after,
 q:before, q:after { content: ''; content: none;}
 
 /* remember to define focus styles! 移除連結虛線 */
-:focus {outline:none}
+/*:focus {outline:none}*/
 /*::-moz-focus-inner { border:none}*/
 
 /* remember to highlight inserts somehow! */
