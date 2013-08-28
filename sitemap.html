@@ -43,33 +43,46 @@
              </nav>
              <br class="clean" />         
          </section>
-         <section class="head_down">
          
-         </section>
-         <!--<section class="head_right">
+         <section class="head_down">
+             <div class="box_search">
+                  <form action="" method="post">  
+                    <label for="search"><span class="hidden">網站搜尋</span></label>
+                    <input name="search" id="search" type="text" class="input_search" onfocus="if (this.value=='請輸入關鍵字查詢') this.value='';" onblur="if (this.value=='') this.value='請輸入關鍵字查詢';" value="請輸入關鍵字查詢" />
+                    <a href="search.html"  class="btn_search" title="搜尋" tabindex="100">搜尋</a>
+                  </form>  
+             </div>
              <div class="subnav">
-               <ul>
-                 <li><a href="#" title="上方主要導覽區" accesskey="u" tabindex='20'>:::</a></li>
-                 <li><span class="iocn_site"></span><a href="sitemap.html" title="網站導覽" tabindex="30">網站導覽</a></li>
-                 <li><a href="index.html" title="目前是中文版" tabindex="40" class="btn_sblue snav_in">中文</a></li>
-                 <li><a href="en/index.html" title="前往英文版" tabindex="50" class="btn_sblue">英文</a></li>
-               </ul>
+                  <ul>
+                    <!--<li><span class="icon_member"></span><a href="sitemap.html" title="會員登入" tabindex="110">會員登入</a></li>-->
+                    <li><span class="icon_logout"></span><a href="index.html" title="會員登出" tabindex="120">會員登出</a></li>
+                    <li><span class="icon_member"></span><a href="content/member/profile_edit.html" title="會員專區" tabindex="130">會員專區</a></li>
+                    <li><span class="icon_site"></span><a href="sitemap.html" title="網站導覽" tabindex="140">網站導覽</a></li>
+                    <li><a href="index.html" title="目前是中文版" class="btn_sblue snav_in" tabindex="150">中文</a></li>
+                    <li><a href="en/index.html" title="前往英文版" class="btn_sblue"  tabindex="160" >英文</a></li>
+                  </ul>
             </div>
-            <div class="box_search">
-                <label for="search"><span class="hidden">網站搜尋</span></label>
-                <input name="search" id="search" type="text" class="input_search" onfocus="if (this.value=='請輸入關鍵字查詢') this.value='';" onblur="if (this.value=='') this.value='請輸入關鍵字查詢';" value="請輸入關鍵字查詢" />
-                <a href="search.html"  class="btn_search" title="搜尋" tabindex="60">搜尋</a>
-                <br class="clean" />
-            </div>
-        </section>-->
+             <br class="clean" />
+         </section>
       </header>
       
       
-      <!-- 中間主選單 -->
-      <a href="#" title="中間主要內容區" accesskey="c" tabindex='90'>:::</a>
-      <section id="main_content">
-         
-      </section>
+       <!-- 中間區塊，tabindex記數由200開始 -->
+       <a href="#" title="中間主要內容區" accesskey="c" tabindex='200'>:::</a>
+       <section id="main_content">
+           <div id="page_main"></div>
+           <aside>
+               <div></div>
+               <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+               </ul>
+           </aside>
+       </section>
      </div> 
    </div>
    

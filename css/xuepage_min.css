@@ -11,6 +11,7 @@
 		  2.2 主選單
 		  2.3 完美底部佈局
 		  2.4 版權列區塊
+		  2.5 內文區塊
 		3 共用元素
 		4 園區快訊
 		5 APP相關訊息
@@ -59,43 +60,44 @@ h1 a{
 	display:block;
 	float:left;
 	width:345px;
-	height:104px;
+	height:88px;
 	text-indent:-9999px;
 	background:url(../images/logo_page.png) 20px 12px no-repeat}
 .head_down{ height:43px}
-
-	
-.head_right{
+.subnav{
 	display:block;
 	float:right;
 	font-size:0.813em;
 	text-align:right;
-	padding:19px 35px 0 0}
-.head_right a:link, footer a:link{ text-decoration:none; color:#FFF}
-.head_right a:visited, footer a:visited{ text-decoration:none; color:#fff}
-.head_right a:hover, footer a:hover{ text-decoration:none; color:#f50}	
+	padding-top:10px}
+.subnav a:link, footer a:link{ text-decoration:none; color:#FFF}
+.subnav a:visited, footer a:visited{ text-decoration:none; color:#fff}
+.subnav a:hover, footer a:hover{ text-decoration:none; color:#f50}	
 .subnav ul{ padding:0 5px 10px 0}
 .subnav li{ display:inline; padding-right:10px}
-.iocn_site{
+.icon_site, .icon_member, .icon_logout{
 	display: inline-block;
 	width:16px;
 	height:16px;
-	background:url(../images/icon_set.png) 0 -16px no-repeat;
 	padding-right:3px;
 	vertical-align: text-bottom}
+.icon_site{background:url(../images/icon_set.png) 0 -16px no-repeat}
+.icon_member{background:url(../images/icon_set.png) 0 -48px no-repeat}
+.icon_logout{background:url(../images/icon_set.png) 0 -32px no-repeat}
 .subnav a.btn_sblue{
 	padding:0 10px;
 	background:#126e93;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
     -moz-border-radius: 10px}
-.subnav a.snav_in{ background:#4ed4fe; color:#FFF}		
+.subnav a.snav_in{ background:#4ed4fe; color:#FFF}	
 .box_search{
 	display:block;
+	float:left;
 	width:238px;
 	height:20px;
 	background:#FFF;
-	margin-right:10px;
+	margin:10px 0 0 20px;
 	padding:2px 0 0 12px;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
@@ -133,20 +135,19 @@ nav li{display: inline-block; margin-left:10px;}
 	text-indent:-9999px}
 .nav_01:hover, .nav_02:hover, .nav_03:hover, .nav_04:hover, .nav_05:hover, .nav_06:hover, .nav_07:hover{ cursor:pointer}
 .nav_01{ background-position: 0 0}
-.nav_01:hover{ background-position: -75px 0}	
+.nav_01:hover, .nav_01.navin{ background-position: -75px 0}	
 .nav_02{ background-position: 0 -76px}
-.nav_02:hover{background-position: -75px -76px}
+.nav_02:hover, .nav_02.navin{background-position: -75px -76px}
 .nav_03{background-position: 0 -152px}
-.nav_03:hover{background-position: -75px -152px}
+.nav_03:hover, .nav_03.navin{background-position: -75px -152px}
 .nav_04{background-position: 0 -228px}
-.nav_04:hover{background-position: -75px -228px}
+.nav_04:hover, .nav_04.navin{background-position: -75px -228px}
 .nav_05{background-position: 0 -304px}
-.nav_05:hover{background-position: -75px -304px}
+.nav_05:hover, .nav_05.navin{background-position: -75px -304px}
 .nav_06{background-position: 0 -380px}
-.nav_06:hover{background-position: -75px -380px}
+.nav_06:hover, .nav_06.navin{background-position: -75px -380px}
 .nav_07{background-position: 0 -456px}
-.nav_07:hover{background-position: -75px -456px}
-					
+.nav_07:hover, .nav_07.navin{background-position: -75px -456px}					
 	
 /*2.3 完美底部佈局---------------------------*/
 html, body, #wrap {height: 100%;}
@@ -183,4 +184,22 @@ footer{
 	 background: url(../images/logo-02.png) 30px 10px no-repeat;
 	 text-indent:-9999px}
 .footer_mid{ padding:10px 0 0 25px}	 
-.pl-25{ padding-left:25px}					
+.pl-25{ padding-left:25px}
+
+/*2.5 內文區塊---------------------------*/
+#main_content{
+	display:block;
+	width:954px;
+	margin:0 auto 20px auto;
+	padding:0 20px}
+#page_main{
+	display:block;
+	float:left;
+	width:766px;
+	padding-left:20px}
+aside{
+	display:block;
+	float:right;
+	width:168px}
+aside ul{}
+aside li{}								
