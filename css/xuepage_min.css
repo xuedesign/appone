@@ -45,7 +45,8 @@ image{border:0}
 /* 2. 頁面主結構
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
-#wrap{ display:block; width:100%;}
+#wrap{ display:block; width:100%}
+.flle{ float:left; font-size:0.813em;}
 
 /*2.1 頂端區塊---------------------------*/
 header{
@@ -59,10 +60,10 @@ header{
 h1 a{
 	display:block;
 	float:left;
-	width:345px;
+	width:330px;
 	height:88px;
 	text-indent:-9999px;
-	background:url(../images/logo_page.png) 20px 12px no-repeat}
+	background:url(../images/logo_page.png) 0 12px no-repeat}
 .head_down{ height:43px}
 .subnav{
 	display:block;
@@ -73,7 +74,7 @@ h1 a{
 .subnav a:link, footer a:link{ text-decoration:none; color:#FFF}
 .subnav a:visited, footer a:visited{ text-decoration:none; color:#fff}
 .subnav a:hover, footer a:hover{ text-decoration:none; color:#f50}	
-.subnav ul{ padding:0 5px 10px 0}
+.subnav ul{ padding:0 22px 10px 0}
 .subnav li{ display:inline; padding-right:10px}
 .icon_site, .icon_member, .icon_logout{
 	display: inline-block;
@@ -125,10 +126,11 @@ h1 a{
 	padding-right:5px}
 	
 /*2.2 主選單設定---------------------------*/	
-nav{ display:block; float:right; width:649px}
+nav{ display:block; float:right; width: 649px}
 nav ul{ padding-top:10px}
 nav li{display: inline-block; margin-left:10px;}
 .nav_01, .nav_02, .nav_03, .nav_04, .nav_05, .nav_06, .nav_07{
+	display:inline-block;
 	width:75px; 
 	height:76px; 
 	background:url(../images/bg_nav.png) no-repeat;
@@ -191,7 +193,7 @@ footer{
 	display:block;
 	width:954px;
 	margin:0 auto 20px auto;
-	padding:0 20px}
+	padding:160px 20px 0 0}
 #page_main{
 	display:block;
 	float:left;
@@ -201,5 +203,8 @@ aside{
 	display:block;
 	float:right;
 	width:168px}
-aside ul{}
-aside li{}								
+aside ul{ padding-top:5px}
+aside li{ margin-bottom:10px}
+.btn_social a{
+	text-align:right;
+	margin:0 0 15px 10px}								
