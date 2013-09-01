@@ -8,7 +8,7 @@
 <link rel="shortcut icon"  href="../../images/favicon.ico"/>
 <link rel="icon" href="../../images/favicon.ico"/>
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>網站導覽│APP線上專業服務網</title>
+<title>API分享資源│APP線上專業服務網</title>
 <!-- InstanceEndEditable -->
 <link rel="stylesheet" href="../../css/reset.css" />
 <link rel="stylesheet" href="../../css/xuepage_min.css"/>
@@ -37,13 +37,40 @@
              <nav>
                <!-- InstanceBeginEditable name="nav" -->
                  <ul><!-- 網站主選單，在該單元顯示時，選項的class要加上navin -->
-                   <li><a href="../epark/park_main.html" title="創意園區進駐申請" class="nav_01" tabindex="30">創意園區進駐申請</a></li>
-                   <li><a href="../news/news_list.html" title="APP相關訊息" class="nav_02" tabindex="40">APP相關訊息</a></li>
-                   <li><a href="../showapp/app_list.html" title="APP展示應用" class="nav_03" tabindex="50">APP展示應用</a></li>
-                   <li><a href="high_list.html" title="API分享資源" class="nav_04 navin" tabindex="60">API分享資源</a></li>
-                   <li><a href="../opendata/data_list.html" title="Open Data" class="nav_05" tabindex="70">Open Data</a></li>
-                   <li><a href="../forum/forum_list.html" title="技術論壇" class="nav_06" tabindex="80">技術論壇</a></li>
-                   <li><a href="../job/job_list.html" title="合作商機" class="nav_07" tabindex="90">合作商機</a></li>
+                   <li><a href="../epark/park_main.html" title="創意園區進駐申請" class="nav_01" tabindex="30">
+                          <h3>創意園區進駐申請</h3>
+                       </a>
+                   </li>
+                   <li><a href="../news/news_list.html" title="APP相關訊息" class="nav_02" tabindex="40">
+                          <h3>APP相關訊息</h3>
+                          <p><span>新增訊息：</span>99</p>
+                       </a>
+                   </li>
+                   <li><a href="../showapp/app_list.html" title="APP展示應用" class="nav_03" tabindex="50">
+                           <h3>APP展示應用</h3>
+                           <p><span>新增訊息：</span>125</p>
+                       </a>
+                   </li>
+                   <li><a href="high_list.html" title="API分享資源" class="nav_04 navin" tabindex="60">
+                           <h3>API分享資源</h3>
+                           <p><span>新增訊息：</span>48</p>
+                       </a>
+                   </li>
+                   <li><a href="../opendata/data_list.html" title="Open Data" class="nav_05" tabindex="70">
+                           <h3>Open Data</h3>
+                           <p><span>新增訊息：</span>89</p>
+                        </a>
+                   </li>
+                   <li><a href="../forum/forum_list.html" title="技術論壇" class="nav_06" tabindex="80">
+                           <h3>技術論壇</h3>
+                           <p><span>新增訊息：</span>20</p>  
+                        </a>
+                   </li>
+                   <li><a href="../job/job_list.html" title="合作商機" class="nav_07" tabindex="90">
+                           <h3>合作商機</h3>
+                           <p><span>新增訊息：</span>60</p> 
+                       </a>
+                   </li>
                  </ul>
                <!-- InstanceEndEditable -->
              </nav>
@@ -75,14 +102,322 @@
       
        <!-- 中間區塊，tabindex記數由200開始 -->
        <section id="main_content">
-           <a href="#" title="中間主要內容區" accesskey="c" tabindex='200'>:::</a>
-           
            <!-- InstanceBeginEditable name="page_main" -->
            <div id="page_main">
-              <h3>Api應用展示</h3>
               
+              <div class="bar_cookie">
+                  <a href="#" title="中間主要內容區" accesskey="c" tabindex='200'>:::</a>
+                  現在位置：<a href="../../index.html" title="首頁" tabindex="210">首頁</a>&gt; <a href="high_list.html" title="API分享資源" tabindex="220">API分享資源</a>&gt; API應用展示
+               </div>
+               
+               <div class="bar_title">
+                  <h3 class="page_title title_01">API應用展示</h3>
+                  <span class="mybtn"><a href="low_list.html" title="API通用展示" tabindex="230">API 通用展示</a></span>
+                  <br class="clean" />
+               </div>
+               
+               <div class="list_search">
+                 <div class="title_search">
+                    <h4>快速搜尋</h4>
+                    <span id="statebut" onclick="$use()" onKeyPress="$use()">縮小搜尋列</span>
+                 </div>
+                 <div id="class1content">
+                     <form action="high_list.html" method="post" class="myform">
+                       <label for="system">作業系統：</label>
+                           <select id="system" name="system" class="box_text w140">
+                               <option>所有系統</option>
+                               <option>iOS</option>
+                               <option>Android</option>
+                               <option>Windows</option>
+                            </select>
+                       <label for="class">類別：</label>
+                            <select id="class" name="class" class="box_text w140">
+                               <option>所有類別</option>
+                               <option>類別一</option>
+                               <option>類別二</option>
+                               <option>類別三</option>
+                            </select>
+                       <label for="tag">標籤：</label>
+                             <select id="tag" name="tag" class="box_text w140">
+                                 <option>所有標籤</option>
+                                 <option>標籤一</option>
+                                 <option>標籤二</option>
+                                 <option>標籤三</option>
+                              </select><br />
+                        <label for="keyword">關 鍵 字： </label>
+                              <input id="keyword" name="keyword" type="text" class="box_text w328 ml-01">
+                        <span class="mybtn btn_search-02"><a href="#" title="搜尋" tabindex="240">搜  尋</a></span>      
+                     </form>
+                  </div>
+                  <p>共搜尋到<span>452</span>個結果</p>
+               </div>
+               
+              <p class="sequence">排序：<a href="#" title="按最近新增時間做排序" tabindex="241">最近新增</a>│<a href="#" title="按點擊次數做排序" tabindex="242">最熱門</a></p>
+               
+               <table width="100%" class="my_table" summary="API應用展示列表">
+                  <tr>
+                    <th>API 名稱</th>
+                    <th>描述</th>
+                    <th class="w100">類別</th>
+                    <th class="w100">上傳時間</th>
+                    <th class="w80">點擊次數</th>
+                    <!--<th class="w80">媒合次數</th>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="Google Maps" tabindex="250">Google Maps</a></td>
+                    <td>Mapping services</td>
+                    <td>地圖</td>
+                    <td>2013-07-29</td>
+                    <td>19</td>
+                    <!--<td>10</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="Twitter" tabindex="260">Twitter</a></td>
+                    <td>Microblogging service</td>
+                    <td>社交</td>
+                    <td>2013-07-29</td>
+                    <td>13</td>
+                    <!--<td>5</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="YouTube" tabindex="270">YouTube</a></td>
+                    <td>Video sharing and search</td>
+                    <td>視頻</td>
+                    <td>2013-07-25</td>
+                    <td>18</td>
+                    <!--<td>11</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="Flickr" tabindex="280">Flickr</a></td>
+                    <td>Photo sharing service</td>
+                    <td>圖片</td>
+                    <td>2013-07-22</td>
+                    <td>20</td>
+                    <!--<td>15</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="Microsoft Bing Maps" tabindex="290">Microsoft Bing Maps</a></td>
+                    <td>Mapping services</td>
+                    <td>地圖</td>
+                    <td>2013-07-18</td>
+                    <td>12</td>
+                    <!--<td>8</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="Google Ajax Search API" tabindex="300">Google Ajax Search API</a></td>
+                    <td>Search services</td>
+                    <td>搜尋</td>
+                    <td>2013-07-18</td>
+                    <td>12</td>
+                    <!--<td>10</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="Yahoo Search" tabindex="310">Yahoo Search</a></td>
+                    <td>Search services</td>
+                    <td>搜尋</td>
+                    <td>2013-07-18</td>
+                    <td>16</td>
+                    <!--<td>10</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="AddThis Client" tabindex="320">AddThis Client</a></td>
+                    <td>Content sharing button service</td>
+                    <td>工具</td>
+                    <td>2013-07-15</td>
+                    <td>22</td>
+                    <!--<td>15</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="Android: Netrunner Card Database" tabindex="330">Android: Netrunner Card Database</a></td>
+                    <td>Netrunner card game card database</td>
+                    <td>遊戲</td>
+                    <td>2013-07-10</td>
+                    <td>23</td>
+                    <!--<td>10</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="Animetrics Face Recognition" tabindex="340">Animetrics Face Recognition</a></td>
+                    <td>3D face recognition</td>
+                    <td>工具</td>
+                    <td>2013-07-05</td>
+                    <td>15</td>
+                    <!--<td>7</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="Google Maps" tabindex="250">Google Maps</a></td>
+                    <td>Mapping services</td>
+                    <td>地圖</td>
+                    <td>2013-07-29</td>
+                    <td>19</td>
+                    <!--<td>10</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="Twitter" tabindex="260">Twitter</a></td>
+                    <td>Microblogging service</td>
+                    <td>社交</td>
+                    <td>2013-07-29</td>
+                    <td>13</td>
+                    <!--<td>5</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="YouTube" tabindex="270">YouTube</a></td>
+                    <td>Video sharing and search</td>
+                    <td>視頻</td>
+                    <td>2013-07-25</td>
+                    <td>18</td>
+                    <!--<td>11</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="Flickr" tabindex="280">Flickr</a></td>
+                    <td>Photo sharing service</td>
+                    <td>圖片</td>
+                    <td>2013-07-22</td>
+                    <td>20</td>
+                    <!--<td>15</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="Microsoft Bing Maps" tabindex="290">Microsoft Bing Maps</a></td>
+                    <td>Mapping services</td>
+                    <td>地圖</td>
+                    <td>2013-07-18</td>
+                    <td>12</td>
+                    <!--<td>8</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="Google Ajax Search API" tabindex="300">Google Ajax Search API</a></td>
+                    <td>Search services</td>
+                    <td>搜尋</td>
+                    <td>2013-07-18</td>
+                    <td>12</td>
+                    <!--<td>10</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="Yahoo Search" tabindex="310">Yahoo Search</a></td>
+                    <td>Search services</td>
+                    <td>搜尋</td>
+                    <td>2013-07-18</td>
+                    <td>16</td>
+                    <!--<td>10</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="AddThis Client" tabindex="320">AddThis Client</a></td>
+                    <td>Content sharing button service</td>
+                    <td>工具</td>
+                    <td>2013-07-15</td>
+                    <td>22</td>
+                    <!--<td>15</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="Android: Netrunner Card Database" tabindex="330">Android: Netrunner Card Database</a></td>
+                    <td>Netrunner card game card database</td>
+                    <td>遊戲</td>
+                    <td>2013-07-10</td>
+                    <td>23</td>
+                    <!--<td>10</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="Animetrics Face Recognition" tabindex="340">Animetrics Face Recognition</a></td>
+                    <td>3D face recognition</td>
+                    <td>工具</td>
+                    <td>2013-07-05</td>
+                    <td>15</td>
+                    <!--<td>7</td>-->
+                  </tr><tr>
+                    <td><a href="high_main.html" title="Google Maps" tabindex="250">Google Maps</a></td>
+                    <td>Mapping services</td>
+                    <td>地圖</td>
+                    <td>2013-07-29</td>
+                    <td>19</td>
+                    <!--<td>10</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="Twitter" tabindex="260">Twitter</a></td>
+                    <td>Microblogging service</td>
+                    <td>社交</td>
+                    <td>2013-07-29</td>
+                    <td>13</td>
+                    <!--<td>5</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="YouTube" tabindex="270">YouTube</a></td>
+                    <td>Video sharing and search</td>
+                    <td>視頻</td>
+                    <td>2013-07-25</td>
+                    <td>18</td>
+                    <!--<td>11</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="Flickr" tabindex="280">Flickr</a></td>
+                    <td>Photo sharing service</td>
+                    <td>圖片</td>
+                    <td>2013-07-22</td>
+                    <td>20</td>
+                    <!--<td>15</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="Microsoft Bing Maps" tabindex="290">Microsoft Bing Maps</a></td>
+                    <td>Mapping services</td>
+                    <td>地圖</td>
+                    <td>2013-07-18</td>
+                    <td>12</td>
+                    <!--<td>8</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="Google Ajax Search API" tabindex="300">Google Ajax Search API</a></td>
+                    <td>Search services</td>
+                    <td>搜尋</td>
+                    <td>2013-07-18</td>
+                    <td>12</td>
+                    <!--<td>10</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="Yahoo Search" tabindex="310">Yahoo Search</a></td>
+                    <td>Search services</td>
+                    <td>搜尋</td>
+                    <td>2013-07-18</td>
+                    <td>16</td>
+                    <!--<td>10</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="AddThis Client" tabindex="320">AddThis Client</a></td>
+                    <td>Content sharing button service</td>
+                    <td>工具</td>
+                    <td>2013-07-15</td>
+                    <td>22</td>
+                    <!--<td>15</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="Android: Netrunner Card Database" tabindex="330">Android: Netrunner Card Database</a></td>
+                    <td>Netrunner card game card database</td>
+                    <td>遊戲</td>
+                    <td>2013-07-10</td>
+                    <td>23</td>
+                    <!--<td>10</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="high_main.html" title="Animetrics Face Recognition" tabindex="340">Animetrics Face Recognition</a></td>
+                    <td>3D face recognition</td>
+                    <td>工具</td>
+                    <td>2013-07-05</td>
+                    <td>15</td>
+                    <!--<td>7</td>-->
+                  </tr>
+                </table>
                 
-           </div>
+                <div class="sabrosus"><!-- span class="current"為目前頁面數 -->
+                  <span class="disabled"> &lt; </span>
+                  <span class="current">1</span>
+                  <a href="#?page=2">2</a>
+                  <a href="#?page=3">3</a>
+                  <a href="#?page=4">4</a>
+                  <a href="#?page=5">5</a>
+                  <a href="#?page=6">6</a>
+                  <a href="#?page=7">7</a>
+                  <a href="#?page=2"> &gt;</a>
+              </div>  
+               
+                 
+           </div><!-- end #page_main -->
            <!-- InstanceEndEditable -->
            
            <aside><!--右側區塊，tabindex記數由1000開始-->

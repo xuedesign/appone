@@ -1,10 +1,472 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/temp_tw.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
-<meta charset="utf-8">
-<title>無標題文件</title>
+<meta charset="utf-8" lang="zh-tw">
+<meta name="description" content="財團法人資訊工業策進會數位教育研究所"/>
+<meta name="keywords" content="APP,API,OPENDATA,資訊工業策進會,經濟部工業局,app開發,產業轉型,分享經濟式創業"/>
+<meta name="Author" content="xuedesign studio" />
+<link rel="shortcut icon"  href="../../images/favicon.ico"/>
+<link rel="icon" href="../../images/favicon.ico"/>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>API分享資源│APP線上專業服務網</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" href="../../css/reset.css" />
+<link rel="stylesheet" href="../../css/xuepage_min.css"/>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if IE 7]>
+	<script src="http://letskillie6.googlecode.com/svn/trunk/2/zh_TW.js"></script>
+<![endif]-->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
 </head>
 
 <body>
+   <noscript><p>您的瀏覽器不支援JavaScript語法,但是並不影響您獲取本網站的內容</p></noscript>
+   <div id="wrap">
+      <div id="wrap_content" class="clearfix">
+       
+      <!-- 頁首 -->
+      <header>
+         <section class="head_top">
+             <a href="#" class="flle" title="上方主要導覽區" accesskey="u" tabindex='10'>:::</a>
+             <h1><a href="../../index.html" title="返回首頁" tabindex="20">APP線上專業服務網</a></h1>
+             <h2 class="hidden">以分享經濟式創業場域為推動國內App產業發展主軸，對內促成團隊間分享交流，對外協助各產業App開發支援服務，進而促進產業轉型與服務升級。</h2>
+             <nav>
+               <!-- InstanceBeginEditable name="nav" -->
+                 <ul><!-- 網站主選單，在該單元顯示時，選項的class要加上navin -->
+                   <li><a href="../epark/park_main.html" title="創意園區進駐申請" class="nav_01" tabindex="30">
+                          <h3>創意園區進駐申請</h3>
+                       </a>
+                   </li>
+                   <li><a href="../news/news_list.html" title="APP相關訊息" class="nav_02" tabindex="40">
+                          <h3>APP相關訊息</h3>
+                          <p><span>新增訊息：</span>99</p>
+                       </a>
+                   </li>
+                   <li><a href="../showapp/app_list.html" title="APP展示應用" class="nav_03" tabindex="50">
+                           <h3>APP展示應用</h3>
+                           <p><span>新增訊息：</span>125</p>
+                       </a>
+                   </li>
+                   <li><a href="high_list.html" title="API分享資源" class="nav_04 navin" tabindex="60">
+                           <h3>API分享資源</h3>
+                           <p><span>新增訊息：</span>48</p>
+                       </a>
+                   </li>
+                   <li><a href="../opendata/data_list.html" title="Open Data" class="nav_05" tabindex="70">
+                           <h3>Open Data</h3>
+                           <p><span>新增訊息：</span>89</p>
+                        </a>
+                   </li>
+                   <li><a href="../forum/forum_list.html" title="技術論壇" class="nav_06" tabindex="80">
+                           <h3>技術論壇</h3>
+                           <p><span>新增訊息：</span>20</p>  
+                        </a>
+                   </li>
+                   <li><a href="../job/job_list.html" title="合作商機" class="nav_07" tabindex="90">
+                           <h3>合作商機</h3>
+                           <p><span>新增訊息：</span>60</p> 
+                       </a>
+                   </li>
+                 </ul>
+               <!-- InstanceEndEditable -->
+             </nav>
+             <br class="clean" />         
+         </section>
+         
+         <section class="head_down">
+             <div class="box_search">
+                  <form action="../../search.html" method="post">  
+                    <label for="search"><span class="hidden">網站搜尋</span></label>
+                    <input name="search" id="search" type="text" class="input_search" onfocus="if (this.value=='請輸入關鍵字查詢') this.value='';" onblur="if (this.value=='') this.value='請輸入關鍵字查詢';" value="請輸入關鍵字查詢" />
+                    <a href="../../search.html"  class="btn_search" title="搜尋" tabindex="100">搜尋</a>
+                  </form>  
+             </div>
+             <div class="subnav">
+                  <ul>
+                    <!--<li><span class="icon_member"></span><a href="sitemap.html" title="會員登入" tabindex="110">會員登入</a></li>-->
+                    <li><span class="icon_logout"></span><a href="../../index.html" title="會員登出" tabindex="120">會員登出</a></li>
+                    <li><span class="icon_member"></span><a href="../member/profile_edit.html" title="會員專區" tabindex="130">會員專區</a></li>
+                    <li><span class="icon_site"></span><a href="../../sitemap.html" title="網站導覽" tabindex="140">網站導覽</a></li>
+                    <li><a href="../../index.html" title="目前是中文版" class="btn_sblue snav_in" tabindex="150">中文</a></li>
+                    <li><a href="../../en/index.html" title="前往英文版" class="btn_sblue"  tabindex="160" >英文</a></li>
+                  </ul>
+            </div>
+             <br class="clean" />
+         </section>
+      </header>
+      
+      
+       <!-- 中間區塊，tabindex記數由200開始 -->
+       <section id="main_content">
+           <!-- InstanceBeginEditable name="page_main" -->
+           <div id="page_main">
+              
+              <div class="bar_cookie">
+                  <a href="#" title="中間主要內容區" accesskey="c" tabindex='200'>:::</a>
+                  現在位置：<a href="../../index.html" title="首頁" tabindex="210">首頁</a>&gt; <a href="high_list.html" title="API分享資源" tabindex="220">API分享資源</a>&gt; API通用展示
+               </div>
+               
+               <div class="bar_title">
+                  <h3 class="page_title title_02">API通用展示</h3>
+                  <span class="mybtn"><a href="high_list.html" title="API通用展示" tabindex="230">API 應用展示</a></span>
+                  <br class="clean" />
+               </div>
+               
+               <div class="list_search">
+                 <div class="title_search">
+                    <h4>快速搜尋</h4>
+                    <span id="statebut" onclick="$use()" onKeyPress="$use()">縮小搜尋列</span>
+                 </div>
+                 <div id="class1content">
+                     <form action="high_list.html" method="post" class="myform">
+                       <label for="system">作業系統：</label>
+                           <select id="system" name="system" class="box_text w140">
+                               <option>所有系統</option>
+                               <option>iOS</option>
+                               <option>Android</option>
+                               <option>Windows</option>
+                            </select>
+                       <label for="class">類別：</label>
+                            <select id="class" name="class" class="box_text w140">
+                               <option>所有類別</option>
+                               <option>類別一</option>
+                               <option>類別二</option>
+                               <option>類別三</option>
+                            </select>
+                       <label for="tag">標籤：</label>
+                             <select id="tag" name="tag" class="box_text w140">
+                                 <option>所有標籤</option>
+                                 <option>標籤一</option>
+                                 <option>標籤二</option>
+                                 <option>標籤三</option>
+                              </select><br />
+                        <label for="keyword">關 鍵 字： </label>
+                              <input id="keyword" name="keyword" type="text" class="box_text w328 ml-01">
+                        <span class="mybtn btn_search-02"><a href="#" title="搜尋" tabindex="240">搜  尋</a></span>      
+                     </form>
+                  </div>
+                  <p>共搜尋到<span>150</span>個結果</p>
+               </div>
+               
+               <p class="sequence">排序：<a href="#" title="按最近新增時間做排序" tabindex="241">最近新增</a>│<a href="#" title="按點擊次數做排序" tabindex="242">最熱門</a></p>
+               
+               <table width="100%" class="my_table" summary="API通用展示列表">
+                  <tr>
+                    <th>API 名稱</th>
+                    <th>描述</th>
+                    <th class="w100">類別</th>
+                    <th class="w100">上傳時間</th>
+                    <th class="w80">點擊次數</th>
+                    <!--<th class="w80">媒合次數</th>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="SimpleAdapter" tabindex="250">SimpleAdapter</a></td>
+                    <td>製作自訂的listview</td>
+                    <td>頁面功能</td>
+                    <td>2013-07-29</td>
+                    <td>19</td>
+                    <!--<td>10</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="Fragment" tabindex="260">Fragment</a></td>
+                    <td>建立TabActivity</td>
+                    <td>一般功能</td>
+                    <td>2013-07-29</td>
+                    <td>13</td>
+                    <!--<td>5</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="AsyncTask" tabindex="270">AsyncTask</a></td>
+                    <td>計算程式執行時間</td>
+                    <td>一般功能</td>
+                    <td>2013-07-25</td>
+                    <td>18</td>
+                    <!--<td>11</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="ExpandableList" tabindex="280">ExpandableList</a></td>
+                    <td>延展的listview</td>
+                    <td>頁面功能</td>
+                    <td>2013-07-22</td>
+                    <td>20</td>
+                    <!--<td>15</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="PreferenceActivity" tabindex="290">PreferenceActivity</a></td>
+                    <td>儲存資料功能</td>
+                    <td>一般功能</td>
+                    <td>2013-07-18</td>
+                    <td>12</td>
+                    <!--<td>8</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="Gallery" tabindex="300">Gallery</a></td>
+                    <td>有倒影及非主要圖片會在側邊縮小</td>
+                    <td>圖像功能</td>
+                    <td>2013-07-18</td>
+                    <td>12</td>
+                    <!--<td>10</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="ImageDownloader" tabindex="310">ImageDownloader</a></td>
+                    <td>下載圖片</td>
+                    <td>圖像功能</td>
+                    <td>2013-07-18</td>
+                    <td>16</td>
+                    <!--<td>10</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="Gesture" tabindex="320">Gesture</a></td>
+                    <td>手勢辨識功能</td>
+                    <td>操作功能</td>
+                    <td>2013-07-15</td>
+                    <td>22</td>
+                    <!--<td>15</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="SideBar" tabindex="330">SideBar</a></td>
+                    <td>側邊工具欄的使用</td>
+                    <td>頁面功能</td>
+                    <td>2013-07-10</td>
+                    <td>23</td>
+                    <!--<td>10</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="CountDownTimer" tabindex="340">CountDownTimer</a></td>
+                    <td>3D face recognition</td>
+                    <td>提供倒數計時器功能</td>
+                    <td>2013-07-05</td>
+                    <td>15</td>
+                    <!--<td>7</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="SimpleAdapter" tabindex="350">SimpleAdapter</a></td>
+                    <td>製作自訂的listview</td>
+                    <td>頁面功能</td>
+                    <td>2013-07-29</td>
+                    <td>19</td>
+                    <!--<td>10</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="Fragment" tabindex="360">Fragment</a></td>
+                    <td>建立TabActivity</td>
+                    <td>一般功能</td>
+                    <td>2013-07-29</td>
+                    <td>13</td>
+                    <!--<td>5</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="AsyncTask" tabindex="370">AsyncTask</a></td>
+                    <td>計算程式執行時間</td>
+                    <td>一般功能</td>
+                    <td>2013-07-25</td>
+                    <td>18</td>
+                    <!--<td>11</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="ExpandableList" tabindex="380">ExpandableList</a></td>
+                    <td>延展的listview</td>
+                    <td>頁面功能</td>
+                    <td>2013-07-22</td>
+                    <td>20</td>
+                    <!--<td>15</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="PreferenceActivity" tabindex="390">PreferenceActivity</a></td>
+                    <td>儲存資料功能</td>
+                    <td>一般功能</td>
+                    <td>2013-07-18</td>
+                    <td>12</td>
+                    <!--<td>8</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="Gallery" tabindex="400">Gallery</a></td>
+                    <td>有倒影及非主要圖片會在側邊縮小</td>
+                    <td>圖像功能</td>
+                    <td>2013-07-18</td>
+                    <td>12</td>
+                    <!--<td>10</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="ImageDownloader" tabindex="410">ImageDownloader</a></td>
+                    <td>下載圖片</td>
+                    <td>圖像功能</td>
+                    <td>2013-07-18</td>
+                    <td>16</td>
+                    <!--<td>10</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="Gesture" tabindex="420">Gesture</a></td>
+                    <td>手勢辨識功能</td>
+                    <td>操作功能</td>
+                    <td>2013-07-15</td>
+                    <td>22</td>
+                    <!--<td>15</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="SideBar" tabindex="430">SideBar</a></td>
+                    <td>側邊工具欄的使用</td>
+                    <td>頁面功能</td>
+                    <td>2013-07-10</td>
+                    <td>23</td>
+                    <!--<td>10</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="CountDownTimer" tabindex="440">CountDownTimer</a></td>
+                    <td>3D face recognition</td>
+                    <td>提供倒數計時器功能</td>
+                    <td>2013-07-05</td>
+                    <td>15</td>
+                    <!--<td>7</td>-->
+                  </tr><tr>
+                    <td><a href="low_main.html" title="SimpleAdapter" tabindex="450">SimpleAdapter</a></td>
+                    <td>製作自訂的listview</td>
+                    <td>頁面功能</td>
+                    <td>2013-07-29</td>
+                    <td>19</td>
+                    <!--<td>10</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="Fragment" tabindex="460">Fragment</a></td>
+                    <td>建立TabActivity</td>
+                    <td>一般功能</td>
+                    <td>2013-07-29</td>
+                    <td>13</td>
+                    <!--<td>5</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="AsyncTask" tabindex="470">AsyncTask</a></td>
+                    <td>計算程式執行時間</td>
+                    <td>一般功能</td>
+                    <td>2013-07-25</td>
+                    <td>18</td>
+                    <!--<td>11</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="ExpandableList" tabindex="480">ExpandableList</a></td>
+                    <td>延展的listview</td>
+                    <td>頁面功能</td>
+                    <td>2013-07-22</td>
+                    <td>20</td>
+                    <!--<td>15</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="PreferenceActivity" tabindex="490">PreferenceActivity</a></td>
+                    <td>儲存資料功能</td>
+                    <td>一般功能</td>
+                    <td>2013-07-18</td>
+                    <td>12</td>
+                    <!--<td>8</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="Gallery" tabindex="500">Gallery</a></td>
+                    <td>有倒影及非主要圖片會在側邊縮小</td>
+                    <td>圖像功能</td>
+                    <td>2013-07-18</td>
+                    <td>12</td>
+                    <!--<td>10</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="ImageDownloader" tabindex="510">ImageDownloader</a></td>
+                    <td>下載圖片</td>
+                    <td>圖像功能</td>
+                    <td>2013-07-18</td>
+                    <td>16</td>
+                    <!--<td>10</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="Gesture" tabindex="520">Gesture</a></td>
+                    <td>手勢辨識功能</td>
+                    <td>操作功能</td>
+                    <td>2013-07-15</td>
+                    <td>22</td>
+                    <!--<td>15</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="SideBar" tabindex="530">SideBar</a></td>
+                    <td>側邊工具欄的使用</td>
+                    <td>頁面功能</td>
+                    <td>2013-07-10</td>
+                    <td>23</td>
+                    <!--<td>10</td>-->
+                  </tr>
+                  <tr>
+                    <td><a href="low_main.html" title="CountDownTimer" tabindex="540">CountDownTimer</a></td>
+                    <td>3D face recognition</td>
+                    <td>提供倒數計時器功能</td>
+                    <td>2013-07-05</td>
+                    <td>15</td>
+                    <!--<td>7</td>-->
+                  </tr>
+                </table>
+                
+                <div class="sabrosus"><!-- span class="current"為目前頁面數 -->
+                  <span class="disabled"> &lt; </span>
+                  <span class="current">1</span>
+                  <a href="#?page=2">2</a>
+                  <a href="#?page=3">3</a>
+                  <a href="#?page=4">4</a>
+                  <a href="#?page=5">5</a>
+                  <a href="#?page=6">6</a>
+                  <a href="#?page=7">7</a>
+                  <a href="#?page=2"> &gt;</a>
+              </div>  
+               
+                 
+           </div><!-- end #page_main -->
+           <!-- InstanceEndEditable -->
+           
+           <aside><!--右側區塊，tabindex記數由1000開始-->
+             <div class="btn_social a2a_kit a2a_kit_size_32 a2a_default_style">
+                    <a href="#" title="右方區塊" accesskey="r" tabindex="1000">:::</a>   
+                    <a class="a2a_button_facebook" title="分享到facebook" tabindex="1010"></a>
+                    <a class="a2a_button_twitter" title="分享到twitter" tabindex="1020"></a>
+                    <a class="a2a_button_google_plus" title="分享到google plus" tabindex="1030"></a>
+               </div>
+               
+               <ul>
+                  <li><a href="#" title="檢測設備租借" rel="external" tabindex="1040">
+                      <img src="../../images/banner_01.jpg" width="168" height="53" alt="檢測設備租借"></a></li>
+                  <li><a href="#" title="創意園區進駐申請" rel="external" tabindex="1050">
+                      <img src="../../images/banner_02.jpg" width="168" height="53" alt="創意園區進駐申請"></a></li>
+                  <li><a href="#" title="促進投資" rel="external" tabindex="1060">
+                      <img src="../../images/banner_03.jpg" width="168" height="53" alt="促進投資"></a></li>
+                  <li><a href="#" title="企業輔導網" rel="external" tabindex="1070">
+                     <img src="../../images/banner_04.jpg" width="168" height="53" alt="企業輔導網"></a></li>
+                  <li><a href="#" title="APP實作體驗營" rel="external" tabindex="1080">
+                     <img src="../../images/banner_05.jpg" width="168" height="53" alt="APP實作體驗營"></a></li>
+                  <li><a href="#" title="Ideas Show 網路創意展" rel="external" tabindex="1090">
+                     <img src="../../images/banner_06.jpg" width="168" height="53" alt="Ideas Show 網路創意展"></a></li>
+               </ul>
+           </aside>
+       </section>
+     </div> 
+   </div>
+   
+   
+   <!-- 版權列，tabindex計數由2000開始-->
+   <footer>
+     <div class="foot_content">
+       <p class="copyright">經濟部工業局版權所有&copy;2013</p>
+       <p class="footer_left">
+          <a href="http://www.moeaidb.gov.tw/" title="[另開視窗]經濟部工業局" tabindex="2000" rel="external">經濟部工業局</a>
+       </p>
+       <div class="footer_mid">
+          <p>主辦單位：經濟部工業局 數位學習產業跨域躍升計畫<span class="pl-25">執行單位：財團法人資訊工業策進會數位教育研究所</span><br />
+             聯絡信箱： <a href="mailto:appservice@iii.org.tw" title="聯絡我們" tabindex="2010">appservice@iii.org.tw</a>　|　<a href="../../private.html" title="隱私權聲明" tabindex="2020">隱私權聲明</a>　|　<a href="../../disclaimer.html" title="免責聲明" tabindex="2030">免責聲明</a></p>
+       </div>
+       <div class="footer_right"><a href="#" title="本網站通過A+優先等級無障礙網頁檢測" tabindex="2040">
+           <img src="../../images/icon_accessibility.jpg" width="88" height="31" alt="無障礙標章"></a>
+       </div>
+     </div> 
+   </footer>
+
+
+<script src="http://static.addtoany.com/menu/page.js"></script><!-- 社群分享 -->  
+<script src="../../scripts/web_set.js"></script><!--綜合屬性-->
 </body>
-</html>
+<!-- InstanceEnd --></html>

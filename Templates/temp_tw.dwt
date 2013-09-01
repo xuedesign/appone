@@ -75,9 +75,11 @@
       
        <!-- 中間區塊，tabindex記數由200開始 -->
        <section id="main_content">
-           <a href="#" title="中間主要內容區" accesskey="c" tabindex='200'>:::</a>
-           
            <!-- TemplateBeginEditable name="page_main" -->
+           <div class="cookie_bar">
+              <a href="#" title="中間主要內容區" accesskey="c" tabindex='200'>:::</a>
+           </div>
+           
            <div id="page_main">
            
            </div>

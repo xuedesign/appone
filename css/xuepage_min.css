@@ -34,7 +34,7 @@ body{
 	line-height:22px;
 	color:#504f4f}
 a:link {text-decoration:none; color:#0795c1}
-a:visited {text-decoration:none; color:#aad6e6}
+a:visited {text-decoration:none; color:#819DA6}
 a:hover {text-decoration:underline; color:#F50}
 form{margin:0; padding:0}
 image{border:0}
@@ -128,13 +128,30 @@ h1 a{
 /*2.2 主選單設定---------------------------*/	
 nav{ display:block; float:right; width: 649px}
 nav ul{ padding-top:10px}
-nav li{display: inline-block; margin-left:10px;}
+nav li{display: inline-block; position:relative; margin-left:10px;}
+nav h3, nav p span{ display:none}
+nav p{
+	display: block;
+	position:absolute;
+	top:5px;
+	right:8px;
+	z-index:99;
+	padding:0 8px;
+	font-size:0.75em;
+	font-weight:bold;
+	color:#FFF;
+	background:#e60012;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+	box-shadow:0 2px 10px #ccc;
+	-moz-box-shadow:0 2px 10px #999; 
+	-webkit-box-shadow:0 2px 10px #999}
 .nav_01, .nav_02, .nav_03, .nav_04, .nav_05, .nav_06, .nav_07{
 	display:inline-block;
 	width:75px; 
 	height:76px; 
-	background:url(../images/bg_nav.png) no-repeat;
-	text-indent:-9999px}
+	background:url(../images/bg_nav.png) no-repeat}
 .nav_01:hover, .nav_02:hover, .nav_03:hover, .nav_04:hover, .nav_05:hover, .nav_06:hover, .nav_07:hover{ cursor:pointer}
 .nav_01{ background-position: 0 0}
 .nav_01:hover, .nav_01.navin{ background-position: -75px 0}	
@@ -192,13 +209,34 @@ footer{
 #main_content{
 	display:block;
 	width:954px;
+	/*min-width:620px;*/
 	margin:0 auto 20px auto;
 	padding:160px 20px 0 0}
+.bar_cookie{
+	display:block;
+	text-align:right;
+	font-size:0.75em;
+	line-height:22px}	
 #page_main{
 	display:block;
 	float:left;
 	width:740px;
-	padding:0 20px}
+	padding:0 20px 30px}
+.bar_title{	display:block; padding:15px 0}
+.bar_title h3{
+	display:block;
+	float:left;
+	width:50%;
+	font-size:1.25em;
+	color:#11154a;
+	margin:0; padding:0}
+.bar_title .page_title{ text-indent:-9999px}
+.bar_title a{ display:block; float:right}
+.title_01, .title_02{ height:17px; margin-top:10px}
+.title_01{background: url(../images/bg_page-title.png) no-repeat}
+.title_02{background: url(../images/bg_page-title.png) 0 -17px no-repeat}
+.title_03{background: url(../images/bg_page-title.png) 0 -34px no-repeat}
+	
 aside{
 	display:block;
 	float:right;
@@ -207,4 +245,107 @@ aside ul{ padding-top:5px}
 aside li{ margin-bottom:10px}
 .btn_social a{
 	text-align:right;
-	margin:0 0 15px 10px}								
+	margin:0 0 15px 10px}
+
+/* 3. 共用元素
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/
+.mybtn a{
+	display:block;
+	padding: 2px 12px;
+	font-size:0.813em;
+	line-height:20px;
+	color:#0D5572;
+	text-shadow:1px 1px 2px #F5F5F5;
+	background:#4ed4fe;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px}
+.mybtn a:hover{background:#126e93; color:#FFF; text-shadow:none; text-decoration:none}
+.box_text{
+	border:1px solid #bab9b9;
+	padding:3px 5px;
+	margin-bottom:15px;
+	box-shadow:1px 1px 2px #efeded inset}
+.w50{ width:50px}
+.w80{ width:80px}
+.w100{ width:100px}
+.w140{ width:140px}
+.w200{ width:200px}
+.w328{ width:328px}
+.ml-01{margin-left:7px}
+.box_text:focus { outline: 0 none; box-shadow: 0 0 8px 0 #6699CC}
+.my_table{ width:100%; margin:10px 0 20px; border-collapse: collapse; border-spacing: 1px}
+.my_table tr:nth-child(odd){ background:#eff3f4} /*odd:奇數,even：偶數*/
+.my_table th{
+	height:29px; 
+	border:1px solid #FFF;
+	font-size:0.813em;
+	font-weight:bold;
+	color:#FFF;
+	vertical-align:middle;
+	background:url(../images/bg_th.png) repeat-x}
+.my_table td{ 
+    font-size:0.813em;
+	line-height:22px;
+	padding:8px; 
+    text-align:center;
+	vertical-align:middle;
+	border-bottom:1px dashed #aad6e6}
+/*頁碼*/
+.sabrosus{padding: 3px; margin:15px 3px 15px; font-size:0.813em; text-align: center}
+.sabrosus a{border: #9aafe5 1px solid; padding:2px 5px; color: #2e6ab1; margin-right: 5px; text-decoration: none}
+.sabrosus a:hover{border: #2b66a5 1px solid; color:#2e6ab1; background-color: #eff3f4}
+.pagination a:active{border: #2b66a5 1px solid;  color: #000; background-color: lightyellow}
+.sabrosus span.current{border: navy 1px solid; padding:2px 5px; font-weight: bold; color: #fff; margin-right: 5px; background-color: #6699CC}
+.sabrosus span.disabled{border: #929292 1px solid; padding:2px 5px; color: #929292; margin-right: 5px}			
+
+
+/* 7. API分享資源
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/
+/*列表頁*/
+.list_search{
+	display:block;
+	width:740px;
+	font-size:0.813em;
+	color:#616161;
+	background:#eef4ff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px}
+.title_search{
+	display:block;
+	width:740px;
+	height:21px;
+	background:url(../images/bg_listsearch.png) no-repeat}	
+.title_search h4{ display:block; float:left; width:660px; text-indent:-9999px}
+.myform{ border-bottom:1px dashed #B9B9B9}
+#statebut{
+	display:block;
+	float:right;
+	width:80px;
+	height:21px;
+	color:#FFF}
+#statebut:hover{color:#84DAFC; cursor:pointer}	
+#class1content{ 
+    clear:both;
+	display:block;
+	width:725px;
+	margin-left:5px;
+	padding:15px 0 5px}
+#class1content label{ padding-left:15px}
+.btn_search-02{ display:inline-block; width:55px; font-size:1.125em; margin-left:15px}
+.list_search p{ clear:both; display:block; width:700px; margin:0 auto; padding:5px 0 10px 0}				
+.list_search p span{ font-weight:bold; font-size:1.25em; color:#18c2f7; padding:0 8px}
+.sequence{ font-size:0.813em; line-height:20px; text-align:right; padding-top:15px}
+
+/*內頁*/
+.btn_download{ display:block; width:80px; margin:10px 0 0 15px}
+.main_list ul{ margin:10px 0 20px}
+.main_list h4{ font-size:0.938em; line-height:25px; color:#017FB1}
+.main_list p{ font-size:0.813em; line-height:22px; padding:0 0 10px 15px}
+.list_left, .list_right{ display:block; float:left}
+.list_left{ width:155px; border-right:1px dashed #666666}
+.list_right{ width:550px; padding-left:20px}
+											
