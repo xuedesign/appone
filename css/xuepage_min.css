@@ -13,14 +13,14 @@
 		  2.4 版權列區塊
 		  2.5 內文區塊
 		3 共用元素
-		4 園區快訊
-		5 APP相關訊息
-		6 APP應用展示
-		7 API分享資源
-		8 open data
-		9 技術論壇
-	   10 合作商機
-	   11 會員商機 
+		4 內文編排
+		  4.1 園區快訊
+		  4.2 APP相關訊息
+		  4.3 APP應用展示
+		  4.4 API分享資源
+		  4.5 技術論壇
+	      4.7 合作商機
+	      4.8 會員商機 
 ***********************************************************************************************/
 
 
@@ -232,10 +232,11 @@ footer{
 	margin:0; padding:0}
 .bar_title .page_title{ text-indent:-9999px}
 .bar_title a{ display:block; float:right}
-.title_01, .title_02{ height:17px; margin-top:10px}
+.title_01, .title_02, .title_03, .title_04{ height:17px; margin-top:10px}
 .title_01{background: url(../images/bg_page-title.png) no-repeat}
 .title_02{background: url(../images/bg_page-title.png) 0 -17px no-repeat}
 .title_03{background: url(../images/bg_page-title.png) 0 -34px no-repeat}
+.title_04{background: url(../images/bg_page-title.png) 0 -51px no-repeat}
 	
 aside{
 	display:block;
@@ -293,7 +294,7 @@ aside li{ margin-bottom:10px}
 	vertical-align:middle;
 	border-bottom:1px dashed #aad6e6}
 /*頁碼*/
-.sabrosus{padding: 3px; margin:15px 3px 15px; font-size:0.813em; text-align: center}
+.sabrosus{ float:left; padding: 3px; margin:10px 3px; font-size:0.813em; text-align: center}
 .sabrosus a{border: #9aafe5 1px solid; padding:2px 5px; color: #2e6ab1; margin-right: 5px; text-decoration: none}
 .sabrosus a:hover{border: #2b66a5 1px solid; color:#2e6ab1; background-color: #eff3f4}
 .pagination a:active{border: #2b66a5 1px solid;  color: #000; background-color: lightyellow}
@@ -301,10 +302,11 @@ aside li{ margin-bottom:10px}
 .sabrosus span.disabled{border: #929292 1px solid; padding:2px 5px; color: #929292; margin-right: 5px}			
 
 
-/* 7. API分享資源
+/* 4. 內文編排
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
-/*列表頁*/
+
+/*4.4 API分享資源 列表頁*/
 .list_search{
 	display:block;
 	width:740px;
@@ -339,13 +341,20 @@ aside li{ margin-bottom:10px}
 .list_search p{ clear:both; display:block; width:700px; margin:0 auto; padding:5px 0 10px 0}				
 .list_search p span{ font-weight:bold; font-size:1.25em; color:#18c2f7; padding:0 8px}
 .sequence{ font-size:0.813em; line-height:20px; text-align:right; padding-top:15px}
+.addup{ float:right; font-size:0.813em; line-height:22px; margin:10px 3px}
+.addup span{ font-size:1.125em; font-weight:bold; color:#017FB1; padding:0 10px}
 
-/*內頁*/
-.btn_download{ display:block; width:80px; margin:10px 0 0 15px}
+/*4.4 API分享資源 內頁*/
+.btn_download-01, .btn_download-02{ display:block; margin:10px 0 10px 15px}
+.btn_download-01{ width:80px}
+.btn_download-02{width:95px}
 .main_list ul{ margin:10px 0 20px}
 .main_list h4{ font-size:0.938em; line-height:25px; color:#017FB1}
 .main_list p{ font-size:0.813em; line-height:22px; padding:0 0 10px 15px}
 .list_left, .list_right{ display:block; float:left}
 .list_left{ width:155px; border-right:1px dashed #666666}
 .list_right{ width:550px; padding-left:20px}
+
+/*4.5 技術論壇*/
+.my_table .align_forl{ text-align:left}
 											
