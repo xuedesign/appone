@@ -223,7 +223,7 @@ footer{
 	float:left;
 	width:740px;
 	padding:0 20px 30px}
-.bar_title{	display:block; position:relative; padding:15px 0}
+.bar_title{	display:block; position:relative; margin-top:18px; padding:15px 0 0}
 .bar_title h3{
 	display:block;
 	float:left;
@@ -266,6 +266,7 @@ aside li{ margin-bottom:10px}
 	-webkit-border-radius: 10px;
     -moz-border-radius: 10px}
 .mybtn a:hover{background:#126e93; color:#FFF; text-shadow:none; text-decoration:none}
+.my_margin{ float:right; margin-left:15px}
 .box_text{
 	border:1px solid #bab9b9;
 	padding:3px 5px;
@@ -302,7 +303,11 @@ aside li{ margin-bottom:10px}
 .sabrosus a:hover{border: #2b66a5 1px solid; color:#2e6ab1; background-color: #eff3f4}
 .pagination a:active{border: #2b66a5 1px solid;  color: #000; background-color: lightyellow}
 .sabrosus span.current{border: navy 1px solid; padding:2px 5px; font-weight: bold; color: #fff; margin-right: 5px; background-color: #6699CC}
-.sabrosus span.disabled{border: #929292 1px solid; padding:2px 5px; color: #929292; margin-right: 5px}			
+.sabrosus span.disabled{border: #929292 1px solid; padding:2px 5px; color: #929292; margin-right: 5px}
+
+.box_main{ display:block; padding:15px 0 30px 0}
+.box_main p{ font-size:0.813em; line-height:22px; padding-bottom:20px}
+.box_main img{margin:0 20px 15px 0}			
 
 
 /* 4. 內文編排
@@ -312,12 +317,12 @@ aside li{ margin-bottom:10px}
 /*4.2 APP相關訊息*/
 .headline h4{ font-size:1em; line-height:25px; margin-bottom:10px}
 .headline p{ font-size:0.813em; line-height:22px}
-.headline time, .list_news time{
+.headline time, .list_news time, .info_writing li{
 	font-size:0.75em; 
 	color:#fff; 
 	line-height:18px; 
-	padding:1px 3px;
-	background:#4ED4FE}
+	background:#6699CC}
+.headline time, .list_news time{padding:1px 3px}	
 .headline img{ float:left; margin:0 15px 15px 0}
 .list_news{ padding-bottom:30px}
 .list_news li{ 
@@ -348,6 +353,8 @@ aside li{ margin-bottom:10px}
 	-webkit-box-shadow:0 2px 0 #999}
 .pop-01{left:80px}
 .pop-02{left:120px}
+.info_writing li{ display:inline-block; margin:0 10px 15px 0; padding:0 8px 0 0}
+.info_writing span{ background:#4ED4FE; padding:0 3px; margin-right:5px; letter-spacing:1px}
 
 /*4.4 API分享資源 列表頁*/
 .list_search{
@@ -356,6 +363,7 @@ aside li{ margin-bottom:10px}
 	font-size:0.813em;
 	color:#616161;
 	background:#eef4ff;
+	margin-top:10px;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
     -moz-border-radius: 5px}
