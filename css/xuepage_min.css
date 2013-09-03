@@ -52,6 +52,7 @@ image{border:0}
 header{
 	display:block;
 	position:fixed;
+	z-index:999999;
 	width:100%;
 	height:171px;
 	background: url(../images/bg_pagehead.png) repeat-x}
@@ -222,21 +223,23 @@ footer{
 	float:left;
 	width:740px;
 	padding:0 20px 30px}
-.bar_title{	display:block; padding:15px 0}
+.bar_title{	display:block; position:relative; padding:15px 0}
 .bar_title h3{
 	display:block;
 	float:left;
 	width:50%;
 	font-size:1.25em;
 	color:#11154a;
-	margin:0; padding:0}
+	margin:0; padding:0}	
 .bar_title .page_title{ text-indent:-9999px}
 .bar_title a{ display:block; float:right}
-.title_01, .title_02, .title_03, .title_04{ height:17px; margin-top:10px}
+.title_01, .title_02, .title_03, .title_04, .title_05, .title_06{ height:17px; margin-top:10px}
 .title_01{background: url(../images/bg_page-title.png) no-repeat}
 .title_02{background: url(../images/bg_page-title.png) 0 -17px no-repeat}
 .title_03{background: url(../images/bg_page-title.png) 0 -34px no-repeat}
 .title_04{background: url(../images/bg_page-title.png) 0 -51px no-repeat}
+.title_05{background: url(../images/bg_page-title.png) 0 -68px no-repeat}
+.title_06{background: url(../images/bg_page-title.png) 0 -85px no-repeat}
 	
 aside{
 	display:block;
@@ -306,6 +309,46 @@ aside li{ margin-bottom:10px}
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
 
+/*4.2 APP相關訊息*/
+.headline h4{ font-size:1em; line-height:25px; margin-bottom:10px}
+.headline p{ font-size:0.813em; line-height:22px}
+.headline time, .list_news time{
+	font-size:0.75em; 
+	color:#fff; 
+	line-height:18px; 
+	padding:1px 3px;
+	background:#4ED4FE}
+.headline img{ float:left; margin:0 15px 15px 0}
+.list_news{ padding-bottom:30px}
+.list_news li{ 
+    display:block; 
+	width:350px;
+	height:22px;
+	overflow:hidden;
+	font-size:0.813em; 
+	line-height:22px;
+	border-bottom:1px dotted #CCCCCC;
+	padding:5px 0}
+.list_news li a{ margin-left:5px}	
+.pop-01, .pop-02{
+	display: block;
+	position:absolute;
+	top:0;
+	z-index:99;
+	padding:0 8px;
+	font-size:0.75em;
+	font-weight:bold;
+	color:#FFF;
+	background:#e60012;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+	box-shadow:0 2px 5px #ccc;
+	-moz-box-shadow:0 2px 5px #999; 
+	-webkit-box-shadow:0 2px 0 #999}
+.pop-01{left:80px}
+.pop-02{left:120px}
+
 /*4.4 API分享資源 列表頁*/
 .list_search{
 	display:block;
@@ -351,9 +394,11 @@ aside li{ margin-bottom:10px}
 .main_list ul{ margin:10px 0 20px}
 .main_list h4{ font-size:0.938em; line-height:25px; color:#017FB1}
 .main_list p{ font-size:0.813em; line-height:22px; padding:0 0 10px 15px}
-.list_left, .list_right{ display:block; float:left}
+.list_left, .list_right, .list_left-02, .list_right-02{ display:block; float:left}
 .list_left{ width:155px; border-right:1px dashed #666666}
 .list_right{ width:550px; padding-left:20px}
+.list_left-02, .list_right-02{width:350px; margin-top:15px}
+.list_left-02{margin-right:40px}
 
 /*4.5 技術論壇*/
 .my_table .align_forl{ text-align:left}
