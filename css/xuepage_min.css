@@ -233,13 +233,15 @@ footer{
 	margin:0; padding:0}	
 .bar_title .page_title{ text-indent:-9999px}
 .bar_title a{ display:block; float:right}
-.title_01, .title_02, .title_03, .title_04, .title_05, .title_06{ height:17px; margin-top:10px}
+.title_01, .title_02, .title_03, .title_04, .title_05, .title_06, .title_07, .title_08{ height:17px; margin-top:10px}
 .title_01{background: url(../images/bg_page-title.png) no-repeat}
 .title_02{background: url(../images/bg_page-title.png) 0 -17px no-repeat}
 .title_03{background: url(../images/bg_page-title.png) 0 -34px no-repeat}
 .title_04{background: url(../images/bg_page-title.png) 0 -51px no-repeat}
 .title_05{background: url(../images/bg_page-title.png) 0 -68px no-repeat}
 .title_06{background: url(../images/bg_page-title.png) 0 -85px no-repeat}
+.title_07{background: url(../images/bg_page-title.png) 0 -102px no-repeat}
+.title_08{background: url(../images/bg_page-title.png) 0 -119px no-repeat}
 	
 aside{
 	display:block;
@@ -307,7 +309,10 @@ aside li{ margin-bottom:10px}
 
 .box_main{ display:block; padding:15px 0 30px 0}
 .box_main p{ font-size:0.813em; line-height:22px; padding-bottom:20px}
-.box_main img{margin:0 20px 15px 0}			
+.box_main img{margin:0 20px 15px 0}
+.box_main ol li, .box_main ul li{ font-size:0.813em; line-height:22px; padding-bottom:10px}
+.box_main ul li{ list-style: disc inside}		
+.box_main ol li{ list-style: decimal inside}				
 
 
 /* 4. 內文編排
