@@ -233,8 +233,7 @@ footer{
 	margin:0; padding:0}	
 .bar_title .page_title{ text-indent:-9999px}
 .bar_title a{ display:block; float:right}
-.title_01, .title_02, .title_03, .title_04, .title_05, .title_06, .title_07, .title_08, .title_09, .title_10
-{height:17px; margin-top:10px}
+.title_01, .title_02, .title_03, .title_04, .title_05, .title_06, .title_07, .title_08, .title_09, .title_10, .title_11, .title_12, .title_13, .title_14 {height:17px; margin-top:10px}
 .title_01{background: url(../images/bg_page-title.png) no-repeat}
 .title_02{background: url(../images/bg_page-title.png) 0 -17px no-repeat}
 .title_03{background: url(../images/bg_page-title.png) 0 -34px no-repeat}
@@ -245,6 +244,10 @@ footer{
 .title_08{background: url(../images/bg_page-title.png) 0 -119px no-repeat}
 .title_09{background: url(../images/bg_page-title.png) 0 -136px no-repeat}
 .title_10{background: url(../images/bg_page-title.png) 0 -153px no-repeat}
+.title_11{background: url(../images/bg_page-title.png) 0 -170px no-repeat}
+.title_12{background: url(../images/bg_page-title.png) 0 -187px no-repeat}
+.title_13{background: url(../images/bg_page-title.png) 0 -204px no-repeat}
+.title_14{background: url(../images/bg_page-title.png) 0 -221px no-repeat}
 	
 aside{
 	display:block;
@@ -285,6 +288,7 @@ aside li{ margin-bottom:10px}
 .w328{ width:328px}
 .ml-01{margin-left:7px}
 .ml-02{margin-left:25px}
+.ml-03{margin-left:45px}
 
 .box_text:focus { outline: 0 none; box-shadow: 0 0 8px 0 #6699CC}
 .my_table{ width:100%; margin:10px 0 20px; border-collapse: collapse; border-spacing: 1px}
@@ -321,16 +325,34 @@ aside li{ margin-bottom:10px}
 
 .box_article{ display:block; padding:15px 0 30px 0}
 .box_article h4{ font-size:0.938em; line-height:25px; padding:5px 0 10px 0}
-.box_article p{ font-size:0.813em; line-height:22px; padding-bottom:10px}
+.box_article p{ font-size:0.813em; line-height:25px; padding-bottom:10px}
 .box_article ul{ margin-left:40px; padding-bottom:10px}
-.box_article ul li{ font-size:0.813em; line-height:22px; list-style:disc}
+.box_article ul li, .box_article ol li{ font-size:0.813em; line-height:25px}
+.box_article ul li{ list-style:disc}
+.box_article ol li{ list-style:decimal}
 .box_article li ul{}	
 .box_article li li{ font-size:1em; line-height:22px; list-style:disc}
+
+.box_article .txt_note{ font-size:1.375em; line-height:25px; font-weight:bold; color:#C00}
 				
 /* 4. 內文編排
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
-
+/*4.1 園區快訊*/
+.ebanner{ display:block; width:687px; margin:20px auto 15px auto}
+.epark_total{
+	display:block;
+	width:657px;
+	margin:0 auto;
+	padding: 5px 15px;
+	background:#303590}
+.epark_total li{
+	display:inline;
+	font-size:0.813em;
+	color:#FFF;
+	padding-left:50px}
+.epark_total li span{ font-size:1.25em; font-weight:bold; padding:0 8px}
+	
 /*4.2 APP相關訊息*/
 .headline h4{ font-size:1em; line-height:25px; margin-bottom:10px}
 .headline p{ font-size:0.813em; line-height:22px}
