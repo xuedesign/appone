@@ -291,9 +291,9 @@ aside li{ margin-bottom:10px}
 .ml-03{margin-left:45px}
 
 .box_text:focus { outline: 0 none; box-shadow: 0 0 8px 0 #6699CC}
-.my_table{ width:100%; margin:10px 0 20px; border-collapse: collapse; border-spacing: 1px}
+.my_table, .my_table-02{ width:100%; margin:10px 0 20px; border-collapse: collapse; border-spacing: 1px}
 .my_table tr:nth-child(odd){ background:#eff3f4} /*odd:奇數,even：偶數*/
-.my_table th{
+.my_table th, .my_table-02 th{
 	height:29px; 
 	border:1px solid #FFF;
 	font-size:0.813em;
@@ -301,13 +301,14 @@ aside li{ margin-bottom:10px}
 	color:#FFF;
 	vertical-align:middle;
 	background:url(../images/bg_th.png) repeat-x}
-.my_table td{ 
+.my_table td, .my_table-02 td{ 
     font-size:0.813em;
 	line-height:22px;
 	padding:8px; 
-    text-align:center;
-	vertical-align:middle;
-	border-bottom:1px dashed #aad6e6}
+    vertical-align:middle}
+.my_table td{ text-align:center; border-bottom:1px dashed #aad6e6}
+.my_table-02 td{ text-align: left; border:1px solid #aad6e6}
+	
 /*頁碼*/
 .sabrosus{ float:left; padding: 3px; margin:10px 3px; font-size:0.813em; text-align: center}
 .sabrosus a{border: #9aafe5 1px solid; padding:2px 5px; color: #2e6ab1; margin-right: 5px; text-decoration: none}
@@ -352,6 +353,15 @@ aside li{ margin-bottom:10px}
 	color:#FFF;
 	padding-left:50px}
 .epark_total li span{ font-size:1.25em; font-weight:bold; padding:0 8px}
+.consent{ display:block; margin-top:15px}
+.consent h4{ font-size:1.125em; line-height:25px; padding:10px 0; color:#6699CC}
+.consent p{ font-size:0.813em; line-height:25px}
+.bg_gray{ background:#EFEEEE}
+.downbtn{
+	display:block;
+	width:80px;
+	text-align:center;
+	margin:15px auto 30px auto}
 	
 /*4.2 APP相關訊息*/
 .headline h4{ font-size:1em; line-height:25px; margin-bottom:10px}
