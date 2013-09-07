@@ -20,7 +20,9 @@
 		  4.4 API分享資源
 		  4.5 技術論壇
 	      4.7 合作商機
-	      4.8 會員商機 
+	      4.8 會員商機
+		  4.9 搜尋結果頁
+		  4.10 檢測設備租借 
 ***********************************************************************************************/
 
 
@@ -233,21 +235,23 @@ footer{
 	margin:0; padding:0}	
 .bar_title .page_title{ text-indent:-9999px}
 .bar_title a{ display:block; float:right}
-.title_01, .title_02, .title_03, .title_04, .title_05, .title_06, .title_07, .title_08, .title_09, .title_10, .title_11, .title_12, .title_13, .title_14 {height:17px; margin-top:10px}
-.title_01{background: url(../images/bg_page-title.png) no-repeat}
-.title_02{background: url(../images/bg_page-title.png) 0 -17px no-repeat}
-.title_03{background: url(../images/bg_page-title.png) 0 -34px no-repeat}
-.title_04{background: url(../images/bg_page-title.png) 0 -51px no-repeat}
-.title_05{background: url(../images/bg_page-title.png) 0 -68px no-repeat}
-.title_06{background: url(../images/bg_page-title.png) 0 -85px no-repeat}
-.title_07{background: url(../images/bg_page-title.png) 0 -102px no-repeat}
-.title_08{background: url(../images/bg_page-title.png) 0 -119px no-repeat}
-.title_09{background: url(../images/bg_page-title.png) 0 -136px no-repeat}
-.title_10{background: url(../images/bg_page-title.png) 0 -153px no-repeat}
-.title_11{background: url(../images/bg_page-title.png) 0 -170px no-repeat}
-.title_12{background: url(../images/bg_page-title.png) 0 -187px no-repeat}
-.title_13{background: url(../images/bg_page-title.png) 0 -204px no-repeat}
-.title_14{background: url(../images/bg_page-title.png) 0 -221px no-repeat}
+.title_01, .title_02, .title_03, .title_04, .title_05, .title_06, .title_07, .title_08, .title_09, .title_10, .title_11, .title_12, .title_13, .title_14, .title_15, .title_16 { background:url(../images/bg_page-title.png) no-repeat; height:17px; margin-top:10px}
+.title_01{background-position:0 0}
+.title_02{background-position:0 -17px}
+.title_03{background-position:0 -34px}
+.title_04{background-position:0 -51px}
+.title_05{background-position:0 -68px}
+.title_06{background-position:0 -85px}
+.title_07{background-position:0 -102px}
+.title_08{background-position:0 -119px}
+.title_09{background-position:0 -136px}
+.title_10{background-position:0 -153px}
+.title_11{background-position:0 -170px}
+.title_12{background-position:0 -187px}
+.title_13{background-position:0 -204px}
+.title_14{background-position:0 -221px}
+.title_15{background-position:0 -238px}
+.title_16{background-position:0 -255px}
 	
 aside{
 	display:block;
@@ -459,4 +463,46 @@ aside li{ margin-bottom:10px}
 
 /*4.5 技術論壇*/
 .my_table .align_forl{ text-align:left}
-											
+
+/*4.9 搜尋結果頁*/
+.txt_search{ font-size:0.813em; padding:15px 0 5px 0;}
+.txt_search span{ font-size:1.25em; font-weight:bold; color:#C00}
+
+/*4.10 檢測設備租借*/
+.abgne_tab {
+    clear: left;
+	width: 740px;
+	margin: 20px auto 30px auto}
+.tabs {
+	display:block;
+	width: 100%;
+	height: 32px;
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #999}
+.tabs li {
+	float: left;
+	height: 31px;
+	line-height: 31px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: -1px;	/* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+	border: 1px solid #999;
+	border-left: none;
+	background: #e1e1e1}
+.tabs li a {
+	display: block;
+	padding: 0 20px;
+	color: #000;
+	border: 1px solid #fff;
+	text-decoration: none}
+.tabs li a:hover {background: #ccc}
+.tabs li.active  {background: #fff; border-bottom: 1px solid #fff}
+.tabs li.active a:hover { background: #fff}
+.tab_container {
+	clear: left;
+	width: 100%;
+	border: 1px solid #999;
+	border-top: none;
+	background: #fff}
+.tab_container .tab_content { padding: 20px}
+.tab_container .tab_content h4 { margin: 0 0 20px}									
