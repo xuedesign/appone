@@ -43,6 +43,7 @@ image{border:0}
 
 .clean{ clear:both}
 .hidden{ display:none}
+.txt_red{ color:#F00}
 
 /* 2. 頁面主結構
 -----------------------------------------------------------------------------------------------
@@ -477,8 +478,8 @@ aside li{ margin-bottom:10px}
 	display:block;
 	width: 100%;
 	height: 32px;
-	border-bottom: 1px solid #999;
-	border-left: 1px solid #999}
+	border-bottom: 1px solid #D1D1D1;
+	border-left: 1px solid #D1D1D1}
 .tabs li {
 	float: left;
 	height: 31px;
@@ -486,23 +487,27 @@ aside li{ margin-bottom:10px}
 	overflow: hidden;
 	position: relative;
 	margin-bottom: -1px;	/* 讓 li 往下移來遮住 ul 的部份 border-bottom */
-	border: 1px solid #999;
+	border: 1px solid #D1D1D1;
 	border-left: none;
-	background: #e1e1e1}
+	background: #A1E2FC}
 .tabs li a {
 	display: block;
 	padding: 0 20px;
 	color: #000;
 	border: 1px solid #fff;
 	text-decoration: none}
-.tabs li a:hover {background: #ccc}
-.tabs li.active  {background: #fff; border-bottom: 1px solid #fff}
+.tabs li a:hover {background: #017FB1; color:#FFF}
+.tabs li.active  {background: #fff; border-bottom: 1px solid #fff; font-weight:bold}
 .tabs li.active a:hover { background: #fff}
 .tab_container {
 	clear: left;
 	width: 100%;
-	border: 1px solid #999;
+	border: 1px solid #D1D1D1;
 	border-top: none;
-	background: #fff}
-.tab_container .tab_content { padding: 20px}
-.tab_container .tab_content h4 { margin: 0 0 20px}									
+	background: #fff;
+	line-height:22px}
+.tab_container .tab_content { padding: 20px 20px 40px}
+.tab_container .tab_content ol{ margin-left:20px}
+.tab_container .tab_content li{ font-size:0.813em; list-style: decimal; padding-bottom:10px}
+.tab_content .my_tab th, .tab_content .my_tab td{ font-size:0.813em}
+									
