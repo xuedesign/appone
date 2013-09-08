@@ -344,8 +344,11 @@ aside li{ margin-bottom:10px}
 .box_article ol li{ list-style:decimal}
 .box_article li ul{}	
 .box_article li li{ font-size:1em; line-height:22px; list-style:disc}
-
 .box_article .txt_note{ font-size:1.375em; line-height:25px; font-weight:bold; color:#C00}
+
+#inline1{ display: none; width:500px; border:1px solid #017FB1; padding:15px}
+#inline1 h4{ font-size:1em; color:#017FB1; padding-bottom:10px}
+#inline1 p{ font-size:0.813em; line-height:24px; padding-bottom:10px}
 				
 /* 4. 內文編排
 -----------------------------------------------------------------------------------------------
@@ -373,6 +376,12 @@ aside li{ margin-bottom:10px}
 	width:80px;
 	text-align:center;
 	margin:15px auto 30px auto}
+.downbtn-02{
+	display:inline-block;
+	width:80px;
+	text-align:center;
+	margin-right:15px}
+.box_check{ display:block; width:200px; margin:15px auto}		
 	
 /*4.2 APP相關訊息*/
 .headline h4{ font-size:1em; line-height:25px; margin-bottom:10px}

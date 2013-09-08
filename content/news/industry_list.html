@@ -113,9 +113,39 @@
                <div class="bar_title">
                   <h3 class="page_title title_06">產業情報分享</h3>
                   <span class="mybtn my_margin"><a href="event_list.html" title="最新活動" tabindex="220">最新活動</a></span>
-                  <span class="mybtn"><a href="../member/mynews_disclaimer.html" title="新增文章" tabindex="230">新增文章</a></span>
+                  <span class="mybtn"><a class="fancybox" href="#inline1" title="免責聲明" tabindex="230">新增文章</a></span>
                   <br class="clean" />
                </div>
+               
+               
+               <div id="inline1"><!-- 免責文字確認框 -->
+                  <h4>1、App 訊息分享免責文字</h4>
+                      <p class="ml-02">本平台對於使用者上傳資料之正確性與合法性不負擔保責任，使用者因使用上開資料而遭受損害或損失，或導致第三人遭受損害或損失而遭求償者，本平台亦不負任何賠償責任。上開資料如有違法情事，或有第三人檢具書面資料主張權利時，本平台有權逕行移除系爭資料。</p>
+                       
+                  <h4>2、API 分享免責文字</h4>
+                      <p class="ml-02">本平台對於所提供開放式資源與公開資料之正確性以及因使用者誤用、錯用或判斷分析過程中產生之錯誤，不負擔保責任。使用者使用上開資源或資料，需符合各公開資訊授權單位使用規範。使用者因使用上開資料而遭受損害或損失，或導致第三人遭受損害或損失而遭求償者，本平台不負任何賠償責任。</p>
+                  
+                  <h4>3、平台外部連結免責文字:</h4>
+                      <p class="ml-02">使用者經由本平台連結至其他(下稱第三方)網站讀取內容、下載軟體或資料時，本平台對於第三方網站內容之正確性與合法性不負擔保責任，對於使用者因連結至第三方網站所遭受之任何損害或損失亦不負任何賠償責任。使用者如認為第三方網站之內容不正確或有侵權之虞，請逕向該網站反應意見。</p>
+                  <div class="box_check">    
+                      <span class="mybtn downbtn-02"><a href="../member/myindustry_add.html" title="確認同意" tabindex="235">同意</a></span>
+                      <span class="mybtn downbtn-02"><a href="industry_list.html" title="我不同意" tabindex="236">不同意</a></span>
+                  </div>    
+               </div>
+               <link rel="stylesheet" href="../../css/jquery.fancybox.css"/>
+               <script src="../../scripts/jquery.fancybox.pack.js"></script>
+               <script type="text/javascript">
+					$(document).ready(function() {
+						$('.fancybox').fancybox();
+							$(".fancybox-effects-a").fancybox({
+								helpers: {
+								title : {
+									type : 'outside'},
+									overlay : {
+									speedOut : 0}
+								}  });  });
+				</script>
+                
                
                <table width="100%" class="my_table" summary="產業情報分享列表">
                   <tr>
