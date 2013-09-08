@@ -230,13 +230,13 @@ footer{
 .bar_title h3{
 	display:block;
 	float:left;
-	width:50%;
+	width:40%;
 	font-size:1.25em;
 	color:#11154a;
 	margin:0; padding:0}	
 .bar_title .page_title{ text-indent:-9999px}
 .bar_title a{ display:block; float:right}
-.title_01, .title_02, .title_03, .title_04, .title_05, .title_06, .title_07, .title_08, .title_09, .title_10, .title_11, .title_12, .title_13, .title_14, .title_15, .title_16 { background:url(../images/bg_page-title.png) no-repeat; height:17px; margin-top:10px}
+.title_01, .title_02, .title_03, .title_04, .title_05, .title_06, .title_07, .title_08, .title_09, .title_10, .title_11, .title_12, .title_13, .title_14, .title_15, .title_16, .title_17{ background:url(../images/bg_page-title.png) no-repeat; height:17px; margin-top:10px}
 .title_01{background-position:0 0}
 .title_02{background-position:0 -17px}
 .title_03{background-position:0 -34px}
@@ -253,6 +253,7 @@ footer{
 .title_14{background-position:0 -221px}
 .title_15{background-position:0 -238px}
 .title_16{background-position:0 -255px}
+.title_17{background-position:0 -272px}
 	
 aside{
 	display:block;
