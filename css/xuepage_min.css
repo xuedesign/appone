@@ -55,7 +55,7 @@ image{border:0}
 header{
 	display:block;
 	position:fixed;
-	z-index:999999;
+	z-index:8010/*9999*/;
 	width:100%;
 	height:171px;
 	background: url(../images/bg_pagehead.png) repeat-x}
@@ -80,15 +80,18 @@ h1 a{
 .subnav a:hover, footer a:hover{ text-decoration:none; color:#f50}	
 .subnav ul{ padding:0 22px 10px 0}
 .subnav li{ display:inline; padding-right:10px}
-.icon_site, .icon_member, .icon_logout{
+.icon_site, .icon_member, .icon_logout, .icon_view, .icon_date{
 	display: inline-block;
 	width:16px;
 	height:16px;
 	padding-right:3px;
 	vertical-align: text-bottom}
+.items .icon_view, .items .icon_date{ margin-left:8px; padding-right:8px; text-indent:-9999px}
 .icon_site{background:url(../images/icon_set.png) 0 -16px no-repeat}
 .icon_member{background:url(../images/icon_set.png) 0 -48px no-repeat}
 .icon_logout{background:url(../images/icon_set.png) 0 -32px no-repeat}
+.icon_view{background:url(../images/icon_set.png) 0 -64px no-repeat}
+.icon_date{background:url(../images/icon_set.png) 0 -80px no-repeat}
 .subnav a.btn_sblue{
 	padding:0 10px;
 	background:#126e93;
@@ -226,16 +229,17 @@ footer{
 	float:left;
 	width:740px;
 	padding:0 20px 30px}
-.bar_title{	display:block; position:relative; margin-top:18px; padding:15px 0 0}
-.bar_title h3{
+.bar_title, .bar_title-02{	display:block; position:relative; margin-top:18px; padding:15px 0 0}
+.bar_title h3, .bar_title-02 h3{
 	display:block;
 	float:left;
-	width:40%;
 	font-size:1.25em;
 	color:#11154a;
-	margin:0; padding:0}	
+	margin:0; padding:0}
+.bar_title h3{width:40%;}
+.bar_title-02 h3{width:70%;}		
 .bar_title .page_title{ text-indent:-9999px}
-.bar_title a{ display:block; float:right}
+.bar_title a, .bar_title-02 a{ display:block; float:right}
 .title_01, .title_02, .title_03, .title_04, .title_05, .title_06, .title_07, .title_08, .title_09, .title_10, .title_11, .title_12, .title_13, .title_14, .title_15, .title_16, .title_17{ background:url(../images/bg_page-title.png) no-repeat; height:17px; margin-top:10px}
 .title_01{background-position:0 0}
 .title_02{background-position:0 -17px}
@@ -279,7 +283,7 @@ aside li{ margin-bottom:10px}
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
     -moz-border-radius: 10px}
-.mybtn a:hover{background:#126e93; color:#FFF; text-shadow:none; text-decoration:none}
+.mybtn a:hover, .mybtn .item_in{background:#126e93; color:#FFF; text-shadow:none; text-decoration:none}
 .my_margin{ float:right; margin-left:15px}
 .box_text{
 	border:1px solid #bab9b9;
@@ -324,6 +328,7 @@ aside li{ margin-bottom:10px}
 .sabrosus span.disabled{border: #929292 1px solid; padding:2px 5px; color: #929292; margin-right: 5px}
 
 .box_main{ display:block; padding:15px 0 30px 0}
+.box_main h1, .box_main h2, .box_main h3, .box_main h4, .box_main h5, .box_main h6{ padding-bottom:10px}
 .box_main p{ font-size:0.813em; line-height:22px; padding-bottom:20px}
 .box_main img{margin:0 20px 15px 0}
 .box_main ol li, .box_main ul li{ font-size:0.813em; line-height:22px; padding-bottom:10px}
@@ -411,6 +416,82 @@ aside li{ margin-bottom:10px}
 .info_writing li{ display:inline-block; margin:0 10px 15px 0; padding:0 8px 0 0}
 .info_writing span{ background:#4ED4FE; padding:0 3px; margin-right:5px; letter-spacing:1px}
 
+/*4.3 APP應用展示*/
+.jumpage{ 
+    display:block; 
+	float:right; 
+	width:30%;
+	padding-left:80px}
+.jumpage h4{ float:left; font-size:0.938em; line-height:30px;}
+.jumpage select{ margin:0}	
+.box_applist{ display:block; padding-top:25px}
+.box_applist h4{ float:left; width:50%; font-size:1.063em; /*padding:25px 0 0*/}
+.box_applist ul{ clear:both; margin-bottom:40px; padding-left:15px}
+.box_applist li{
+	display:block;
+	float:left;
+	width:128px;
+	height:190px;
+	overflow:hidden;
+	margin:10px 15px 15px 0;
+	border:1px solid #CCC}
+.box_applist li img{ display:block; width:81px; margin:10px auto;}
+.box_applist li h5{ display:block; width:128px; height:22px; font-size:1em; text-align:center; overflow:hidden}
+.box_applist li p{font-size:0.813em; line-height:22px; text-align:center}
+.box_applist li:hover{ background:#F6F6F6; border:1px solid #63D8FD}
+.box_applist li .items{ 
+    display:block; 
+	width:128px; 
+	background:#6699CC; 
+	color:#FFF; 
+	border-bottom:1px solid #FFF; 
+	text-align:left}
+.app_info, .appmain{ display:block; float:left}	
+.app_info{ 
+     width:140px; 
+	 padding:15px; 
+	 background:#EFEFEF; 
+	 margin:15px 25px 0 0;
+	 -webkit-border-radius: 5px;
+	 -moz-border-radius: 5px;
+	 -o-border-radius: 5px;
+	 -ms-border-radius: 5px;
+	 border-radius: 5px}
+.app_info img{ 
+     display:block; 
+	 width:100px; 
+	 padding:5px; 
+	 background:#FFF; 
+	 margin:0 auto;
+	 -webkit-box-shadow: 0px 0px 5px #999;
+	 -moz-box-shadow: 0px 0px 5px #999;
+	 -o-box-shadow: 0px 0px 5px #999;
+	 -ms-box-shadow: 0px 0px 5px #999;
+	 box-shadow: 0px 0px 5px #999}
+.app_info a>img{
+	 width:120px;
+	 background:none;
+	 -webkit-box-shadow:none;
+	 -moz-box-shadow:none;
+	 -o-box-shadow:none9;
+	 -ms-box-shadow:none9;
+	 box-shadow:none}	 	 
+.app_info h4{ font-size:0.938em; color:#017FB1; padding:10px 0}
+.app_info p{ font-size:0.813em; line-height:22px}
+.app_info li{ border-bottom:1px dashed #999; padding-bottom:10px}
+.app_shot{
+	display:block;
+	padding:10px 0 30px 15px}	 
+.app_shot li{
+	display:inline-block;
+	width:145px;
+	height:145px;
+	border:1px solid #E3E3E3;
+	margin-right:15px;
+	padding:5px;
+	background:#FFF;
+	overflow:hidden}	
+ 
 /*4.4 API分享資源 列表頁*/
 .list_search{
 	display:block;
@@ -499,7 +580,7 @@ aside li{ margin-bottom:10px}
 	text-decoration: none}
 .tabs li a:hover {background: #017FB1; color:#FFF}
 .tabs li.active  {background: #fff; border-bottom: 1px solid #fff; font-weight:bold}
-.tabs li.active a:hover { background: #fff}
+.tabs li.active a:hover { background: #fff; color:#000}
 .tab_container {
 	clear: left;
 	width: 100%;

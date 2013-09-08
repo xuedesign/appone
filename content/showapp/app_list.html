@@ -107,21 +107,225 @@
               
               <div class="bar_cookie">
                   <a href="#" title="中間主要內容區" accesskey="c" tabindex='200'>:::</a>
-                  現在位置：<a href="../../index.html" title="首頁" tabindex="210">首頁</a>&gt; APP應用展示
+                  現在位置：<a href="../../index.html" title="首頁" tabindex="210">首頁</a>&gt; <a href="high_list.html" title="APP應用展示" tabindex="215">APP應用展示</a>&gt; 所有類別
                </div>
                
                <div class="bar_title">
                   <h3 class="page_title title_17">APP應用展示</h3>
-                  <span class="mybtn my_margin"><a href="item_list.html" title="產業情報分享" tabindex="220">其他</a></span>
-                  <span class="mybtn my_margin"><a href="item_list.html" title="產業情報分享" tabindex="230">工具</a></span>
-                  <span class="mybtn my_margin"><a href="item_list.html" title="產業情報分享" tabindex="240">生活應用</a></span>
-                  <span class="mybtn my_margin"><a href="item_list.html" title="產業情報分享" tabindex="250">學習</a></span>
-                  <span class="mybtn my_margin"><a href="item_list.html" title="產業情報分享" tabindex="260">遊戲</a></span>
-                  <span class="mybtn"><a href="hot_list.html" title="所有類別" tabindex="270">所有類別</a></span>
+                  <div class="jumpage">
+                    <h4>目前類別：</h4>
+                    <select name="jumpMenu" id="jumpMenu" onChange="MM_jumpMenu('parent',this,0)" class="box_text w140">
+                       <option value="app_list.html" selected>所有類別</option>
+                       <option value="#">遊戲</option>
+                       <option value="#">學習</option>
+                       <option value="#">生活應用</option>
+                       <option value="#">工具</option>
+                       <option value="#">其他</option>
+                    </select>
+                  </div>
                   <br class="clean" />
                   <hr>
                </div>
                
+               <div class="box_applist">
+                  <h4>[所有類別] 最熱門的APP</h4>
+                  <span class="mybtn my_margin"><a href="hot_list.html" title="顯示全部" tabindex="280">顯示全部</a></span>
+                  <ul>
+                  	<li><!--APP Icon尺寸 85*85px-->
+                        <a href="app_main.html" title="聽。旅行" tabindex="290">
+                            <img src="../../images/icon_sample-01.png" width="81" height="81" alt="app_icon">
+                            <h5>聽。旅行</h5>
+                        </a>
+                        <p>生活應用</p>
+                        <p class="items"><span class="icon_view">點擊數：</span>18</p>
+                        <p class="items"><span class="icon_date">上傳日期：</span>2013-08-09</p> 
+                    
+                   </li>
+                  	<li>
+                        <a href="app_main.html" title="MediQ醫療輕鬆排" tabindex="300">
+                            <img src="../../images/icon_sample-02.png" width="81" height="81" alt="app_icon">
+                            <h5>MediQ醫療輕鬆排</h5>
+                         </a>   
+                         <p>生活應用</p>
+                         <p class="items"><span class="icon_view">點擊數：</span>22</p>
+                         <p class="items"><span class="icon_date">上傳日期：</span>2013-08-07</p> 
+                    </li>
+                  	<li>
+                        <a href="app_main.html" title="iCulture 2" tabindex="310">
+                            <img src="../../images/icon_sample-03.png" width="81" height="81" alt="app_icon">
+                            <h5>iCulture 2</h5>
+                        </a>    
+                        <p>生活應用</p>
+                        <p class="items"><span class="icon_view">點擊數：</span>30</p>
+                        <p class="items"><span class="icon_date">上傳日期：</span>2013-07-09</p> 
+                    </li>
+                  	<li>
+                        <a href="app_main.html" title="生活氣象" tabindex="320">
+                            <img src="../../images/icon_sample-04.png" width="81" height="81" alt="app_icon">
+                            <h5>生活氣象</h5>
+                        </a>    
+                        <p>生活應用</p>
+                        <p class="items"><span class="icon_view">點擊數：</span>24</p>
+                        <p class="items"><span class="icon_date">上傳日期：</span>2013-08-07</p> 
+                        
+                    </li>
+                  	<li>
+                        <a href="app_main.html" title="Taipei Free台北公眾區域無線上網" tabindex="330">
+                            <img src="../../images/icon_sample-05.png" width="81" height="81" alt="app_icon">
+                            <h5>Taipei Free台北公眾區域無線上網</h5>
+                        </a>    
+                        <p>生活應用</p>
+                        <p class="items"><span class="icon_view">點擊數：</span>15</p>
+                        <p class="items"><span class="icon_date">上傳日期：</span>2013-08-01</p> 
+                    </li>
+                  	<li>
+                        <a href="app_main.html" title="健康台北" tabindex="340">
+                            <img src="../../images/icon_sample-06.png" width="81" height="81" alt="app_icon">
+                            <h5>健康台北</h5>
+                        </a>    
+                        <p>生活應用</p>
+                        <p class="items"><span class="icon_view">點擊數：</span>36</p>
+                        <p class="items"><span class="icon_date">上傳日期：</span>2013-07-29</p> 
+                    </li>
+                  	<li>
+                        <a href="app_main.html" title="台北市行動防災" tabindex="350">
+                            <img src="../../images/icon_sample-07.png" width="81" height="81" alt="app_icon">
+                            <h5>台北市行動防災</h5>
+                        </a>    
+                        <p>生活應用</p>
+                        <p class="items"><span class="icon_view">點擊數：</span>15</p>
+                        <p class="items"><span class="icon_date">上傳日期：</span>2013-08-02</p> 
+                    </li>
+                  	<li>
+                        <a href="app_main.html" title="愛樂透-台灣彩劵自動兌獎及彩劵地圖" tabindex="360">
+                            <img src="../../images/icon_sample-08.png" width="81" height="81" alt="app_icon">
+                            <h5>愛樂透-台灣彩劵自動兌獎及彩劵地圖</h5>
+                         </a>   
+                         <p>生活應用</p>
+                         <p class="items"><span class="icon_view">點擊數：</span>24</p>
+                         <p class="items"><span class="icon_date">上傳日期：</span>2013-07-15</p> 
+                    </li>
+                  	<li>
+                        <a href="app_main.html" title="每日一字" tabindex="370">
+                            <img src="../../images/icon_sample-09.png" width="81" height="81" alt="app_icon">
+                            <h5>每日一字</h5>
+                        </a>    
+                        <p>學習</p>
+                        <p class="items"><span class="icon_view">點擊數：</span>11</p>
+                        <p class="items"><span class="icon_date">上傳日期：</span>2013-07-14</p> 
+                    </li>
+                  	<li>
+                        <a href="app_main.html" title="台北畫刊" tabindex="380">
+                            <img src="../../images/icon_sample-10.png" width="81" height="81" alt="app_icon">
+                            <h5>台北畫刊</h5>
+                        </a>    
+                        <p>學習</p>
+                        <p class="items"><span class="icon_view">點擊數：</span>25</p>
+                        <p class="items"><span class="icon_date">上傳日期：</span>2013-08-03</p> 
+                    </li>
+                  </ul>
+                  <br class="clean"/>
+               </div>
+               
+               <div class="box_applist">
+                  <h4>[所有類別] 最近新增的APP</h4>
+                  <span class="mybtn my_margin"><a href="new_list.html" title="顯示全部" tabindex="390">顯示全部</a></span>
+                  <ul>
+                  	<li><!--APP Icon尺寸 85*85px-->
+                        <a href="app_main.html" title="聽。旅行" tabindex="400">
+                            <img src="../../images/icon_sample-01.png" width="81" height="81" alt="app_icon">
+                            <h5>聽。旅行</h5>
+                        </a>
+                        <p>生活應用</p>
+                        <p class="items"><span class="icon_view">點擊數：</span>18</p>
+                        <p class="items"><span class="icon_date">上傳日期：</span>2013-08-09</p> 
+                    
+                   </li>
+                  	<li>
+                        <a href="app_main.html" title="MediQ醫療輕鬆排" tabindex="410">
+                            <img src="../../images/icon_sample-02.png" width="81" height="81" alt="app_icon">
+                            <h5>MediQ醫療輕鬆排</h5>
+                         </a>   
+                         <p>生活應用</p>
+                         <p class="items"><span class="icon_view">點擊數：</span>22</p>
+                         <p class="items"><span class="icon_date">上傳日期：</span>2013-08-07</p> 
+                    </li>
+                  	<li>
+                        <a href="app_main.html" title="iCulture 2" tabindex="420">
+                            <img src="../../images/icon_sample-03.png" width="81" height="81" alt="app_icon">
+                            <h5>iCulture 2</h5>
+                        </a>    
+                        <p>生活應用</p>
+                        <p class="items"><span class="icon_view">點擊數：</span>30</p>
+                        <p class="items"><span class="icon_date">上傳日期：</span>2013-07-09</p> 
+                    </li>
+                  	<li>
+                        <a href="app_main.html" title="生活氣象" tabindex="430">
+                            <img src="../../images/icon_sample-04.png" width="81" height="81" alt="app_icon">
+                            <h5>生活氣象</h5>
+                        </a>    
+                        <p>生活應用</p>
+                        <p class="items"><span class="icon_view">點擊數：</span>24</p>
+                        <p class="items"><span class="icon_date">上傳日期：</span>2013-08-07</p> 
+                        
+                    </li>
+                  	<li>
+                        <a href="app_main.html" title="Taipei Free台北公眾區域無線上網" tabindex="440">
+                            <img src="../../images/icon_sample-05.png" width="81" height="81" alt="app_icon">
+                            <h5>Taipei Free台北公眾區域無線上網</h5>
+                        </a>    
+                        <p>生活應用</p>
+                        <p class="items"><span class="icon_view">點擊數：</span>15</p>
+                        <p class="items"><span class="icon_date">上傳日期：</span>2013-08-01</p> 
+                    </li>
+                  	<li>
+                        <a href="app_main.html" title="健康台北" tabindex="450">
+                            <img src="../../images/icon_sample-06.png" width="81" height="81" alt="app_icon">
+                            <h5>健康台北</h5>
+                        </a>    
+                        <p>生活應用</p>
+                        <p class="items"><span class="icon_view">點擊數：</span>36</p>
+                        <p class="items"><span class="icon_date">上傳日期：</span>2013-07-29</p> 
+                    </li>
+                  	<li>
+                        <a href="app_main.html" title="台北市行動防災" tabindex="460">
+                            <img src="../../images/icon_sample-07.png" width="81" height="81" alt="app_icon">
+                            <h5>台北市行動防災</h5>
+                        </a>    
+                        <p>生活應用</p>
+                        <p class="items"><span class="icon_view">點擊數：</span>15</p>
+                        <p class="items"><span class="icon_date">上傳日期：</span>2013-08-02</p> 
+                    </li>
+                  	<li>
+                        <a href="app_main.html" title="愛樂透-台灣彩劵自動兌獎及彩劵地圖" tabindex="470">
+                            <img src="../../images/icon_sample-08.png" width="81" height="81" alt="app_icon">
+                            <h5>愛樂透-台灣彩劵自動兌獎及彩劵地圖</h5>
+                         </a>   
+                         <p>生活應用</p>
+                         <p class="items"><span class="icon_view">點擊數：</span>24</p>
+                         <p class="items"><span class="icon_date">上傳日期：</span>2013-07-15</p> 
+                    </li>
+                  	<li>
+                        <a href="app_main.html" title="每日一字" tabindex="480">
+                            <img src="../../images/icon_sample-09.png" width="81" height="81" alt="app_icon">
+                            <h5>每日一字</h5>
+                        </a>    
+                        <p>學習</p>
+                        <p class="items"><span class="icon_view">點擊數：</span>11</p>
+                        <p class="items"><span class="icon_date">上傳日期：</span>2013-07-14</p> 
+                    </li>
+                  	<li>
+                        <a href="app_main.html" title="台北畫刊" tabindex="490">
+                            <img src="../../images/icon_sample-10.png" width="81" height="81" alt="app_icon">
+                            <h5>台北畫刊</h5>
+                        </a>    
+                        <p>學習</p>
+                        <p class="items"><span class="icon_view">點擊數：</span>25</p>
+                        <p class="items"><span class="icon_date">上傳日期：</span>2013-08-03</p> 
+                    </li>
+                  </ul>
+                  <br class="clean"/>
+               </div>
                  
            </div><!-- end #page_main -->
            <!-- InstanceEndEditable -->
