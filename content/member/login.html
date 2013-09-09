@@ -115,25 +115,35 @@
                   <hr>
                </div>
                
-               <p>還沒有個人帳號嗎?請快來<a href="register.html" title="註冊帳號" tabindex="220">註冊</a>一個</p>
+               <p class="login_note">還沒有個人帳號嗎?請快來<a href="register_note.html" title="註冊帳號" tabindex="220">註冊</a>一個。</p>
                
                <div class="box_action">
                   <form action="profile.html" method="post">
                      <div class="input_set">
-                         <h4><label for="memeber_id">帳號：</label></h4>
-                             <input id="member_id" name="member_id" type="text">
+                         <h4><label for="memeber_id">帳號 (Email)：</label></h4>
+                             <input id="member_id" name="member_id" type="text" class="box_text-02 w328">
                          <h4><label for="password">密碼：</label></h4>
-                             <input id="password" name="password" type="text">
-                     </div>        
+                             <input id="password" name="password" type="text" class="box_text-02 w328 mytextfield">
+                     </div>
                      <div class="box_buttons">
-                         <span class="mybtn"><a href="profile.html" title="登入" tabindex="">登入</a></span>
+                        <span class="mybtn"><a href="profile.html" title="會員登入" tabindex="230">會員登入</a></span> 
                      </div>    
                   </form>
+                  
+                  <script src="../../scripts/jquery.myPass.js"></script>
+				  <script>
+                      $(document).ready(function() {
+                          $('.mytextfield').myPass({
+                                  charReplace : '%u25CF',
+                                  charDuration : 1000
+                              });
+                      });
+                  </script>
                </div>
                
                <div class="sublogin">
-                  <a href="profile.html" title="忘記密碼" tabindex="">忘記密碼</a></span>
-                  <a href="profile.html" title="重啟帳號" tabindex="">重啟帳號</a></span>
+                  <span class="icon_key"></span><a href="password.html" title="忘記密碼" tabindex="240">忘記密碼</a>
+                  <span class="icon_id"></span><a href="reconfirm.html" title="啟動帳號" tabindex="250">啟動帳號</a>
                </div>
                
                  
