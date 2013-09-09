@@ -62,7 +62,7 @@
                   <ul>
                     <!--<li><span class="icon_member"></span><a href="sitemap.html" title="會員登入" tabindex="110">會員登入</a></li>-->
                     <li><span class="icon_logout"></span><a href="../index.html" title="會員登出" tabindex="120">會員登出</a></li>
-                    <li><span class="icon_member"></span><a href="../content/member/profile_edit.html" title="會員專區" tabindex="130">會員專區</a></li>
+                    <li><span class="icon_member"></span><a href="../content/member/profile.html" title="會員專區" tabindex="130">會員專區</a></li>
                     <li><span class="icon_site"></span><a href="../sitemap.html" title="網站導覽" tabindex="140">網站導覽</a></li>
                     <li><a href="../index.html" title="目前是中文版" class="btn_sblue snav_in" tabindex="150">中文</a></li>
                     <li><a href="../en/index.html" title="前往英文版" class="btn_sblue"  tabindex="160" >英文</a></li>

@@ -66,7 +66,7 @@
                            <p><span>新增訊息：</span>20</p>  
                         </a>
                    </li>
-                   <li><a href="../job/job_list.html" title="合作商機" class="nav_07 navin" tabindex="90">
+                   <li><a href="../job/job_list.html" title="合作商機" class="nav_07" tabindex="90">
                            <h3>合作商機</h3>
                            <p><span>新增訊息：</span>60</p> 
                        </a>
@@ -89,7 +89,7 @@
                   <ul>
                     <!--<li><span class="icon_member"></span><a href="sitemap.html" title="會員登入" tabindex="110">會員登入</a></li>-->
                     <li><span class="icon_logout"></span><a href="../../index.html" title="會員登出" tabindex="120">會員登出</a></li>
-                    <li><span class="icon_member"></span><a href="profile_edit.html" title="會員專區" tabindex="130">會員專區</a></li>
+                    <li><span class="icon_member"></span><a href="profile.html" title="會員專區" tabindex="130">會員專區</a></li>
                     <li><span class="icon_site"></span><a href="../../sitemap.html" title="網站導覽" tabindex="140">網站導覽</a></li>
                     <li><a href="../../index.html" title="目前是中文版" class="btn_sblue snav_in" tabindex="150">中文</a></li>
                     <li><a href="../../en/index.html" title="前往英文版" class="btn_sblue"  tabindex="160" >英文</a></li>
@@ -104,8 +104,37 @@
        <section id="main_content">
            <!-- InstanceBeginEditable name="page_main" -->
            <div id="page_main">
-              
-              <h3 style=" display:block; width:200px; font-size:1.25em; margin:50px auto 0 auto">網頁製作中...</h3>
+              <div class="bar_cookie">
+                  <a href="#" title="中間主要內容區" accesskey="c" tabindex='200'>:::</a>
+                  現在位置：<a href="../../index.html" title="首頁" tabindex="210">首頁</a>&gt; 會員專區
+               </div>
+               
+               <div class="bar_title-02">
+                  <h3>會員登入</h3>
+                  <br class="clean" />
+                  <hr>
+               </div>
+               
+               <p>還沒有個人帳號嗎?請快來<a href="register.html" title="註冊帳號" tabindex="220">註冊</a>一個</p>
+               
+               <div class="box_action">
+                  <form action="profile.html" method="post">
+                     <div class="input_set">
+                         <h4><label for="memeber_id">帳號：</label></h4>
+                             <input id="member_id" name="member_id" type="text">
+                         <h4><label for="password">密碼：</label></h4>
+                             <input id="password" name="password" type="text">
+                     </div>        
+                     <div class="box_buttons">
+                         <span class="mybtn"><a href="profile.html" title="登入" tabindex="">登入</a></span>
+                     </div>    
+                  </form>
+               </div>
+               
+               <div class="sublogin">
+                  <a href="profile.html" title="忘記密碼" tabindex="">忘記密碼</a></span>
+                  <a href="profile.html" title="重啟帳號" tabindex="">重啟帳號</a></span>
+               </div>
                
                  
            </div><!-- end #page_main -->
