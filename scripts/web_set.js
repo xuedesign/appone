@@ -20,7 +20,14 @@ $(function() {
 function MM_jumpMenu(targ,selObj,restore){ //v3.0
   eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
   if (restore) selObj.selectedIndex=0;
-}  
+}
+
+//全選
+function check_all(obj,cName) 
+{ 
+    var checkboxs = document.getElementsByName(cName); 
+    for(var i=0;i<checkboxs.length;i++){checkboxs[i].checked = obj.checked;} 
+}   
 	 
 	  
 

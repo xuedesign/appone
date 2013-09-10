@@ -22,7 +22,8 @@
 	      4.7 合作商機
 	      4.8 會員專區
 		  4.9 搜尋結果頁
-		  4.10 檢測設備租借 
+		  4.10 檢測設備租借
+		  4.11 網站導覽 
 ***********************************************************************************************/
 
 
@@ -244,7 +245,7 @@ footer{
 .bar_title-02 h3{width:70%;}		
 .bar_title .page_title{ text-indent:-9999px}
 .bar_title a, .bar_title-02 a{ display:block; float:right}
-.title_01, .title_02, .title_03, .title_04, .title_05, .title_06, .title_07, .title_08, .title_09, .title_10, .title_11, .title_12, .title_13, .title_14, .title_15, .title_16, .title_17{ background:url(../images/bg_page-title.png) no-repeat; height:17px; margin-top:10px}
+.title_01, .title_02, .title_03, .title_04, .title_05, .title_06, .title_07, .title_08, .title_09, .title_10, .title_11, .title_12, .title_13, .title_14, .title_15, .title_16, .title_17, .title_18{ background:url(../images/bg_page-title.png) no-repeat; height:17px; margin-top:10px}
 .title_01{background-position:0 0}
 .title_02{background-position:0 -17px}
 .title_03{background-position:0 -34px}
@@ -262,6 +263,7 @@ footer{
 .title_15{background-position:0 -238px}
 .title_16{background-position:0 -255px}
 .title_17{background-position:0 -272px}
+.title_18{background-position:0 -289px}
 	
 aside{
 	display:block;
@@ -613,15 +615,19 @@ aside li{ margin-bottom:10px}
 
 /*4.8 會員專區*/
 .box_member{ display:block; width:740px; /*padding-top:20px*/}
+.box_member h4{ font-size:1em; line-height:25px; color:#017FB1; padding-bottom:5px}
+.box_member .img{ display:block; width:700px; margin:10px auto 30px auto; }
 .member_left, .member_right{ display:block; float:left}
 .member_left{ width:150px; margin-right:20px}
 .member_left img{ display:block; width:100px; padding:5px; background: #FFF; border:1px solid #CCC}
 .member_left img{margin:0 auto}
 .member_right{ width:570px}
 .member_right ul{}
-.member_right li{padding-bottom:5px; border-bottom:1px dashed #E7E7E7}
-.member_right p, .member_right .set_note{font-size:0.813em; line-height:22px}
+.member_right li{padding-bottom:5px; border-bottom:1px dashed #CCC}
+.member_right p, .member_right .set_note, .box_member p{font-size:0.813em; line-height:22px}
 .btn_file{ margin:10px auto}
+.online{ color:#090; font-weight:bold}
+.offline{ color:#C33; font-weight:bold}
 
 /*4.9 搜尋結果頁*/
 .txt_search{ font-size:0.813em; padding:15px 0 5px 0;}
@@ -668,4 +674,9 @@ aside li{ margin-bottom:10px}
 .tab_container .tab_content ol{ margin-left:20px}
 .tab_container .tab_content li{ font-size:0.813em; list-style: decimal; padding-bottom:10px}
 .tab_content .my_tab th, .tab_content .my_tab td{ font-size:0.813em}
-									
+
+/*4.10 網站導覽*/
+.sitemap{ display:block; padding:0 0 0 40px}
+.box_article .sitemap li{ font-size:0.938em; line-height:25px; font-weight:bold; padding-bottom:10px}
+.sitemap li ol{ display:block; padding:0 0 5px 20px}
+.sitemap li li{ font-size:0.813em; line-height:22px; padding:5px 0; border-bottom:1px dashed #999; list-style:none; font-weight:normal}									
