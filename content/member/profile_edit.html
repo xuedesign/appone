@@ -104,11 +104,65 @@
        <section id="main_content">
            <!-- InstanceBeginEditable name="page_main" -->
            <div id="page_main">
-              
-              <h3 style=" display:block; width:200px; font-size:1.25em; margin:50px auto 0 auto">網頁製作中...</h3>
+              <div class="bar_cookie">
+                  <a href="#" title="中間主要內容區" accesskey="c" tabindex='200'>:::</a>
+                  現在位置：<a href="../../index.html" title="首頁" tabindex="210">首頁</a>&gt; 會員專區
+               </div>
                
-                 
-           </div><!-- end #page_main -->
+               <div class="bar_title">
+                  <h3>****的會員管理專區</h3>
+                  <div class="jumpage">
+                    <h4>目前項目：</h4>
+                    <select name="jumpMenu" id="jumpMenu" onChange="MM_jumpMenu('parent',this,0)" class="box_text w140">
+                       <option value="profile.html" selected>會員資料</option>
+                       <option value="myarticle_list.html">文章列表</option>
+                       <option value="myapp_list.html">APP列表</option>
+                       <option value="myapilow_list.html">基礎API列表</option>
+                       <option value="myapihigh_list.html">應用API列表</option>
+                       <option value="mydata_list.html">Open Data列表</option>
+                       <option value="eparkform_list">APP創意園區進駐申請</option>
+                       <option value="verification.html">產品驗證</option>
+                    </select>
+                  </div>
+                  <br class="clean" />
+                  <hr>
+                  <!-- 在該頁面顯示時，選項的class要加上item_in  -->
+                  <span class="mybtn my_margin"><a href="password_edit.html" title="修改密碼" tabindex="220">修改密碼</a></span>
+                  <span class="mybtn"><a href="profile_edit.html" class="item_in" title="修改資料" tabindex="230">修改資料</a></span>
+                  <br class="clean" />
+               </div>
+               
+               <section class="box_member">
+                  <div class="member_left">
+                     <img src="../../images/logo-01.png" width="100" height="100" alt="pic">
+                  </div>
+                  <div class="member_right">
+                     <form action="#" method="post">  
+                      <ul>
+                        <li>
+                           <h4><label for="member_pic">會員圖片：</label></h4>
+                           <input id="member_pic" name="member_pic" type="file" class="btn_file">
+                           <p>(長寬建議各為100px，檔案最大為100k)</p>  
+                        </li>
+                        <li>
+                           <h4><label for="name">會員名稱：</label></h4>
+                           <input id="member_id" name="member_id" type="text" class="box_text-02 w328" value="abc123">   
+                        </li>
+                        <li>
+                           <h4><label for="member_info">會員介紹：</label></h4>
+                           <textarea id="member_info" name="member_info" cols="" rows="5" class="box_text-02 w328">隔壁的老兄，一周7天都沒有休息的時候，沒了你在身邊，地震發生時，根據中央氣象局地震測報中心地震報告，面包已經烤好了，第二杯咖啡，下了18顆，來回坐國道客運不舒適還要趕半夜三四點的車...真的謝謝你們，終于明白了為什麼越南是賣冰咖啡的了。</textarea>  
+                        </li>
+                      </ul>
+                      
+                      <div class="box_check-02">
+                         <span class="mybtn downbtn-02"><a href="profile.html" title="確認修改" tabindex="240">確認修改</a></span>
+                          <span class="mybtn downbtn-02"><a href="profile.html" title="取消修改" tabindex="250">取消修改</a></span>
+                      </div>
+                    </form>  
+                  </div>
+               </section>
+               
+            </div><!-- end #page_main -->
            <!-- InstanceEndEditable -->
            
            <aside><!--右側區塊，tabindex記數由1000開始-->

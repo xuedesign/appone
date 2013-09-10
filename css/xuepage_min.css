@@ -20,7 +20,7 @@
 		  4.4 API分享資源
 		  4.5 技術論壇
 	      4.7 合作商機
-	      4.8 會員商機
+	      4.8 會員專區
 		  4.9 搜尋結果頁
 		  4.10 檢測設備租借 
 ***********************************************************************************************/
@@ -293,7 +293,12 @@ aside li{ margin-bottom:10px}
 .box_text, .box_text-02{
 	border:1px solid #bab9b9;
 	margin-bottom:15px;
-	box-shadow:1px 1px 2px #efeded inset}
+	box-shadow:1px 1px 2px #efeded inset;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;}
 .box_text{padding:3px 5px}	
 .box_text-02{padding:5px 10px}	
 .w50{ width:50px}
@@ -430,7 +435,8 @@ aside li{ margin-bottom:10px}
 	width:80px;
 	text-align:center;
 	margin-right:15px}
-.box_check{ display:block; width:200px; margin:15px auto}		
+.box_check{ display:block; width:200px; margin:15px auto}
+.box_check-02{ display:block; width:470px; margin:15px auto}			
 	
 /*4.2 APP相關訊息*/
 .headline h4{ font-size:1em; line-height:25px; margin-bottom:10px}
@@ -534,7 +540,7 @@ aside li{ margin-bottom:10px}
 	 -o-box-shadow:none9;
 	 -ms-box-shadow:none9;
 	 box-shadow:none}	 	 
-.app_info h4{ font-size:0.938em; color:#017FB1; padding:10px 0}
+.app_info h4, .member_right h4{ font-size:0.938em; color:#017FB1; padding:10px 0}
 .app_info p{ font-size:0.813em; line-height:22px}
 .app_info li{ border-bottom:1px dashed #999; padding-bottom:10px}
 .app_shot{
@@ -604,6 +610,18 @@ aside li{ margin-bottom:10px}
 
 /*4.5 技術論壇*/
 .my_table .align_forl{ text-align:left}
+
+/*4.8 會員專區*/
+.box_member{ display:block; width:740px; /*padding-top:20px*/}
+.member_left, .member_right{ display:block; float:left}
+.member_left{ width:150px; margin-right:20px}
+.member_left img{ display:block; width:100px; padding:5px; background: #FFF; border:1px solid #CCC}
+.member_left img{margin:0 auto}
+.member_right{ width:570px}
+.member_right ul{}
+.member_right li{padding-bottom:5px; border-bottom:1px dashed #E7E7E7}
+.member_right p, .member_right .set_note{font-size:0.813em; line-height:22px}
+.btn_file{ margin:10px auto}
 
 /*4.9 搜尋結果頁*/
 .txt_search{ font-size:0.813em; padding:15px 0 5px 0;}
