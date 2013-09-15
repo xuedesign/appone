@@ -156,20 +156,21 @@ h1 a{
 .box_nav p{
 	display:block;
 	position:absolute;
-	top:35px;
-	left:165px;
+	top:30px;
+	left:170px;
 	z-index:99;
-	padding:3px 13px;
+	padding:3px 10px;
 	font-size:0.813em;
 	font-weight:bold;
 	color:#FFF;
 	background:#e60012;
+	/*border:2px solid #E8E7E8;*/
 	border-radius: 15px;
 	-webkit-border-radius: 15px;
     -moz-border-radius: 15px;
-	box-shadow:0 2px 10px #ccc;
-	-moz-box-shadow:0 2px 10px #999; 
-	-webkit-box-shadow:0 2px 10px #999}
+	box-shadow:0 2px 10px #666;
+	-moz-box-shadow:0 2px 10px #666; 
+	-webkit-box-shadow:0 2px 10px #666}
 .box_nav p span{ display:none}		 	
 .nav_item img{
 	position: relative;

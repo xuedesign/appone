@@ -112,10 +112,42 @@
                
                <div class="bar_title">
                   <h3 class="page_title title_04">技術論壇</h3>
+                  <div class="jumpage">
+                    <h4>目前分類：</h4>
+                    <select name="jumpMenu" id="jumpMenu" onChange="MM_jumpMenu('parent',this,0)" class="box_text w140">
+                       <option value="forum_list.html" selected>所有討論</option>
+                       <option value="#">站務、版務</option>
+                       <option value="#">Android App 開發</option>
+                       <option value="#">iOS App 開發</option>
+                       <option value="#">Windows Phone App 開發</option>
+                       <option value="#">Game App 開發專區</option>
+                       <option value="#">App介紹</option>
+                       <option value="#">App作品發表</option>
+                       <option value="#">App聚會與研討會</option>
+                     </select>
+                  </div>
+                  <br class="clean" />
+                  <hr>
+                  <span class="mybtn my_margin-02"><a href="forum_add.html" title="發起新討論" tabindex="220">發起新討論</a></span>
+                  <span class="mybtn my_margin"><a href="#" title="最新的" tabindex="220">最新的</a></span>
+                  <span class="mybtn"><a href="#" title="最熱門的" tabindex="230">最熱門的</a></span>
                   <br class="clean" />
                </div>
                
-               <table width="100%" class="my_table" summary="技術論壇列表">
+               <ul class="forum_list">
+                 <li>
+                    <div class="forum_title">
+                       
+                    </div>
+                    <div class="forum_noun">
+                       <ul>
+                          <li><span>訪問</span>99</li>
+                          <li><span>評論</span>25</li>
+                       </ul>  
+                    </div>
+                 </li>
+               </ul>
+               <!--<table width="100%" class="my_table" summary="技術論壇列表">
                   <tr>
                     <th class="w80">項次</th>
                     <th>名稱</th>
@@ -134,7 +166,7 @@
                     <td class="align_forl">iOS APP 的行銷經驗分享</td> 
                     <td><a href="http://www.epark.org.tw/app/file/001.pdf" title="[另開視窗]" rel="external" tabindex="230">連結</a></td>
                   </tr>
-                </table>
+                </table>-->
                 
                 <div class="sabrosus"><!-- span class="current"為目前頁面數 -->
                   <span class="disabled"> &lt; </span>
