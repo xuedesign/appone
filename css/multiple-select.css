@@ -69,7 +69,8 @@
 	top: 100%;
 	left:30px;
 	background: #fff;
-	color: #000;
+	font-size:0.813em;
+	color: #333;
 	border: 1px solid #aaa;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -95,7 +96,7 @@
 	width: 100%;
 	height: auto !important;
 	min-height: 24px;
-	padding: 0 20px 0 5px;
+	padding: 0 15px 0 0;
 	margin: 0;
 	outline: 0;
 	font-family: sans-serif;
@@ -127,7 +128,7 @@
 .ms-drop ul {
 	overflow: auto;
 	margin: 0;
-	padding: 5px 8px;
+	padding: 5px 8px 5px 0;
 }
 
 .ms-drop ul > li {

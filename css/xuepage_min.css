@@ -642,9 +642,12 @@ aside li{ margin-bottom:10px}
 .required{ padding-left:20px}
 .required-02{ padding-left:5px}
 .box_edit{ display:block; width:700px; margin:15px auto 30px auto}
-.box_edit h5{ font-size:0.938em; line-height:25px; color:#017FB1; padding:10px 0 5px 0}
+.box_edit h5, .box_edit h6{ line-height:25px; color:#017FB1}
+.box_edit h5{font-size:0.938em; padding:10px 0 5px 0}
+.box_edit h6{font-size:0.813em; padding:0 0 5px 35px}
 .box_edit .edit_item{padding-bottom:10px; /*border-bottom:1px dashed #CCC*/}
 .box_edit input, .box_edit select, .box_edit p, .box_edit textarea{ margin-left:28px}
+.box_edit textarea{ font-size:0.813em; line-height:22px}
 .edit_item .edit_list li{ display:block; float:left; margin-bottom:10px;}
 
 .edit_left, .edit_right{ display:block}
