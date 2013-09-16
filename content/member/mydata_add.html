@@ -188,49 +188,38 @@
                               
                               <div class="edit_item">
                                  <h5><span class="pot">5</span>標籤：(最多三個)<span class="required-02">*</span></h5>
-                                 <ul class="edit_list">
-                                 	<li class="w100">
-                                       <input id="tag_01" name="tag_01" type="checkbox" value="人事">
-                                       <label for="tag_01">人事</label>
-                                    </li>
-                                 	<li class="w100">
-                                       <input id="tag_02" name="tag_02" type="checkbox" value="原民">
-                                       <label for="tag_02">原民</label>
-                                    </li>
-                                 	<li class="w100">
-                                       <input id="tag_03" name="tag_03" type="checkbox" value="長照">
-                                       <label for="tag_03">長照</label>
-                                    </li>
-                                 	<li class="w100">
-                                       <input id="tag_04" name="tag_04" type="checkbox" value="客家">
-                                       <label for="tag_04">客家</label>
-                                    </li>
-                                 	<li class="w100">
-                                       <input id="tag_05" name="tag_05" type="checkbox" value="景觀">
-                                       <label for="tag_05">景觀</label>
-                                    </li>
-                                    <li class="w100">
-                                       <input id="tag_06" name="tag_06" type="checkbox" value="漁業">
-                                       <label for="tag_06">漁業</label>
-                                    </li>
-                                    <li class="w100">
-                                       <input id="tag_07" name="tag_07" type="checkbox" value="宗教">
-                                       <label for="tag_07">宗教</label>
-                                    </li>
-                                    <li class="w100">
-                                       <input id="tag_08" name="ttag_08" type="checkbox" value="旅遊">
-                                       <label for="tag_08">旅遊</label>
-                                    </li>
-                                    <li class="w100">
-                                       <input id="tag_09" name="tag_09" type="checkbox" value="法制">
-                                       <label for="tag_09">法制</label>
-                                    </li>
-                                 </ul>
-                                 <br class="clean" />  
+                                 <select id="tag" name="tag_list" class="box_text-02 w280" multiple="multiple">
+                                   <option>人事</option>
+                                   <option>原民</option>
+                                   <option>長照</option>
+                                   <option>客家</option>
+                                   <option>景觀</option>
+                                   <option>漁業</option>
+                                   <option>宗教</option>
+                                   <option>旅遊</option>
+                                   <option>法治</option>
+                                   <option>工務</option>
+                                   <option>人事</option>
+                                   <option>原民</option>
+                                   <option>長照</option>
+                                   <option>客家</option>
+                                   <option>景觀</option>
+                                   <option>漁業</option>
+                                   <option>宗教</option>
+                                   <option>旅遊</option>
+                                   <option>法治</option>
+                                   <option>工務</option>
+                                 </select>
+                                 <link rel="stylesheet" href="../../css/multiple-select.css"/>
+                                  <script src="../../scripts/jquery.multiple.select.js"></script>
+								  <script>
+                                      $('#tag').multipleSelect();
+                                  </script>
+                                 
                                  <p>(若沒有適合的標籤請在底下新增)</p>
-                                 <input id="tag_01" name="tag_01" type="text" class="box_text-02 w260 mytextfield">
-                                 <input id="tag_02" name="tag_02" type="text" class="box_text-02 w260 mytextfield">
-                                 <input id="tag_03" name="tag_03" type="text" class="box_text-02 w260 mytextfield">
+                                 <input id="tag_01" name="tag_01" type="text" class="box_text-02 w240 mytextfield">
+                                 <input id="tag_02" name="tag_02" type="text" class="box_text-02 w240 mytextfield">
+                                 <input id="tag_03" name="tag_03" type="text" class="box_text-02 w240 mytextfield">
                               </div>
                               
                               <div class="edit_item">
@@ -246,38 +235,38 @@
                               </div>
                           
                               <div class="edit_item">
-                                 <h5><label for="link"><span class="pot">8</span>下載連結：</label></h5>
-                                 <input id="link" name="link" type="text" class="box_text-02 w260 mytextfield">
+                                 <h5><label for="downloalink"><span class="pot">8</span>下載連結：</label></h5>
+                                 <input id="downloalink" name="downloalink" type="text" class="box_text-02 w260 mytextfield">
                               </div>
                               
                               <div class="edit_item">
-                                 <h5><label for="link"><span class="pot">9</span>參考網址連結：</label></h5>
-                                 <input id="link" name="link" type="text" class="box_text-02 w260 mytextfield">
+                                 <h5><label for="reference-link"><span class="pot">9</span>參考網址連結：</label></h5>
+                                 <input id="reference-link" name="reference-link" type="text" class="box_text-02 w260 mytextfield">
                               </div>
                               
                               <div class="edit_item">
-                                 <h5><label for="link"><span class="pot">10</span>地圖連結：</label></h5>
-                                 <input id="link" name="link" type="text" class="box_text-02 w260 mytextfield">
+                                 <h5><label for="map-link"><span class="pot">10</span>地圖連結：</label></h5>
+                                 <input id="map-link" name="map-link" type="text" class="box_text-02 w260 mytextfield">
                               </div>
                               
                               <div class="edit_item">
-                                 <h5><label for="link"><span class="pot">11</span>JSON下載：</label></h5>
-                                 <input id="link" name="link" type="text" class="box_text-02 w260 mytextfield">
+                                 <h5><label for="json-link"><span class="pot">11</span>JSON下載：</label></h5>
+                                 <input id="json-link" name="json-link" type="text" class="box_text-02 w260 mytextfield">
                               </div>
                               
                               <div class="edit_item">
-                                 <h5><label for="link"><span class="pot">12</span>xml下載：</label></h5>
-                                 <input id="link" name="link" type="text" class="box_text-02 w260 mytextfield">
+                                 <h5><label for="xml-link"><span class="pot">12</span>xml下載：</label></h5>
+                                 <input id="xml-link" name="xml-link" type="text" class="box_text-02 w260 mytextfield">
                               </div>
                               
                               <div class="edit_item">
-                                 <h5><label for="link"><span class="pot">13</span>csv下載：</label></h5>
-                                 <input id="link" name="link" type="text" class="box_text-02 w260 mytextfield">
+                                 <h5><label for="csv-link"><span class="pot">13</span>csv下載：</label></h5>
+                                 <input id="csv-link" name="csv-link" type="text" class="box_text-02 w260 mytextfield">
                               </div>
                               
                               <div class="edit_item">
-                                 <h5><label for="link"><span class="pot">14</span>原始檔案下載：</label></h5>
-                                 <input id="link" name="link" type="text" class="box_text-02 w260 mytextfield">
+                                 <h5><label for="file-link"><span class="pot">14</span>原始檔案下載：</label></h5>
+                                 <input id="file-link" name="file-link" type="text" class="box_text-02 w260 mytextfield">
                               </div>
                               
                               <div class="edit_item">

@@ -171,29 +171,19 @@
                              
                               <div class="edit_item">
                                  <h5><span class="pot">4</span>API標籤：(最多三個)<span class="required-02">*</span></h5>
-                                 <ul class="edit_list">
-                                 	<li class="w150">
-                                       <input id="tag_game" name="tag_game" type="checkbox" value="遊戲">
-                                       <label for="tag_game">遊戲</label>
-                                    </li>
-                                 	<li class="w150">
-                                       <input id="tag_study" name="tag_study" type="checkbox" value="學習">
-                                       <label for="tag_study">學習</label>
-                                    </li>
-                                 	<li class="w150">
-                                       <input id="tag_life" name="tag_life" type="checkbox" value="生活應用">
-                                       <label for="tag_life">生活應用</label>
-                                    </li>
-                                 	<li class="w150">
-                                       <input id="tag_tool" name="tag_tool" type="checkbox" value="工具">
-                                       <label for="tag_tool">工具</label>
-                                    </li>
-                                 	<li class="w150">
-                                       <input id="tag_other" name="tag_other" type="checkbox" value="其他">
-                                       <label for="tag_other">其他</label>
-                                    </li>
-                                 </ul>
-                                 <br class="clean" />  
+                                 <select id="tag" name="tag_list" class="box_text-02 w280" multiple="multiple">
+                                   <option>遊戲</option>
+                                   <option>學習</option>
+                                   <option>生活應用</option>
+                                   <option>工具</option>
+                                   <option>其他</option>
+                                 </select>
+                                 <link rel="stylesheet" href="../../css/multiple-select.css"/>
+                                  <script src="../../scripts/jquery.multiple.select.js"></script>
+								  <script>
+                                      $('#tag').multipleSelect();
+                                  </script>
+                                    
                                  <p>(若沒有適合的標籤請在底下新增)</p>
                                  <input id="tag_01" name="tag_01" type="text" class="box_text-02 w260 mytextfield">
                                  <input id="tag_02" name="tag_02" type="text" class="box_text-02 w260 mytextfield">
