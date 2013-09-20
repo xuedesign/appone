@@ -294,6 +294,7 @@ aside li{ margin-bottom:10px}
 .my_margin{float:right; margin-left:15px}
 .my_margin-02{float:left}
 .my_margin-03{ margin-bottom:15px;}
+.my_margin-04{float:right; margin:0 0 5px 15px}
 
 .box_text, .box_text-02{
 	border:1px solid #bab9b9;
@@ -316,6 +317,8 @@ aside li{ margin-bottom:10px}
 .w260{ width:260px}
 .w280{ width:280px}
 .w328{ width:328px}
+.w520{ width:520px}
+.w580{ width:580px}
 .ml-01{margin-left:7px}
 .ml-02{margin-left:25px}
 .ml-03{margin-left:45px}
@@ -444,15 +447,21 @@ aside li{ margin-bottom:10px}
 	width:80px;
 	text-align:center;
 	margin-right:15px}
-.box_check, .box_check-02, .box_check-03{ display:block; margin:15px auto}
+.downbtn-03{
+	display:block;
+	width:150px;
+	text-align:center;
+	margin:15px auto 30px auto}	
+.box_check, .box_check-02, .box_check-03, .box_check-04{ display:block; margin:15px auto}
 .box_check{width:200px}
 .box_check-02{ width:470px}
-.box_check-03{ width:200px}				
+.box_check-03{ width:200px}	
+.box_check-04{ width:300px}				
 	
 /*4.2 APP相關訊息*/
 .headline h4{ font-size:1em; line-height:25px; margin-bottom:10px}
 .headline p{ font-size:0.813em; line-height:22px}
-.headline time, .list_news time, .info_writing li{
+.headline time, .list_news time{
 	font-size:0.75em; 
 	color:#fff; 
 	line-height:18px; 
@@ -488,8 +497,8 @@ aside li{ margin-bottom:10px}
 	-webkit-box-shadow:0 2px 0 #999}
 .pop-01{left:80px}
 .pop-02{left:120px}
-.info_writing li{ display:inline-block; margin:0 10px 15px 0; padding:0 8px 0 0}
-.info_writing span{ background:#4ED4FE; padding:0 3px; margin-right:5px; letter-spacing:1px}
+/*.info_writing li{ display:inline-block; margin:0 10px 15px 0; padding:0 8px 0 0}
+.info_writing span{ background:#4ED4FE; padding:0 3px; margin-right:5px; letter-spacing:1px}*/
 
 /*4.3 APP應用展示*/
 .jumpage{ 
@@ -621,9 +630,100 @@ aside li{ margin-bottom:10px}
 
 /*4.5 技術論壇*/
 .my_table .align_forl{ text-align:left}
-.forum_list{}
-.forum_list li{ border-bottom:1px dashed #CCCCCC}
+.forum_list{
+	display:block;
+	padding:20px 0 10px;
+	border-bottom:1px dashed #CCCCCC}
+.forum_title{
+	display:block;
+	float:left;
+	width:590px}
+.forum_title li, .info_writing li{ 
+    display:inline-block;
+	padding-right:8px;
+	font-size:0.75em; 
+	color:#333; 
+	line-height:18px; 
+	background:#E4E4E4}
+.forum_title li{margin:16px 10px 0 0}	
+.info_writing li{margin:5px 10px 20px 0}
+.forum_title li span, .info_writing li span{ 
+    color:#F5FDFF;
+	background:#6699CC; 
+	padding:0 3px; 
+	margin-right:5px; 
+	letter-spacing:1px}
+.info_writing .pic_logo{ display: block; float:left;  vertical-align: middle; margin-right:15px}		
+	
+.forum_noun{
+	display: block;
+	float:right;
+	width:150px}	
+.forum_noun li{
+	display:inline-block;
+	width:55px;
+	color:#FFF;
+	font-size:0.813em;
+	letter-spacing:1px;
+	text-align:center;
+	margin-left:10px;
+	background: #47B5E1;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+    -moz-border-radius: 9px}
+.forum_noun li .noun_top{
+	display:block;
+	background:#017FB1;
+	font-weight:bold;
+	line-height:22px;
+	padding:3px 5px;
+	border-bottom:1px solid #FFF;
+	-webkit-border-radius: 8px 8px 0 0;
+	-moz-border-radius: 8px 8px 0 0;
+	-o-border-radius: 8px 8px 0 0;
+	-ms-border-radius: 8px 8px 0 0;
+	border-radius: 8px 8px 0 0}
+.forum_noun li .noun_down{ display:block; font-size:1.25em; padding:3px 8px}
 
+.guestbook{
+	display:block;
+	width:700px;
+	margin:15px auto;
+	padding:0 20px}
+.guestbook h4{font-size:1.125em; color:#11154a}	
+.guestbook img{ display:inline-block; padding:0 15px; vertical-align:top}
+.guest_top{ 
+    display:block; 
+	width:680px; 
+	margin:15px auto 15px auto;
+	padding:10px; 
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC}
+.guest_top h5, .guest_top p{display:block; float:left; width:50%}
+.guest_top p{ text-align:right; font-size:0.813em; line-height:22px}
+.guest_item{ display:block; padding:10px 0 10px 0; border-bottom:1px dashed #ccc}
+.guest_item img, .guest_item p{ display:block; float:left}
+.guest_item img{ width:30px; margin-right:15px}
+.guest_item p{ font-size:0.813em; line-height:22px}
+
+.accordion{
+	display:block;
+	width: 625px;
+	padding:5px 0 0 75px;
+	margin:0}
+.accordion h5{
+	font-size:0.813em;
+	color:#017FB1;
+	cursor: pointer;
+	margin:0;
+	padding:0}
+.accordion ul{ display: none; margin:5px 0; padding: 0}
+.accordion li{ display:block; width:625px; padding-bottom:5px}
+.accordion li img, .accordion li p{ display:block; float:left}
+.accordion li img{width:30px; margin:10px 15px 0 0}
+.accordion li p{ width:550px; font-size:0.813em; line-height:22px; border-bottom:1px dashed #ccc; padding:5px 0}
+.accordion li textarea{ margin:5px 0}
+	
 /*4.8 會員專區*/
 .box_member{ display:block; width:740px; /*padding-top:20px*/}
 .box_member h4{ font-size:1em; line-height:25px; color:#017FB1; padding-bottom:5px}

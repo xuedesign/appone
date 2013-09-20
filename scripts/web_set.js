@@ -27,7 +27,15 @@ function check_all(obj,cName)
 { 
     var checkboxs = document.getElementsByName(cName); 
     for(var i=0;i<checkboxs.length;i++){checkboxs[i].checked = obj.checked;} 
-}   
+}
+
+//摺疊回應項目
+$(".accordion > li > h5").click(function(){
+	if(false == $(this).next().is(':visible')) {
+		$('.accordion ul').slideUp(300);
+	}
+	$(this).next().slideToggle(300);
+});   
 	 
 	  
 
