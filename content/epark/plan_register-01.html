@@ -116,14 +116,123 @@
                   <span class="mybtn my_margin"><a href="park_note.html" title="進駐申請須知" tabindex="230">進駐申請須知</a></span>
                   <span class="mybtn"><a href="park_origin.html" title="計畫源起" tabindex="240">計畫源起</a></span>
                   <br class="clean" />
-               </div>
-               
-             
+              </div>
               
-                  
-                 
-
-           </div><!-- end #page_main -->
+              <div class="register_set">
+                 <ul>
+                 	<li class="inset"><span>步驟一</span>基本資料</li>
+                 	<li><span>步驟二</span>其他成員基本資料</li>
+                 	<li><span>步驟三</span>計畫基本資料</li>
+                 	<li><span>步驟四</span>填寫申請書</li>
+                 	<li><span>步驟五</span>上傳相關證明文件</li>
+                 </ul>
+              </div>
+              
+              <div class="register_note">
+                 <ul>
+                 	<li>每個申請案件只需計畫團隊其中一人提出申請即可，其他成員則會收到啟動帳號Mail，每個成員不可重覆報名。</li>
+                 	<li>必須先完成<strong class="txt_red">步驟一、基本資料</strong>與<strong class="txt_red">步驟二、其他成員基本資料(若0人則不必填)</strong>填寫後才可開始填寫計畫內容。</li>
+                 	<li>在撰寫<strong class="txt_red">自我介紹</strong>時若有複製word檔內的資料貼到編輯區時，請先去除資料原先設定的樣式。</li>
+                    <li>非IE使用者：方法為在word畫面上方[格式]工具列上按一下再選擇下拉選單中的 [樣式與格式]，畫面右側會出現選單，再選擇要複製的內容，之後點選右測選單中的[清除格式設定]，完成後即可複製與貼上編輯區。</li>
+                    <li>為IE使用者：方法為複製word檔內的資料，然後在編輯區貼上時會跳出提示視窗詢問是否允許存取，請點選允許；之後會再跳出詢問是否要先清除word的格式，點選確定後跳出小編輯區，把資料貼上後按確定即可完成。</li>
+                    <li> word 2007使用者：請點擊此<a href="http://office.microsoft.com/zh-hk/word-help/HA010210679.aspx" title="[另開視窗]教學連結" rel="external" tabindex="250">教學連結</a>。</li>
+                 </ul>
+              </div>
+              
+               <form action="plan_register-02.html" method="post">
+                  <p class="txt_note-02">*號為必填</p>
+                  <table width="100%" class="my_table" summary="填寫個人資料">
+                      <tr>
+                        <td class="w140 my_align-01">
+                           <span class="txt_red">*</span><label for="name">姓名</label>：</td>
+                        <td class="my_align-02">
+                           <input id="name" name="name" type="text" class="box_text-03 w200" value="Elmo Wu"></td>
+                      </tr>
+                      <tr>
+                        <td class="my_align-01">
+                           <span class="txt_red">*</span><label for="member_id">帳號</label>：</td>
+                        <td class="my_align-02">
+                           <input id="member_id" name="member_id" type="text" class="box_text-03 w200" value="abc123@yahoo.com.tw"> (以Email為帳號，成為會員後不能再做修改) <a href="#" title="檢查帳號" tabindex="240">檢查帳號</a></td>
+                      </tr>
+                      <tr>
+                        <td class="my_align-01"><label for="other_email">備用Email：</label></td>
+                        <td class="my_align-02">
+                            <input id="other_email" name="other_email" type="text" class="box_text-03 w200" value=""></td>
+                      </tr>
+                      <tr>
+                        <td class="my_align-01">
+                             <span class="txt_red">*</span><label for="mobile">手機</label>：</td>
+                        <td class="my_align-02">
+                             <input id="mobile" name="mobile" type="text" class="box_text-03 w200" value=""> (EX:09XXXXXXXX)</td>
+                      </tr>
+                      <tr>
+                        <td class="my_align-01">
+                             <label for="other_phonenumber">其他連絡電話</label>：</td>
+                        <td class="my_align-02">
+                             <input id="other_phonenumber" name="other_phonenumber" type="text" class="box_text-03 w200" value=""></td>
+                      </tr>
+                      <tr>
+                        <td class="my_align-01"><span class="txt_red">*</span>性別：</td>
+                        <td class="my_align-02">
+                            <input id="male" name="sex" type="radio" value="男性">
+                            <label for="male">男性</label>
+                            <input id="female" name="sex" type="radio" value="女性">
+                            <label for="female">女性</label></td>
+                      </tr>
+                      <tr>
+                        <td class="my_align-01">
+                             <span class="txt_red">*</span><label for="id_number">身份證字號</label>：</td>
+                        <td class="my_align-02">
+                             <input id="id_number" name="id_number" type="text" class="box_text-03 w200" value=""> (開頭請用英文大寫)</td>
+                      </tr>
+                      <tr>
+                        <td class="my_align-01">
+                            <span class="txt_red">*</span><label for="birthday">出生年月日</label>：</td>
+                        <td class="my_align-02">
+                            <input id="birthday" name="birthday" type="text" class="box_text-03 w200" value=""> (ex:1980-12-04)</td>
+                      </tr>
+                      <tr>
+                        <td class="my_align-01"><span class="txt_red">*</span>最高學歷：</td>
+                        <td class="my_align-02">
+                            <input id="doctor" name="education" type="radio" value="博士">
+                            <label for="doctor">博士</label>
+                            <input id="master" name="education" type="radio" value="碩士">
+                            <label for="master">碩士</label>
+                            <input id="bachelor" name="education" type="radio" value="大學">
+                            <label for="bachelor">大學</label>
+                            <input id="sub-degree" name="education" type="radio" value="專科">
+                            <label for="sub-degree">專科</label>
+                            <input id="senior high school" name="education" type="radio" value="高中以下">
+                            <label for="senior high school">高中以下</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="my_align-01"><span class="txt_red">*</span>自我介紹：</td>
+                        <td class="my_align-02"><!-- 寬度550px -->
+                            <img src="../../images/pic_fck-02.jpg" width="550" height="308" alt="FCKedit">【填寫說明】個人：姓名、工作經歷、專長、成功經驗分享、個人未來規劃；但不限於此。</td>
+                      </tr>
+                      <tr>
+                        <td class="my_align-01"><span class="txt_red">*</span><label for="partner">選擇其他成員人數</label>：</td>
+                        <td class="my_align-02">
+                            <select id="partner">
+                              <option selected>請選擇</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                            </select>人<br/>
+                        (成員人數與資料可於<strong>計畫書確認送出</strong>之前在<span class="txt_red">會員專區中"App創意園區進駐申請"</span>做新增或刪除)</td>
+                      </tr>
+                    </table>
+                    <p class="txt_note-02">註：本網站之個人資料蒐集，乃由財團法人資訊工業策進會受經濟部工業局委託為之，所蒐集之資料僅供App創意分享園區進駐申請團隊以及後續與App創意分享園區相關事宜聯繫之用。</p> 
+              
+                  <div class="box_check-03">
+                      <span class="mybtn downbtn-02"><a href="application.html" title="取消申請" tabindex="260">取消申請</a></span>
+                      <span class="mybtn downbtn-02"><a href="plan_register-02.html" title="下一步" tabindex="270">下一步</a></span>
+                  </div>
+              </form>
+            
+            </div><!-- end #page_main -->
            <!-- InstanceEndEditable -->
            
            <aside><!--右側區塊，tabindex記數由1000開始-->

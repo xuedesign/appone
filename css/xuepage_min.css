@@ -14,7 +14,7 @@
 		  2.5 內文區塊
 		3 共用元素
 		4 內文編排
-		  4.1 園區快訊
+		  4.1 創意園區進駐申請
 		  4.2 APP相關訊息
 		  4.3 APP應用展示
 		  4.4 API分享資源
@@ -296,17 +296,17 @@ aside li{ margin-bottom:10px}
 .my_margin-03{ margin-bottom:15px;}
 .my_margin-04{float:right; margin:0 0 5px 15px}
 
-.box_text, .box_text-02{
+.box_text, .box_text-02, .box_text-03{
 	border:1px solid #bab9b9;
-	margin-bottom:15px;
 	box-shadow:1px 1px 2px #efeded inset;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-o-border-radius: 5px;
 	-ms-border-radius: 5px;
 	border-radius: 5px;}
-.box_text{padding:3px 5px}	
-.box_text-02{padding:5px 10px}	
+.box_text{padding:3px 5px; margin-bottom:15px}	
+.box_text-02{padding:5px 10px; margin-bottom:15px}
+.box_text-03{padding:5px 10px}		
 .w50{ width:50px}
 .w80{ width:80px}
 .w100{ width:100px}
@@ -341,6 +341,9 @@ aside li{ margin-bottom:10px}
     vertical-align:middle}
 .my_table td{ text-align:center; border-bottom:1px dashed #aad6e6}
 .my_table-02 td{ text-align: left; border:1px solid #aad6e6}
+.txt_note-02{ font-size:0.813em; line-height:25px; color:#C00}
+.my_table td.my_align-01{ text-align:right}
+.my_table td.my_align-02{ text-align:left}
 	
 /*頁碼*/
 .sabrosus{ float:left; padding: 3px; margin:10px 3px; font-size:0.813em; text-align: center}
@@ -419,7 +422,7 @@ aside li{ margin-bottom:10px}
 /* 4. 內文編排
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
-/*4.1 園區快訊*/
+/*4.1 創意園區進駐申請*/
 .ebanner{ display:block; width:687px; margin:20px auto 15px auto}
 .epark_total{
 	display:block;
@@ -442,21 +445,59 @@ aside li{ margin-bottom:10px}
 	width:80px;
 	text-align:center;
 	margin:15px auto 30px auto}
-.downbtn-02{
-	display:inline-block;
-	width:80px;
-	text-align:center;
-	margin-right:15px}
+.downbtn-02, .downbtn-04{ display:inline-block; text-align:center; margin-right:15px}
+.downbtn-02{width:80px}
+.downbtn-04{ width:100px}	
 .downbtn-03{
 	display:block;
 	width:150px;
 	text-align:center;
-	margin:15px auto 30px auto}	
-.box_check, .box_check-02, .box_check-03, .box_check-04{ display:block; margin:15px auto}
+	margin:15px auto 30px auto}
+		
+.box_check, .box_check-02, .box_check-03, .box_check-04, .box_check-05, .box_check-06{ display:block; margin:15px auto}
 .box_check{width:200px}
 .box_check-02{ width:470px}
 .box_check-03{ width:200px}	
-.box_check-04{ width:300px}				
+.box_check-04{ width:300px}
+.box_check-05{ width:320px}
+.box_check-06{ width:450px}
+
+.register_set{ display:block; padding:25px 0}
+.register_set li, .register_set li .inset{
+	display:inline-block;
+	width:135px;
+	margin-left:8px;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+	font-size:0.813em;
+	text-align:center}
+.register_set li{background:#E6E6E6; color:#666}	
+.register_set .inset{background:#74D5FC; color:#0D5572;	text-shadow:1px 1px 2px #F5F5F5}	
+.register_set li span, .register_set li .inset span{
+	display:block;
+	width:100%;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-o-border-radius: 5px 5px 0 0;
+	-ms-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+	border-bottom:1px solid #FFF}
+.register_set li span{background:#CCC}
+.register_set .inset span{ background:#017FB1; color:#fff; text-shadow:none}		
+
+.register_note{ 
+    display:block; 
+	width:680px; 
+	margin:0 auto 30px auto}
+.register_note li{
+	font-size:0.813em;
+	border-bottom:1px dashed #D9D9D9;
+	padding:5px;
+	list-style:disc outside}
+				
 	
 /*4.2 APP相關訊息*/
 .headline h4{ font-size:1em; line-height:25px; margin-bottom:10px}
@@ -784,6 +825,7 @@ aside li{ margin-bottom:10px}
 .tabs li {
 	float: left;
 	height: 31px;
+	font-size:0.938em;
 	line-height: 31px;
 	overflow: hidden;
 	position: relative;
@@ -808,6 +850,7 @@ aside li{ margin-bottom:10px}
 	background: #fff;
 	line-height:22px}
 .tab_container .tab_content { padding: 20px 20px 40px}
+.tab_container .tab_content P{ font-size:0.813em; line-height:22px; padding-bottom:5px}
 .tab_container .tab_content ol{ margin-left:20px}
 .tab_container .tab_content li{ font-size:0.813em; list-style: decimal; padding-bottom:10px}
 .tab_content .my_tab th, .tab_content .my_tab td{ font-size:0.813em}

@@ -8,7 +8,7 @@
 <link rel="shortcut icon"  href="../../images/favicon.ico"/>
 <link rel="icon" href="../../images/favicon.ico"/>
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>會員專區│APP線上專業服務網</title>
+<title>創意園區進駐申請│APP線上專業服務網</title>
 <!-- InstanceEndEditable -->
 <link rel="stylesheet" href="../../css/reset.css" />
 <link rel="stylesheet" href="../../css/xuepage_min.css"/>
@@ -37,7 +37,7 @@
              <nav>
                <!-- InstanceBeginEditable name="nav" -->
                  <ul><!-- 網站主選單，在該單元顯示時，選項的class要加上navin -->
-                   <li><a href="../epark/park_main.html" title="創意園區進駐申請" class="nav_01" tabindex="30">
+                   <li><a href="park_main.html" title="創意園區進駐申請" class="nav_01 navin" tabindex="30">
                           <h3>創意園區進駐申請</h3>
                        </a>
                    </li>
@@ -89,7 +89,7 @@
                   <ul>
                     <!--<li><span class="icon_member"></span><a href="sitemap.html" title="會員登入" tabindex="110">會員登入</a></li>-->
                     <li><span class="icon_logout"></span><a href="../../index.html" title="會員登出" tabindex="120">會員登出</a></li>
-                    <li><span class="icon_member"></span><a href="profile.html" title="會員專區" tabindex="130">會員專區</a></li>
+                    <li><span class="icon_member"></span><a href="../member/profile.html" title="會員專區" tabindex="130">會員專區</a></li>
                     <li><span class="icon_site"></span><a href="../../sitemap.html" title="網站導覽" tabindex="140">網站導覽</a></li>
                     <li><a href="../../index.html" title="目前是中文版" class="btn_sblue snav_in" tabindex="150">中文</a></li>
                     <li><a href="../../en/index.html" title="前往英文版" class="btn_sblue"  tabindex="160" >英文</a></li>
@@ -104,65 +104,70 @@
        <section id="main_content">
            <!-- InstanceBeginEditable name="page_main" -->
            <div id="page_main">
+              
               <div class="bar_cookie">
                   <a href="#" title="中間主要內容區" accesskey="c" tabindex='200'>:::</a>
-                  現在位置：<a href="../../index.html" title="首頁" tabindex="210">首頁</a>&gt; 會員專區
-               </div>
+                  現在位置：<a href="../../index.html" title="首頁" tabindex="210">首頁</a>&gt; <a href="park_main.html" title="創意園區進駐申請" tabindex="215">創意園區進駐申請</a>&gt; 進駐申請線上報名
+             </div>
                
-               <div class="bar_title">
-                  <h3>****的會員管理專區</h3>
-                  <div class="jumpage">
-                    <h4>目前項目：</h4>
-                    <select name="jumpMenu" id="jumpMenu" onChange="MM_jumpMenu('parent',this,0)" class="box_text w140">
-                       <option value="profile.html" selected>會員資料</option>
-                       <option value="myarticle_list.html">文章列表</option>
-                       <option value="myapp_list.html">APP列表</option>
-                       <option value="myapilow_list.html">基礎API列表</option>
-                       <option value="myapihigh_list.html">應用API列表</option>
-                       <option value="mydata_list.html">Open Data列表</option>
-                       <option value="myforum_list.html">技術論壇列表</option>
-                       <option value="eparkform_list.html">APP創意園區進駐申請</option>
-                       <option value="verification.html">產品驗證</option>
-                    </select>
-                  </div>
+             <div class="bar_title">
+               <h3 class="page_title title_14">進駐申請線上報名</h3>
+                  <span class="mybtn my_margin"><a href="application.html" title="進駐申請線上報名" tabindex="220">進駐申請線上報名</a></span>
+                  <span class="mybtn my_margin"><a href="park_note.html" title="進駐申請須知" tabindex="230">進駐申請須知</a></span>
+                  <span class="mybtn"><a href="park_origin.html" title="計畫源起" tabindex="240">計畫源起</a></span>
                   <br class="clean" />
-                  <hr>
-                  <!-- 在該頁面顯示時，選項的class要加上item_in  -->
-                  <span class="mybtn my_margin"><a href="password_edit.html" title="修改密碼" tabindex="220">修改密碼</a></span>
-                  <span class="mybtn"><a href="profile_edit.html" class="item_in" title="修改資料" tabindex="230">修改資料</a></span>
-                  <br class="clean" />
-               </div>
-               
-               <section class="box_member">
-                  <div class="member_left">
-                     <img src="../../images/logo-01.png" width="100" height="100" alt="pic">
+              </div>
+              
+              <div class="register_set">
+                 <ul>
+                 	<li><span>步驟一</span>基本資料</li>
+                 	<li><span>步驟二</span>其他成員基本資料</li>
+                 	<li><span>步驟三</span>計畫基本資料</li>
+                 	<li><span>步驟四</span>填寫申請書</li>
+                 	<li class="inset"><span>步驟五</span>上傳相關證明文件</li>
+                 </ul>
+              </div>
+              
+              <div class="register_note">
+                 <ul>
+                 	<li>您可點<strong class="txt_red">選暫存不送出</strong>儲存現有資料後離開報名頁面，之後重新登入在<strong class="txt_red">會員專區</strong>中的<strong class="txt_red">App創意園區進駐申請</strong>繼續修改。</li>
+                 	<li>步驟四與步驟五的資料在您點選步驟五的<strong class="txt_red">確認送出報名</strong>時才會做是否有漏寫的檢查，您可在此兩步驟畫面中填寫目前確定的欄位。</li>
+                    <li>當您點選確認送出報名後計畫資料、會員資料就不能再做修改。</li>
+                    <li>「基本資料、營運計畫書與證明文件等一經確認送出，即無法修改」。</li>
+                 </ul>
+              </div>
+              
+               <form action="plan_register-02.html" method="post">
+                  <p class="txt_note-02">*號為必填</p>
+                  <table width="100%" class="my_table" summary="填寫個人資料">
+                      <tr>
+                        <td class="w200 my_align-01">
+                           <span class="txt_red">*</span><label for="skill_information">可提供技術說明之名稱</label>：</td>
+                        <td class="my_align-02">
+                           <input id="skill_information" name="skill_information" type="text" class="box_text-03 w260" value=""></td>
+                      </tr>
+                      <tr>
+                        <td class="my_align-01">
+                           <label for="skill_website">可提供技術說明之所在網址</label>：</td>
+                        <td class="my_align-02">
+                           <input id="skill_website" name="skill_website" type="text" class="box_text-03 w260" value=""></td>
+                      </tr>
+                      <tr>
+                        <td class="my_align-01"><label for="other_paper">其他相關資料：</label></td>
+                        <td class="my_align-02">
+                            <input id="other_paper" name="other_paper" type="file"><br />(多個文件請壓縮再上傳，檔案大於10m請寄給服務人員幫忙上傳)</td>
+                      </tr>
+                    </table>
+                    <p class="txt_note-02">註：本網站之個人資料蒐集，乃由財團法人資訊工業策進會受經濟部工業局委託為之，所蒐集之資料僅供App創意分享園區進駐申請團隊以及後續與App創意分享園區相關事宜聯繫之用。</p> 
+              
+                  <div class="box_check-06">
+                      <span class="mybtn downbtn-02"><a href="plan_register-04.html" title="上一步" tabindex="260">上一步</a></span>
+                      <span class="mybtn downbtn-04"><a href="../member/eparkform_list.html" title="暫存不送出" tabindex="270">暫存不送出</a></span>
+                      <span class="mybtn downbtn-04"><a href="plan_preview.html" title="送出預覽" tabindex="280">送出預覽</a></span>
+                      <span class="mybtn downbtn-02"><a href="park_main.html" title="送出報名" tabindex="290">送出報名</a></span>
                   </div>
-                  <div class="member_right">
-                     <form action="#" method="post">  
-                      <ul>
-                        <li>
-                           <h4><label for="member_pic">會員圖片：</label></h4>
-                           <input id="member_pic" name="member_pic" type="file" class="btn_file">
-                           <p>(長寬建議各為100px，檔案最大為100k)</p>  
-                        </li>
-                        <li>
-                           <h4><label for="name">會員名稱：</label></h4>
-                           <input id="member_id" name="member_id" type="text" class="box_text-02 w328" value="abc123">   
-                        </li>
-                        <li>
-                           <h4><label for="member_info">會員介紹：</label></h4>
-                           <textarea id="member_info" name="member_info" cols="" rows="5" class="box_text-02 w328">隔壁的老兄，一周7天都沒有休息的時候，沒了你在身邊，地震發生時，根據中央氣象局地震測報中心地震報告，面包已經烤好了，第二杯咖啡，下了18顆，來回坐國道客運不舒適還要趕半夜三四點的車...真的謝謝你們，終于明白了為什麼越南是賣冰咖啡的了。</textarea>  
-                        </li>
-                      </ul>
-                      
-                      <div class="box_check-02">
-                         <span class="mybtn downbtn-02"><a href="profile.html" title="確認修改" tabindex="240">確認修改</a></span>
-                          <span class="mybtn downbtn-02"><a href="profile.html" title="取消修改" tabindex="250">取消修改</a></span>
-                      </div>
-                    </form>  
-                  </div>
-               </section>
-               
+              </form>
+            
             </div><!-- end #page_main -->
            <!-- InstanceEndEditable -->
            
@@ -177,7 +182,7 @@
                <ul>
                   <li><a href="../../rent.html" title="檢測設備租借" tabindex="1040">
                       <img src="../../images/banner_01.jpg" width="168" height="53" alt="檢測設備租借"></a></li>
-                  <li><a href="../epark/application.html" title="創意園區進駐申請" tabindex="1050">
+                  <li><a href="application.html" title="創意園區進駐申請" tabindex="1050">
                       <img src="../../images/banner_02.jpg" width="168" height="53" alt="創意園區進駐申請"></a></li>
                   <li><a href="#" title="促進投資" rel="external" tabindex="1060">
                       <img src="../../images/banner_03.jpg" width="168" height="53" alt="促進投資"></a></li>
