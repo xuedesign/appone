@@ -35,10 +35,4 @@ $(".accordion > li > h5").click(function(){
 		$('.accordion ul').slideUp(300);
 	}
 	$(this).next().slideToggle(300);
-});   
-	 
-	  
-
-
-                  
-	  
+});

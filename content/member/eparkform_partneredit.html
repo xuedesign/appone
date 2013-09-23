@@ -129,30 +129,90 @@
                   <hr>
                </div>
                
-               
-               
-             <section class="box_member">
-               <h4 class="my_margin-02">計畫書版本列表</h4>
-               <span class="mybtn my_margin"><a href="eparkform_plan.html" title="修改計畫書" tabindex="220">修改計畫書</a></span>
-               <span class="mybtn my_margin"><a href="eparkform_partner.html" title="修改成員資料" tabindex="230">修改成員資料</a></span>
-               <br class="clean" />
-                <table width="100%" class="my_table" summary="API應用列表">
-                      <tr>
-                        <th class="w50">項次</th>
-                        <th>修改人員</th>
-                        <th>修改時間</th>
-                        <th class="w140">詳細內容</th>
-                      </tr>
-                      <tr>
-                         <td>1</td>
-                         <td>Elmo Wu</td>
-                         <td>2013-09-06 16:23:55</td>
-                         <td><a href="../epark/plan_preview.html" title="[另開視窗]觀看詳細內容" rel="external" tabindex="240">觀看</a></td>
-                      </tr>
-                 </table>     
-             </section>
-               
-            </div><!-- end #page_main -->
+              <section class="box_member">
+               <h4 class="my_margin-02">計畫成員編輯</h4>
+               <p class="my_margin"><span class="txt_red">*</span>號為必填</p>
+               <form action="eparkform_partner.html" method="post">
+                <table width="100%" class="my_table" summary="填寫個人資料">
+                    <tr>
+                      <td class="w140 my_align-01">
+                         <span class="txt_red">*</span><label for="name-01">姓名</label>：</td>
+                      <td class="my_align-02">
+                         <input id="name-01" name="name" type="text" class="box_text-03 w200" value=""></td>
+                    </tr>
+                    <tr>
+                      <td class="my_align-01">
+                         <span class="txt_red">*</span><label for="member_id-01">帳號</label>：</td>
+                      <td class="my_align-02">
+                         <input id="member_id-01" name="member_id" type="text" class="box_text-03 w200" value=""> (以Email為帳號，成為會員後不能再做修改)<a href="#" title="檢查帳號" tabindex="240">檢查帳號</a></td>
+                    </tr>
+                    <tr>
+                      <td class="my_align-01"><label for="other_email-01">備用Email：</label></td>
+                      <td class="my_align-02">
+                          <input id="other_email-01" name="other_email" type="text" class="box_text-03 w200" value=""></td>
+                    </tr>
+                    <tr>
+                      <td class="my_align-01">
+                           <span class="txt_red">*</span><label for="mobile-01">手機</label>：</td>
+                      <td class="my_align-02">
+                           <input id="mobile-01" name="mobile" type="text" class="box_text-03 w200" value=""> (EX:09XXXXXXXX)</td>
+                    </tr>
+                    <tr>
+                      <td class="my_align-01">
+                           <label for="other_phonenumber-01">其他連絡電話</label>：</td>
+                      <td class="my_align-02">
+                           <input id="other_phonenumber-01" name="other_phonenumber" type="text" class="box_text-03 w200" value=""></td>
+                    </tr>
+                    <tr>
+                      <td class="my_align-01"><span class="txt_red">*</span>性別：</td>
+                      <td class="my_align-02">
+                          <input id="male-01" name="sex" type="radio" value="男性">
+                          <label for="male-01">男性</label>
+                          <input id="female-01" name="sex" type="radio" value="女性">
+                          <label for="female-01">女性</label></td>
+                    </tr>
+                    <tr>
+                      <td class="my_align-01">
+                           <span class="txt_red">*</span><label for="id_number-01">身份證字號</label>：</td>
+                      <td class="my_align-02">
+                           <input id="id_number-01" name="id_number" type="text" class="box_text-03 w200" value=""> (開頭請用英文大寫)</td>
+                    </tr>
+                    <tr>
+                      <td class="my_align-01">
+                          <span class="txt_red">*</span><label for="birthday-01">出生年月日</label>：</td>
+                      <td class="my_align-02">
+                          <input id="birthday-01" name="birthday" type="text" class="box_text-03 w200" value=""> (ex:1980-12-04)</td>
+                    </tr>
+                    <tr>
+                      <td class="my_align-01"><span class="txt_red">*</span>最高學歷：</td>
+                      <td class="my_align-02">
+                          <input id="doctor-01" name="education" type="radio" value="博士">
+                          <label for="doctor-01">博士</label>
+                          <input id="master-01" name="education" type="radio" value="碩士">
+                          <label for="master-01">碩士</label>
+                          <input id="bachelor-01" name="education" type="radio" value="大學">
+                          <label for="bachelor-01">大學</label>
+                          <input id="sub-degree-01" name="education" type="radio" value="專科">
+                          <label for="sub-degree-01">專科</label>
+                          <input id="senior high school-01" name="education" type="radio" value="高中以下">
+                          <label for="senior high school-01">高中以下</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="my_align-01"><span class="txt_red">*</span>自我介紹：</td>
+                      <td class="my_align-02"><!-- 寬度550px -->
+                          <img src="../../images/pic_fck-02.jpg" width="505" height="249" alt="FCKedit"><br/>【填寫說明】個人：姓名、工作經歷、專長、成功經驗分享、個人未來規劃；但不限於此。</td>
+                    </tr>
+                  </table>
+                  </form>
+                  
+                  <div class="box_check-03">
+                      <span class="mybtn downbtn-02"><a href="eparkform_partner.html" title="確認送出" tabindex="240">確認送出</a></span>
+                      <span class="mybtn downbtn-02"><a href="eparkform_partner.html" title="取消編輯" tabindex="250">取消編輯</a></span>
+                  </div>     
+              </section>
+                        
+           </div><!-- end #page_main -->
            <!-- InstanceEndEditable -->
            
            <aside><!--右側區塊，tabindex記數由1000開始-->

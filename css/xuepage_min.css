@@ -816,7 +816,7 @@ aside li{ margin-bottom:10px}
     clear: left;
 	width: 740px;
 	margin: 20px auto 30px auto}
-.tabs {
+.tabs{
 	display:block;
 	width: 100%;
 	height: 32px;
@@ -842,6 +842,7 @@ aside li{ margin-bottom:10px}
 .tabs li a:hover {background: #017FB1; color:#FFF}
 .tabs li.active  {background: #fff; border-bottom: 1px solid #fff; font-weight:bold}
 .tabs li.active a:hover { background: #fff; color:#000}
+
 .tab_container {
 	clear: left;
 	width: 100%;

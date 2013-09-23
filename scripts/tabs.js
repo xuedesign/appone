@@ -7,7 +7,7 @@ $(function(){
 		
 		// 當 li 頁籤被點擊時...
 		// 若要改成滑鼠移到 li 頁籤就切換時, 把 click 改成 mouseover
-		$('ul.tabs li').click(function() {
+		$('ul.tabs li').mouseover(function() {
 			// 找出 li 中的超連結 href(#id)
 			var $this = $(this),
 				_clickTab = $this.find('a').attr('href');
@@ -32,7 +32,7 @@ $(function(){
 		
 		// 當 li 頁籤被點擊時...
 		// 若要改成滑鼠移到 li 頁籤就切換時, 把 click 改成 mouseover
-		$('ul.tabs-02 li').click(function() {
+		$('ul.tabs-02 li').mouseover(function() {
 			// 找出 li 中的超連結 href(#id)
 			var $this = $(this),
 				_clickTab = $this.find('a').attr('href');
