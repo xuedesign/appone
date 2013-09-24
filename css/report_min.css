@@ -103,45 +103,8 @@ footer{
 .w140{ width:140px}
 .w180{ width:180px}
 
-.abgne_tab {
-    clear: left;
-	width: 740px;
-	margin: 20px auto 30px auto}
-.tabs, .tabs-02 {
-	display:block;
-	width: 100%;
-	height: 32px;
-	border-bottom: 1px solid #D1D1D1;
-	border-left: 1px solid #D1D1D1}
-.tabs li, .tabs-02 li {
-	float: left;
-	height: 31px;
-	font-size:0.938em;
-	line-height: 31px;
-	overflow: hidden;
-	position: relative;
-	margin-bottom: -1px;	/* 讓 li 往下移來遮住 ul 的部份 border-bottom */
-	border: 1px solid #D1D1D1;
-	border-left: none;
-	background: #A1E2FC}
-.tabs li a, .tabs-02 li a {
-	display: block;
-	padding: 0 20px;
-	color: #000;
-	border: 1px solid #fff;
-	text-decoration: none}
-.tabs li a:hover, .tabs-02 li a:hover {background: #017FB1; color:#FFF}
-.tabs li.active, .tabs-02 li.active  {background: #fff; border-bottom: 1px solid #fff; font-weight:bold}
-.tabs li.active a:hover, .tabs-02 li.active a:hover { background: #fff; color:#000}
-.tab_container {
-	clear: left;
-	width: 100%;
-	border: 1px solid #D1D1D1;
-	border-top: none;
-	background: #fff;
-	line-height:22px}
-.tab_container .tab_content { padding: 20px 20px 40px}
-.tab_container .tab_content P{ font-size:0.813em; line-height:22px; padding-bottom:5px}
-.tab_container .tab_content ol{ margin-left:20px}
-.tab_container .tab_content li{ font-size:0.813em; list-style: decimal; padding-bottom:10px}
+.tab_content { padding: 20px 20px 40px}
+.tab_content P{ font-size:0.813em; line-height:22px; padding-bottom:5px}
+.tab_content ol{ margin-left:20px}
+.tab_content li{ font-size:0.813em; list-style: decimal; padding-bottom:10px}
 .tab_content .my_tab th, .tab_content .my_tab td{ font-size:0.813em}	

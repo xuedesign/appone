@@ -1,0 +1,40 @@
+.horizontalTab{ display:block; margin-top:15px}
+.r-tabs { position: relative}
+.r-tabs .r-tabs-nav { border-bottom: 1px solid #D1D1D1}
+.r-tabs .r-tabs-nav .r-tabs-tab { position: relative; top: 1px}
+.r-tabs .r-tabs-nav .r-tabs-anchor {
+	background: #017FB1;
+	margin-bottom: 3px;
+	padding: 8px 12px;
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	font-size:0.938em;
+	font-weight: bold}
+.r-tabs .r-tabs-nav .r-tabs-state-active {
+	background-color: #fff;
+	margin-bottom: -1px;
+	border-top: 1px solid #D1D1D1;
+	border-right: 1px solid #D1D1D1;
+	border-left: 1px solid #D1D1D1}
+.r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {color: #00aadd; background-color: #fff}
+.r-tabs .r-tabs-panel {
+	border-right: 1px solid #D1D1D1;
+	border-bottom: 1px solid #D1D1D1;
+	border-left: 1px solid #D1D1D1;
+	margin-bottom: 3px}
+.r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+	display: block;
+	padding: 10px;
+	background-color: #00aadd;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	margin-bottom: 3px}
+.r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
+	background-color: #fff;
+	color: #00aadd;
+	border-top: 1px solid #D1D1D1;
+	border-right: 1px solid #D1D1D1;
+	border-left: 1px solid #D1D1D1;
+	margin-bottom: 0}

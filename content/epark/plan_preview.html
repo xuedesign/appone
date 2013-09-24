@@ -65,9 +65,23 @@
           </table>
 
          <h3>二、「App創意分享園區申請書」</h3>
-             <script src="../../scripts/tabs.js"></script>
-             <div class="abgne_tab">
-               <ul class="tabs">
+             
+             <!-- 頁籤效果 -->
+              <link rel="stylesheet" href="../../css/responsive-tabs.css">
+              <link rel="stylesheet" href="../../css/style.css">
+              <script src="../../scripts/jquery.responsiveTabs.min.js"></script>
+              <script>
+                  $(document).ready(function () {
+                      $('.horizontalTab').responsiveTabs({
+                          startCollapsed: 'accordion',
+                          collapsible: true,
+                          rotate: false,
+                          setHash: true
+                      });
+                  });
+               </script>
+             <div class="horizontalTab">
+               <ul>
                   <li><a href="#tab1" title="技術、產品說明" tabindex="60">技術、產品說明</a></li>
                   <li><a href="#tab2" title="專業技術獨特性" tabindex="70">專業技術獨特性</a></li>
                   <li><a href="#tab3" title="市場需求使用性" tabindex="80">市場需求使用性</a></li>
@@ -75,8 +89,7 @@
                   <li><a href="#tab5" title="歷年開發成果" tabindex="100">歷年開發成果</a></li>
               </ul>
            
-              <div class="tab_container">
-                <div id="tab1" class="tab_content">
+              <div id="tab1" class="tab_content">
                     <p>人房教在太后臺合起，大之過快勢園未的跑……法本動黃政象收他母親反來境士，果電分！野謝術道們業著方國食外了角三個戲濟不感：張兒參智及用的世物那推環多。話獨多，那中效新計，夫對沒出保主紅酒能？</p>
                 </div>
                 
@@ -95,13 +108,11 @@
                 <div id="tab5" class="tab_content">
                     <p>天美量著小雖般片得裡害也這點計視歌灣不好大速水味實亮顯死的？支間子主著唱：來委微評標。的認防義分打歷英法者應個委願賽，學消母像、兒的接作自於小不以出只形老研作不也日說立，人年引做明解那育家工司說……王清大我該價法候法卻級生人給們正推為，散了等有制天然次館神可眾非近，水進理當：輕眼適今質興微為安，可中們，送適作會，他呢程著身學面地底談的法產的來綠生說衣辦手別且。民生一客嚴童回。那不死對數流達。</p>
                 </div>
-             
-             </div>
-         </div> 
+          </div> 
          
          <h3>三、團隊成員資料</h3>
-             <div class="abgne_tab">
-                   <ul class="tabs-02">
+             <div class="horizontalTab">
+                   <ul>
                       <li><a href="#tab6" title="Elmo (負責人)" tabindex="110">Elmo (負責人)</a></li>
                       <li><a href="#tab7" title="Partner1" tabindex="120">Partner 1</a></li>
                       <li><a href="#tab8" title="Partner2" tabindex="130">Partner 2</a></li>
@@ -109,8 +120,7 @@
                       <li><a href="#tab10" title="Partner4" tabindex="150">Partner 4</a></li>
                   </ul>
                
-                  <div class="tab_container">
-                    <div id="tab6" class="tab_content">
+                  <div id="tab6" class="tab_content">
                         <table width="100%" class="my_table" summary="個人資料表">
                           <tr>
                               <td class="w140 my_align-01">EMail：</td>
@@ -274,8 +284,6 @@
                             </tr>
                         </table>
                     </div>
-                 
-                 </div>
              </div> 
           
          <h3>四、相關證明文件</h3> 

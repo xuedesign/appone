@@ -140,10 +140,24 @@
                  </ul>
               </div>
               
+              
+              <!-- 頁籤效果 -->
+              <link rel="stylesheet" href="../../css/responsive-tabs.css">
+               <link rel="stylesheet" href="../../css/style.css">
+               <script src="../../scripts/jquery.responsiveTabs.min.js"></script>
+               <script>
+					$(document).ready(function () {
+						$('.horizontalTab').responsiveTabs({
+							startCollapsed: 'accordion',
+							collapsible: true,
+							rotate: false,
+							setHash: true
+						});
+					});
+				</script>
                <form action="plan_register-05.html" method="post">
-                  <script src="../../scripts/tabs.js"></script><!-- 頁籤效果 -->
-                   <div class="abgne_tab">
-                       <ul class="tabs">
+                  <div class="horizontalTab">
+                       <ul>
                           <li><a href="#tab1" title="技術、產品說明" tabindex="220">技術、產品說明</a></li>
                           <li><a href="#tab2" title="專業技術獨特性" tabindex="230">專業技術獨特性</a></li>
                           <li><a href="#tab3" title="市場需求使用性" tabindex="240">市場需求使用性</a></li>
@@ -151,8 +165,7 @@
                           <li><a href="#tab5" title="歷年開發成果" tabindex="250">歷年開發成果</a></li>
                       </ul>
                    
-                      <div class="tab_container">
-                        <div id="tab1" class="tab_content">
+                      <div id="tab1" class="tab_content">
                             <p class="txt_note-02">*必填</p>
                             <p>【填寫說明】已具備App開發專業技術及曾有產品上架之開發團隊，並願意於本園區(以下擇一即可)：</p>
                             <ol>
@@ -186,7 +199,6 @@
                             <img src="../../images/pic_fck.png" width="700" height="308" alt="FCKedit"> 
                         </div>
                      
-                     </div>
                  </div> 
                     
                    <div class="box_check-05">

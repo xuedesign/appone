@@ -136,17 +136,30 @@
                  </ul>
               </div>
               
+              <!-- 頁籤效果 -->
+              <link rel="stylesheet" href="../../css/responsive-tabs.css">
+               <link rel="stylesheet" href="../../css/style.css">
+               <script src="../../scripts/jquery.responsiveTabs.min.js"></script>
+               <script>
+					$(document).ready(function () {
+						$('.horizontalTab').responsiveTabs({
+							startCollapsed: 'accordion',
+							collapsible: true,
+							rotate: false,
+							setHash: true
+						});
+					});
+				</script>
                <form action="plan_register-03.html" method="post">
-                  <script src="../../scripts/tabs.js"></script><!-- 頁籤效果 -->
-                   <div class="abgne_tab">
-                       <ul class="tabs">
+                   <div class="horizontalTab">
+                       <ul>
                           <li><a href="#tab1" title="成員1" tabindex="220">成員1</a></li>
                           <li><a href="#tab2" title="成員2" tabindex="230">成員2</a></li>
                           <li><a href="#tab3" title="成員3" tabindex="240">成員3</a></li>
                           <li><a href="#tab4" title="成員4" tabindex="250">成員4</a></li>
                       </ul>
                    
-                      <div class="tab_container">
+                      
                         <div id="tab1" class="tab_content">
                             <p class="txt_note-02">*號為必填</p>
                             <table width="100%" class="my_table" summary="填寫個人資料">
@@ -446,8 +459,6 @@
                                 </tr>
                               </table>
                         </div> 
-                     
-                     </div>
                  </div> 
                     
                   <div class="box_check-03">
