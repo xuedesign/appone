@@ -127,29 +127,81 @@
                   </div>
                   <br class="clean" />
                   <hr>
+                  
                </div>
                
-               
-               
-             <section class="box_member">
-               <h4 class="my_margin-02">計畫書版本列表</h4>
-               <span class="mybtn my_margin"><a href="eparkform_plan-01.html" title="修改計畫書" tabindex="220">修改計畫書</a></span>
-               <span class="mybtn my_margin"><a href="eparkform_partner.html" title="修改成員資料" tabindex="230">修改成員資料</a></span>
-               <br class="clean" />
-                <table width="100%" class="my_table" summary="API應用列表">
+              <section class="box_member">
+                  <div class="register_set-02">
+                     <ul>
+                        <li class="inset"><span>修改步驟一</span>計畫基本資料</li>
+                        <li><span>修改步驟二</span>填寫申請書</li>
+                        <li><span>修改步驟三</span>上傳相關證明文件</li>
+                     </ul>
+                  </div>
+                  
+                  <div class="register_note">
+                     <ul>
+                        <li>您可點選<strong class="txt_red">暫存資料</strong>儲存現有資料後離開，系統會紀錄目前您填寫的版本，計畫成員可以在<strong class="txt_red">會員專區</strong>中<strong class="txt_red">App創意園區進駐申請的計劃書版本列表</strong>中查看。</li>
+                        <li>您必須先填寫完成步驟一的欄位才可選擇步驟二或步驟三的畫面。</li>
+                     </ul>
+                  </div>
+                  
+                  <form action="plan_register-04.html" method="post">
+                  <p class="txt_note-02">*號為必填</p>
+                  <table width="100%" class="my_table" summary="填寫計畫基本資料">
                       <tr>
-                        <th class="w50">項次</th>
-                        <th>修改人員</th>
-                        <th>修改時間</th>
-                        <th class="w140">詳細內容</th>
+                        <td class="w140 my_align-01">
+                           <label for="name">主要聯絡人</label>：</td>
+                        <td class="my_align-02">
+                           <input id="name" name="name" type="text" class="box_text-03 w200" value="Elmo Wu">
+                        </td>
                       </tr>
                       <tr>
-                         <td>1</td>
-                         <td>Elmo Wu</td>
-                         <td>2013-09-06 16:23:55</td>
-                         <td><a href="../epark/plan_preview.html" title="[另開視窗]觀看詳細內容" rel="external" tabindex="240">觀看</a></td>
+                        <td class="my_align-01">
+                           <label for="mobile">主要聯絡人電話</label>：</td>
+                        <td class="my_align-02">
+                           <input id="mobile" name="mobile" type="text" class="box_text-03 w200" value="0980-123456">
+                        </td>
                       </tr>
-                 </table>     
+                      <tr>
+                        <td class="my_align-01">
+                           <label for="member_id">主要聯絡人Email</label>：</td>
+                        <td class="my_align-02">
+                           <input id="member_id" name="member_id" type="text" class="box_text-03 w200" value="abc123@yahoo.com.tw"></td>
+                      </tr>
+                      
+                      <tr>
+                        <td class="my_align-01"><span class="txt_red">*</span>請選擇申請類型：</td>
+                        <td class="my_align-02">
+                            <input id="single" name="plan_type" type="radio" value="個人">
+                            <label for="single">個人</label>
+                            <input id="team" name="plan_type" type="radio" value="團隊">
+                            <label for="team">團隊</label>
+                            <input id="company" name="plan_type" type="radio" value="公司/工作室">
+                            <label for="company">公司/工作室</label>  (僅能選擇一種類型申請進駐)</td>
+                      </tr>
+                      
+                      <tr>
+                        <td class="my_align-01"><span class="txt_red">*</span>中文簡介：</td>
+                        <td class="my_align-02"><!-- 寬度550px -->
+                            <img src="../../images/pic_fck-02.jpg" width="550" height="308" alt="FCKedit"></td>
+                      </tr>
+                      
+                      <tr>
+                        <td class="my_align-01"><span class="txt_red">*</span>英文簡介：</td>
+                        <td class="my_align-02"><!-- 寬度550px -->
+                            <img src="../../images/pic_fck-02.jpg" width="550" height="308" alt="FCKedit"></td>
+                      </tr>
+                      
+                    </table>
+                    <p class="txt_note-02">註：本網站之個人資料蒐集，乃由財團法人資訊工業策進會受經濟部工業局委託為之，所蒐集之資料僅供App創意分享園區進駐申請團隊以及後續與App創意分享園區相關事宜聯繫之用。</p> 
+                    
+                    <div class="box_check">
+                      <span class="mybtn downbtn-02"><a href="eparkform_list.html" title="暫存資料" tabindex="220">暫存資料</a></span>
+                      <span class="mybtn downbtn-02"><a href="eparkform_plan-02.html" title="下一步" tabindex="230">下一步</a></span>
+                  </div>
+              </form>
+                    
              </section>
                
             </div><!-- end #page_main -->

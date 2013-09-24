@@ -127,29 +127,96 @@
                   </div>
                   <br class="clean" />
                   <hr>
+                  
                </div>
                
-               
-               
-             <section class="box_member">
-               <h4 class="my_margin-02">計畫書版本列表</h4>
-               <span class="mybtn my_margin"><a href="eparkform_plan-01.html" title="修改計畫書" tabindex="220">修改計畫書</a></span>
-               <span class="mybtn my_margin"><a href="eparkform_partner.html" title="修改成員資料" tabindex="230">修改成員資料</a></span>
-               <br class="clean" />
-                <table width="100%" class="my_table" summary="API應用列表">
-                      <tr>
-                        <th class="w50">項次</th>
-                        <th>修改人員</th>
-                        <th>修改時間</th>
-                        <th class="w140">詳細內容</th>
-                      </tr>
-                      <tr>
-                         <td>1</td>
-                         <td>Elmo Wu</td>
-                         <td>2013-09-06 16:23:55</td>
-                         <td><a href="../epark/plan_preview.html" title="[另開視窗]觀看詳細內容" rel="external" tabindex="240">觀看</a></td>
-                      </tr>
-                 </table>     
+              <section class="box_member">
+                  <div class="register_set-02">
+                     <ul>
+                        <li><span>修改步驟一</span>計畫基本資料</li>
+                        <li class="inset"><span>修改步驟二</span>填寫申請書</li>
+                        <li><span>修改步驟三</span>上傳相關證明文件</li>
+                     </ul>
+                  </div>
+                  
+                  <div class="register_note">
+                     <ul>
+                        <li>您可點選<strong class="txt_red">暫存資料</strong>儲存現有資料後離開，系統會紀錄目前您填寫的版本，計畫成員可以在<strong class="txt_red">會員專區</strong>中<strong class="txt_red">App創意園區進駐申請的計劃書版本列表</strong>中查看。</li>
+                        <li>步驟二與步驟三的資料在您點選步驟三的<strong class="txt_red">確認送出報名</strong>時才會做是否有漏寫的檢查，您可在此兩步驟畫面中填寫目前確定的欄位。</li>
+                    <li>在撰寫計畫內容時若有複製word檔內的資料貼到編輯區時，請先去除資料原先設定的樣式。</li>
+                    <li>非IE使用者：方法為在word畫面上方[格式]工具列上按一下再選擇下拉選單中的 [樣式與格式]，畫面右側會出現選單，再選擇要複製的內容，之後點選右測選單中的[清除格式設定]，完成後即可複製與貼上編輯區。</li>
+                    <li>為IE使用者：方法為複製word檔內的資料，然後在編輯區貼上時會跳出提示視窗詢問是否允許存取，請點選允許；之後會再跳出詢問是否要先清除word的格式，點選確定後跳出小編輯區，把資料貼上後按確定即可完成。</li>
+                    <li> word 2007使用者：請點擊此<a href="http://office.microsoft.com/zh-hk/word-help/HA010210679.aspx" title="[另開視窗]教學連結" rel="external" tabindex="250">教學連結</a>。</li>
+                     </ul>
+                  </div>
+                  
+                 <!-- 頁籤效果 -->
+                 <link rel="stylesheet" href="../../css/responsive-tabs.css">
+                 <link rel="stylesheet" href="../../css/style.css">
+                 <script src="../../scripts/jquery.responsiveTabs.min.js"></script>
+                 <script>
+                      $(document).ready(function () {
+                          $('.horizontalTab').responsiveTabs({
+                              startCollapsed: 'accordion',
+                              collapsible: true,
+                              rotate: false,
+                              setHash: true
+                          });
+                      });
+                  </script>
+                 <form action="plan_register-05.html" method="post">
+                    <div class="horizontalTab">
+                         <ul>
+                            <li><a href="#tab1" title="技術、產品說明" tabindex="250">技術、產品說明</a></li>
+                            <li><a href="#tab2" title="專業技術獨特性" tabindex="260">專業技術獨特性</a></li>
+                            <li><a href="#tab3" title="市場需求使用性" tabindex="270">市場需求使用性</a></li>
+                            <li><a href="#tab4" title="未來發展計畫" tabindex="280">未來發展計畫</a></li>
+                            <li><a href="#tab5" title="歷年開發成果" tabindex="290">歷年開發成果</a></li>
+                        </ul>
+                     
+                        <div id="tab1" class="tab_content">
+                              <p class="txt_note-02">*必填</p>
+                              <p>【填寫說明】已具備App開發專業技術及曾有產品上架之開發團隊，並願意於本園區(以下擇一即可)：</p>
+                              <ol>
+                                <li>將自行研發技術之至少一個API或SDK進行交換分享並提供使用單位相關協助，技術類別如3D、 NFC、行動支付等，但不以此為限，可隨進駐現況隨時調整。(進駐園區團隊所分享的API/SDK等，將永久存放於App創意分享園區之專業入口服務網，免費提供使用)</li>
+                                <li>其他：團隊需具體提出可協助其他團隊之相關措施，如協助產品完整測試並給予產品服務建議、協助其他團隊產品服務行銷、協助相關App開發課程教授等，貢獻程度大小由進駐審查會議決定。</li>
+                               </ol>
+                               <img src="../../images/pic_fck.png" width="700" height="308" alt="FCKedit"> 
+                          </div>
+                          
+                          <div id="tab2" class="tab_content">
+                              <p class="txt_note-02">*必填</p>
+                              <p>【填寫說明】須包含競業分析、技術優勢分析、技術與團隊市場差異性、技術及競爭優勢分析；但不限於此。</p>
+                              <img src="../../images/pic_fck.png" width="700" height="308" alt="FCKedit"> 
+                          </div>
+                          
+                          <div id="tab3" class="tab_content">
+                              <p class="txt_note-02">*必填</p>
+                              <p>【填寫說明】須包含預期使用對象分析、服務商業化潛質分析、市場產品/服務需求分析、服務與獲利規劃說明；但不限於此。</p>
+                              <img src="../../images/pic_fck.png" width="700" height="308" alt="FCKedit"> 
+                          </div>
+                          
+                          <div id="tab4" class="tab_content">
+                              <p class="txt_note-02">*必填</p>
+                              <p>【填寫說明】須包含團隊特色、團隊未來發展說明、團隊/公司營運資金、專利申請及長期獲利規劃等；但不限於此。</p>
+                              <img src="../../images/pic_fck.png" width="700" height="308" alt="FCKedit"> 
+                          </div>
+                          
+                          <div id="tab5" class="tab_content">
+                              <p class="txt_note-02">*必填</p>
+                              <p>【填寫說明】須包含產品書面展示說明、得獎證明、專利陳述等；但不限於此。</p>
+                              <img src="../../images/pic_fck.png" width="700" height="308" alt="FCKedit"> 
+                          </div>
+                   </div>
+                   <p class="txt_note-02">註：本網站之個人資料蒐集，乃由財團法人資訊工業策進會受經濟部工業局委託為之，所蒐集之資料僅供App創意分享園區進駐申請團隊以及後續與App創意分享園區相關事宜聯繫之用。</p> 
+                  
+                    <div class="box_check-05">
+                      <span class="mybtn downbtn-02"><a href="eparkform_plan-01.html" title="上一步" tabindex="260">上一步</a></span>
+                      <span class="mybtn downbtn-02"><a href="eparkform_list.html" title="暫存資料" tabindex="270">暫存資料</a></span>
+                      <span class="mybtn downbtn-02"><a href="eparkform_plan-03.html" title="下一步" tabindex="280">下一步</a></span>
+                    </div>
+              
+                    
              </section>
                
             </div><!-- end #page_main -->

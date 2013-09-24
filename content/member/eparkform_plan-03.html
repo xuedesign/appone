@@ -127,29 +127,58 @@
                   </div>
                   <br class="clean" />
                   <hr>
+                  
                </div>
                
-               
-               
-             <section class="box_member">
-               <h4 class="my_margin-02">計畫書版本列表</h4>
-               <span class="mybtn my_margin"><a href="eparkform_plan-01.html" title="修改計畫書" tabindex="220">修改計畫書</a></span>
-               <span class="mybtn my_margin"><a href="eparkform_partner.html" title="修改成員資料" tabindex="230">修改成員資料</a></span>
-               <br class="clean" />
-                <table width="100%" class="my_table" summary="API應用列表">
-                      <tr>
-                        <th class="w50">項次</th>
-                        <th>修改人員</th>
-                        <th>修改時間</th>
-                        <th class="w140">詳細內容</th>
-                      </tr>
-                      <tr>
-                         <td>1</td>
-                         <td>Elmo Wu</td>
-                         <td>2013-09-06 16:23:55</td>
-                         <td><a href="../epark/plan_preview.html" title="[另開視窗]觀看詳細內容" rel="external" tabindex="240">觀看</a></td>
-                      </tr>
-                 </table>     
+              <section class="box_member">
+                  <div class="register_set-02">
+                     <ul>
+                        <li><span>修改步驟一</span>計畫基本資料</li>
+                        <li><span>修改步驟二</span>填寫申請書</li>
+                        <li class="inset"><span>修改步驟三</span>上傳相關證明文件</li>
+                     </ul>
+                  </div>
+                  
+                  <div class="register_note">
+                     <ul>
+                        <li>您可點選<strong class="txt_red">暫存資料</strong>儲存現有資料後離開，系統會紀錄目前您填寫的版本，計畫成員可以在<strong class="txt_red">會員專區</strong>中<strong class="txt_red">App創意園區進駐申請的計劃書版本列表</strong>中查看。</li>
+                        <li>步驟二與步驟三的資料在您點選步驟三的<strong class="txt_red">確認送出</strong>報名時才會做是否有漏寫的檢查，您可在此兩步驟畫面中填寫目前確定的欄位。</li>
+                        <li>當您點選<strong class="txt_red">確認送出</strong>報名後計畫資料、會員資料就不能再做修改。</li>
+                        <li>「基本資料、營運計畫書與證明文件等一經確認送出，即無法修改」。</li>
+                     </ul>
+                  </div>
+                  
+                  <form action="plan_register-02.html" method="post">
+                    <p class="txt_note-02">*號為必填</p>
+                    <table width="100%" class="my_table" summary="填寫個人資料">
+                        <tr>
+                          <td class="w200 my_align-01">
+                             <span class="txt_red">*</span><label for="skill_information">可提供技術說明之名稱</label>：</td>
+                          <td class="my_align-02">
+                             <input id="skill_information" name="skill_information" type="text" class="box_text-03 w260" value="地產非般南人小食的雖首"></td>
+                        </tr>
+                        <tr>
+                          <td class="my_align-01">
+                             <label for="skill_website">可提供技術說明之所在網址</label>：</td>
+                          <td class="my_align-02">
+                             <input id="skill_website" name="skill_website" type="text" class="box_text-03 w260" value="http://www.xuedesign.tw/"></td>
+                        </tr>
+                        <tr>
+                          <td class="my_align-01"><label for="other_paper">其他相關資料：</label></td>
+                          <td class="my_align-02">
+                              <input id="other_paper" name="other_paper" type="file"><br />(多個文件請壓縮再上傳，檔案大於10m請寄給服務人員幫忙上傳)</td>
+                        </tr>
+                      </table>
+                      <p class="txt_note-02">註：本網站之個人資料蒐集，乃由財團法人資訊工業策進會受經濟部工業局委託為之，所蒐集之資料僅供App創意分享園區進駐申請團隊以及後續與App創意分享園區相關事宜聯繫之用。</p> 
+                
+                    <div class="box_check-06">
+                        <span class="mybtn downbtn-02"><a href="eparkform_plan-02.html" title="上一步" tabindex="260">上一步</a></span>
+                        <span class="mybtn downbtn-04"><a href="eparkform_list.html" title="暫存資料" tabindex="270">暫存資料</a></span>
+                        <span class="mybtn downbtn-04"><a href="../epark/plan_preview.html" title="[另開視窗]送出預覽" rel="external" tabindex="280">送出預覽</a></span>
+                        <span class="mybtn downbtn-02"><a href="eparkform_list.html" title="送出報名" tabindex="290">送出報名</a></span>
+                    </div>
+                 </form>
+                    
              </section>
                
             </div><!-- end #page_main -->
