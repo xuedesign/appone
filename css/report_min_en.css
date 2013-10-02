@@ -1,0 +1,110 @@
+/**********************************************************************************************
+
+	Title: CSS for app e-park
+	Author: Elmo Wu (by studio xuedesign)
+	Date: 2013/08~2013/09   
+
+**********************************************************************************************/
+body{
+	background: url(../images/bg_site.png);
+	font-family:"微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU", Arial, Helvetica, sans-serif;
+	font-size:100%;
+	line-height:20px;
+	color:#504f4f}
+a:link {text-decoration:none; color:#0795c1}
+a:visited {text-decoration:none; color:#aad6e6}
+a:hover {text-decoration:underline; color:#F50}
+form{margin:0; padding:0}
+image{border:0}
+
+.clean{ clear:both}
+.hidden{ display:none}
+
+#wrap{ 
+    display:block; 
+	width:800px; 
+	margin:0 auto; 
+	border:1px solid #CCC;
+	-webkit-box-shadow: 0 3px 3px #ccc;
+	-moz-box-shadow: 0 3px 3px #ccc;
+	-o-box-shadow: 0 3px 3px #ccc;
+	-ms-box-shadow: 0 3px 3px #ccc;
+	box-shadow: 0 3px 3px #ccc}
+header{
+	display:block;
+	width:100%;
+	height:150px;
+	background: url(../images/bg_pagehead.png) repeat-x}
+.head_top{
+	display:block; 
+	width:800px;
+	height:88px; 
+	background:url(../images/bg_header-page.jpg) no-repeat}
+.flle{ float:left; font-size:0.813em}	
+h1 a{
+	display:block;
+	width:100%;
+	height:88px;
+	text-indent:-9999px;
+	background:url(../images/logo_page_en.png) 35px 12px no-repeat}
+h2{
+	font-size:1em;
+	line-height:40px;
+	text-align:center;
+	color:#FFF;
+	letter-spacing:1px}		
+	
+#bodyer{
+	display:block;
+	background:#FFF;
+	padding:10px 30px 30px;
+	min-height:350px}
+h3{ font-size:1em; line-height:40px; color:#11154a}	
+
+footer{
+	display:block;
+	width:100%;
+	height:114px;
+	background:url(../images/bg_footer.png) repeat-x;
+	font-size:0.813em;
+	color:#07acd8}
+.foot_content{ display:block; width:800px; margin:0 auto}
+.copyright{ color:#FFF; text-align:center; line-height:30px; padding-top:3px; letter-spacing:1px}
+.footer_left a:link, .footer_mid{ display:block; float:left}
+.footer_right{ display:block; float:right; width:100px; padding-top:15px}
+.footer_left a{ 
+     width:193px;
+	 height:80px; 
+	 background: url(../images/logo-02_en.png) 30px 10px no-repeat;
+	 text-indent:-9999px}
+.footer_mid{ padding:10px 0 0 25px}	 
+.pl-25{ padding-left:25px}
+
+.my_table, .my_table-02{ width:100%; margin:10px 0 20px; border-collapse: separate; border-spacing: 1px}
+.my_table tr:nth-child(odd){ background:#eff3f4} /*odd:奇數,even：偶數*/
+.my_table th, .my_table-02 th{
+	height:29px; 
+	border:1px solid #FFF;
+	font-size:0.813em;
+	font-weight:bold;
+	color:#FFF;
+	vertical-align:middle;
+	background:url(../images/bg_th.png) repeat-x}
+.my_table td, .my_table-02 td{ 
+    font-size:0.813em;
+	line-height:22px;
+	padding:8px; 
+    vertical-align:middle}
+.my_table td{ text-align:center; border-bottom:1px dashed #aad6e6}
+.my_table-02 td{ text-align: left; border:1px solid #aad6e6}
+.txt_note-02{ font-size:0.813em; line-height:25px; color:#C00}
+.my_table td.my_align-01{ text-align:right}
+.my_table td.my_align-02{ text-align:left}
+.w140{ width:140px}
+.w180{ width:180px}
+
+.tab_content { padding: 20px 20px 40px}
+.tab_content P{ font-size:0.813em; line-height:22px; padding-bottom:5px}
+.tab_content ol{ margin-left:20px}
+.tab_content li{ font-size:0.813em; list-style: decimal; padding-bottom:10px}
+.tab_content .my_tab th, .tab_content .my_tab td{ font-size:0.813em}	

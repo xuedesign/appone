@@ -1,0 +1,834 @@
+/**********************************************************************************************
+
+	Title: CSS for app e-park
+	Author: Elmo Wu (by studio xuedesign)
+	Date: 2013/08~2013/09   
+
+***********************************************************************************************
+		1 通用
+		2 頁面主結構
+		  2.1 頂端區塊
+		  2.2 主選單
+		  2.3 完美底部佈局
+		  2.4 版權列區塊
+		  2.5 內文區塊
+		3 共用元素
+		4 內文編排
+		  4.1 創意園區進駐申請
+		  4.2 APP相關訊息
+		  4.3 APP應用展示
+		  4.4 API分享資源
+		  4.5 技術論壇
+	      4.7 合作商機
+	      4.8 會員專區
+		  4.9 搜尋結果頁
+		  4.10 檢測設備租借
+		  4.11 網站導覽 
+***********************************************************************************************/
+
+
+/* 1. 通用 
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/
+body{
+	background:#FFF;
+	font-family:"微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU", Arial, Helvetica, sans-serif;
+	font-size:100%;
+	line-height:22px;
+	color:#504f4f}
+a:link {text-decoration:none; color:#0795c1}
+a:visited {text-decoration:none; color:#819DA6}
+a:hover {text-decoration:underline; color:#F50}
+form{margin:0; padding:0}
+image{border:0}
+
+.clean{ clear:both}
+.hidden{ display:none}
+.txt_red{ color:#F00}
+
+/* 2. 頁面主結構
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/
+#wrap{ display:block; width:100%}
+.flle{ float:left; font-size:0.813em;}
+
+/*2.1 頂端區塊---------------------------*/
+header{
+	display:block;
+	position:fixed;
+	z-index:8010/*9999*/;
+	width:100%;
+	height:171px;
+	background: url(../images/bg_pagehead.png) repeat-x}
+.head_top, .head_down{ display:block; width:994px; margin:0 auto}	
+.head_top{ height:88px; background:url(../images/bg_header-page.jpg) no-repeat}	
+h1 a{
+	display:block;
+	float:left;
+	width:330px;
+	height:88px;
+	text-indent:-9999px;
+	background:url(../images/logo_page_en.png) 0 12px no-repeat}
+.head_down{ height:43px}
+.subnav{
+	display:block;
+	float:right;
+	font-size:0.813em;
+	text-align:right;
+	padding-top:10px}
+.subnav a:link, footer a:link{ text-decoration:none; color:#FFF}
+.subnav a:visited, footer a:visited{ text-decoration:none; color:#fff}
+.subnav a:hover, footer a:hover{ text-decoration:none; color:#f50}	
+.subnav ul{ padding:0 22px 10px 0}
+.subnav li{ display:inline; padding-right:10px}
+.icon_site, .icon_member, .icon_logout, .icon_view, .icon_date, .icon_key, .icon_id, .icon_member-02{
+	display: inline-block;
+	width:16px;
+	height:16px;
+	padding-right:3px;
+	vertical-align: text-bottom}
+.items .icon_view, .items .icon_date{ margin-left:8px; padding-right:8px; text-indent:-9999px}
+.icon_site{background:url(../images/icon_set.png) 0 -16px no-repeat}
+.icon_member{background:url(../images/icon_set.png) 0 -48px no-repeat}
+.icon_logout{background:url(../images/icon_set.png) 0 -32px no-repeat}
+.icon_view{background:url(../images/icon_set.png) 0 -64px no-repeat}
+.icon_date{background:url(../images/icon_set.png) 0 -80px no-repeat}
+.icon_key{background:url(../images/icon_set.png) 0 -96px no-repeat}
+.icon_id{background:url(../images/icon_set.png) 0 -112px no-repeat}
+.icon_member-02{background:url(../images/icon_set.png) 0 -128px no-repeat}
+
+.subnav a.btn_sblue{
+	padding:0 10px;
+	background:#126e93;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px}
+.subnav a.snav_in{ background:#4ed4fe; color:#FFF}	
+.box_search{
+	display:block;
+	float:left;
+	width:238px;
+	height:20px;
+	background:#FFF;
+	margin:10px 0 0 20px;
+	padding:2px 0 0 12px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+	box-shadow:0 2px 5px #ccc inset;
+	-moz-box-shadow:0 2px 5px #999 inset; 
+	-webkit-box-shadow:0 2px 5px #999 inset}
+.input_search{
+	display:block;
+	float:left;
+	width:200px;
+	font-size:0.813em;
+	font-size:13px;
+	color:#9c9c9c;
+	border:none;
+	background:none}
+.box_search .btn_search{
+	display:block;
+	float:right;
+	width:16px;
+	height:16px;
+	background:url(../images/icon_set.png) no-repeat;
+	font-size:0;
+	*text-indent:-9999px;
+	padding-right:5px}
+	
+/*2.2 主選單設定---------------------------*/	
+nav{ display:block; float:right; width: 649px}
+nav ul{ padding-top:10px}
+nav li{display: inline-block; position:relative; margin-left:10px;}
+nav h3, nav p span{ display:none}
+nav p{
+	display: block;
+	position:absolute;
+	top:5px;
+	right:8px;
+	z-index:99;
+	padding:0 8px;
+	font-size:0.75em;
+	font-weight:bold;
+	color:#FFF;
+	/*border:1px solid #E8E7E8;*/
+	background:#e60012;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+	box-shadow:0 2px 10px #666;
+	-moz-box-shadow:0 2px 10px #666; 
+	-webkit-box-shadow:0 2px 10px #666}
+.nav_01, .nav_02, .nav_03, .nav_04, .nav_05, .nav_06, .nav_07{
+	display:inline-block;
+	width:75px; 
+	height:76px; 
+	background:url(../images/bg_nav_en.png) no-repeat}
+.nav_01:hover, .nav_02:hover, .nav_03:hover, .nav_04:hover, .nav_05:hover, .nav_06:hover, .nav_07:hover{ cursor:pointer}
+.nav_01{ background-position: 0 0}
+.nav_01:hover, .nav_01.navin{ background-position: -75px 0}	
+.nav_02{ background-position: 0 -76px}
+.nav_02:hover, .nav_02.navin{background-position: -75px -76px}
+.nav_03{background-position: 0 -152px}
+.nav_03:hover, .nav_03.navin{background-position: -75px -152px}
+.nav_04{background-position: 0 -228px}
+.nav_04:hover, .nav_04.navin{background-position: -75px -228px}
+.nav_05{background-position: 0 -304px}
+.nav_05:hover, .nav_05.navin{background-position: -75px -304px}
+.nav_06{background-position: 0 -380px}
+.nav_06:hover, .nav_06.navin{background-position: -75px -380px}
+.nav_07{background-position: 0 -456px}
+.nav_07:hover, .nav_07.navin{background-position: -75px -456px}					
+	
+/*2.3 完美底部佈局---------------------------*/
+html, body, #wrap {height: 100%;}
+body > #wrap {height:auto; min-height: 100%;}
+#wrap_content{padding-bottom:114px}
+.clearfix:after {
+	content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;}
+.clearfix {display: inline-block;} /* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;} /* End hide from IE-mac */
+
+/*2.4 版權列區塊---------------------------*/	
+footer{
+	clear:both;
+	display:block;
+	position: relative;
+	width:100%;
+	height:114px;
+	background:url(../images/bg_footer.png) repeat-x;
+	margin-top:-114px;
+	font-size:0.813em;
+	color:#07acd8}
+.foot_content{ display:block; width:994px; margin:0 auto}
+.copyright{ color:#FFF; text-align:center; line-height:30px; padding-top:3px; letter-spacing:1px}
+.footer_left a:link, .footer_mid{ display:block; float:left}
+.footer_right{ display:block; float:right; width:100px; padding-top:15px}
+.footer_left a{ 
+     width:193px;
+	 height:80px; 
+	 background: url(../images/logo-02_en.png) 30px 10px no-repeat;
+	 text-indent:-9999px}
+.footer_mid{ padding:10px 0 0 25px}	 
+.pl-25{ padding-left:25px}
+
+/*2.5 內文區塊---------------------------*/
+#main_content{
+	display:block;
+	width:954px;
+	/*min-width:620px;*/
+	margin:0 auto 20px auto;
+	padding:160px 20px 0 0}
+.bar_cookie{
+	display:block;
+	text-align:right;
+	font-size:0.75em;
+	line-height:22px}	
+#page_main{
+	display:block;
+	float:left;
+	width:740px;
+	padding:0 20px 30px}
+.bar_title, .bar_title-02{	display:block; position:relative; margin-top:18px; padding:15px 0 0}
+.bar_title h3, .bar_title-02 h3{
+	display:block;
+	float:left;
+	font-size:1.25em;
+	color:#11154a;
+	margin:0; padding:0}
+.bar_title h3{width:40%;}
+.bar_title-02 h3{width:70%;}		
+.bar_title .page_title{ text-indent:-9999px}
+.bar_title a, .bar_title-02 a{ display:block; float:right}
+.title_01, .title_02, .title_03, .title_04, .title_05, .title_06, .title_07, .title_08, .title_09, .title_10, .title_11, .title_12, .title_13, .title_14, .title_15, .title_16, .title_17, .title_18{ background:url(../images/bg_page-title_en.png) no-repeat; height:17px; margin-top:10px}
+.title_01{background-position:0 0}
+.title_02{background-position:0 -17px}
+.title_03{background-position:0 -34px}
+.title_04{background-position:0 -51px}
+.title_05{background-position:0 -68px}
+.title_06{background-position:0 -85px}
+.title_07{background-position:0 -102px}
+.title_08{background-position:0 -119px}
+.title_09{background-position:0 -136px}
+.title_10{background-position:0 -153px}
+.title_11{background-position:0 -170px}
+.title_12{background-position:0 -187px}
+.title_13{background-position:0 -204px}
+.title_14{background-position:0 -221px}
+.title_15{background-position:0 -238px}
+.title_16{background-position:0 -255px}
+.title_17{background-position:0 -272px}
+.title_18{background-position:0 -289px}
+	
+aside{
+	display:block;
+	float:right;
+	width:168px}
+aside ul{ padding-top:5px}
+aside li{ margin-bottom:10px}
+.btn_social a{
+	text-align:right;
+	margin:0 0 15px 10px}
+
+/* 3. 共用元素
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/
+.mybtn a{
+	display:block;
+	padding: 2px 12px;
+	font-size:0.813em;
+	line-height:20px;
+	color:#0D5572;
+	text-shadow:1px 1px 2px #F5F5F5;
+	background:#4ed4fe;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px}
+.mybtn a:hover, .mybtn .item_in{background:#126e93; color:#FFF; text-shadow:none; text-decoration:none}
+.my_margin{float:right; margin-left:15px}
+.my_margin-02{float:left}
+.my_margin-03{ margin-bottom:15px;}
+.my_margin-04{float:right; margin:0 0 5px 15px}
+
+.box_text, .box_text-02, .box_text-03{
+	border:1px solid #bab9b9;
+	box-shadow:1px 1px 2px #efeded inset;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;}
+.box_text{padding:3px 5px; margin-bottom:15px}	
+.box_text-02{padding:5px 10px; margin-bottom:15px}
+.box_text-03{padding:5px 10px}		
+.w50{ width:50px}
+.w80{ width:80px}
+.w100{ width:100px}
+.w140{ width:140px}
+.w150{ width:150px}
+.w180{ width:150px}
+.w200{ width:200px}
+.w240{ width:240px}
+.w260{ width:260px}
+.w280{ width:280px}
+.w328{ width:328px}
+.w520{ width:520px}
+.w580{ width:580px}
+.ml-01{margin-left:7px}
+.ml-02{margin-left:25px}
+.ml-03{margin-left:45px}
+.box_text:focus, .box_text-02:focus{ outline: 0 none; box-shadow: 0 0 8px 0 #6699CC}
+
+.my_table, .my_table-02{ width:100%; margin:10px 0 20px; border-collapse: collapse; border-spacing: 1px}
+.my_table tr:nth-child(odd){ background:#eff3f4} /*odd:奇數,even：偶數*/
+.my_table th, .my_table-02 th{
+	height:29px; 
+	border:1px solid #FFF;
+	font-size:0.813em;
+	font-weight:bold;
+	color:#FFF;
+	vertical-align:middle;
+	background:url(../images/bg_th.png) repeat-x}
+.my_table td, .my_table-02 td{ 
+    font-size:0.813em;
+	line-height:22px;
+	padding:8px; 
+    vertical-align:middle}
+.my_table td{ text-align:center; border-bottom:1px dashed #aad6e6}
+.my_table-02 td{ text-align: left; border:1px solid #aad6e6}
+.txt_note-02{ font-size:0.813em; line-height:25px; color:#C00}
+.my_table td.my_align-01{ text-align:right}
+.my_table td.my_align-02{ text-align:left}
+	
+/*頁碼*/
+.sabrosus{ float:left; padding: 3px; margin:10px 3px; font-size:0.813em; text-align: center}
+.sabrosus a{border: #9aafe5 1px solid; padding:2px 5px; color: #2e6ab1; margin-right: 5px; text-decoration: none}
+.sabrosus a:hover{border: #2b66a5 1px solid; color:#2e6ab1; background-color: #eff3f4}
+.pagination a:active{border: #2b66a5 1px solid;  color: #000; background-color: lightyellow}
+.sabrosus span.current{border: navy 1px solid; padding:2px 5px; font-weight: bold; color: #fff; margin-right: 5px; background-color: #6699CC}
+.sabrosus span.disabled{border: #929292 1px solid; padding:2px 5px; color: #929292; margin-right: 5px}
+
+.box_main{ display:block; padding:15px 0 30px 0}
+.box_main h1, .box_main h2, .box_main h3, .box_main h4, .box_main h5, .box_main h6{ padding-bottom:10px}
+.box_main p{ font-size:0.813em; line-height:22px; padding-bottom:20px}
+.box_main img{margin:0 20px 15px 0}
+.box_main ol li, .box_main ul li{ font-size:0.813em; line-height:22px; padding-bottom:10px}
+.box_main ul li{ list-style: disc inside}		
+.box_main ol li{ list-style: decimal inside}
+
+.box_article{ display:block; padding:15px 0 30px 0}
+.box_article h4{ font-size:0.938em; line-height:25px; padding:5px 0 10px 0}
+.box_article p{ font-size:0.813em; line-height:25px; padding-bottom:10px}
+.box_article ul{ margin-left:40px; padding-bottom:10px}
+.box_article ul li, .box_article ol li{ font-size:0.813em; line-height:25px}
+.box_article ul li{ list-style:disc}
+.box_article ol li{ list-style:decimal}
+.box_article li ul{}	
+.box_article li li{ font-size:1em; line-height:22px; list-style:disc}
+.box_article .txt_note{ font-size:1.375em; line-height:25px; font-weight:bold; color:#C00}
+
+#inline1{display: none; width:500px; border:1px solid #017FB1; padding:15px}
+#inline1 h4{font-size:1em; color:#017FB1; padding-bottom:10px}
+#inline1 p{font-size:0.813em; line-height:24px; padding-bottom:10px}
+
+.box_action{
+	display:block;
+	width:400px;
+	/*min-height:300px;*/
+	margin:30px auto 0 auto;
+	border:1px solid #CCC;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 5px #E0E0E0;
+	-moz-box-shadow: 0px 0px 5px #E0E0E0;
+	-o-box-shadow: 0px 0px 5px #E0E0E0;
+	-ms-box-shadow: 0px 0px 5px #E0E0E0;
+	box-shadow: 0px 0px 5px #E0E0E0}
+.box_action h4{ font-size:1em; line-height:30px; color:#017FB1}
+.box_action ul{ padding:0 20px }
+.box_action li{ font-size:0.813em; line-height:22px; padding:5px 0; border-bottom:1px dashed #CCCCCC; list-style:disc}
+.box_action input{ font-size:0.938em; line-height:22px}	
+.box_buttons{
+	display: block;
+	width:360px;
+	margin-top:10px;
+	padding:20px;
+	background:#EFEFEF;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	-moz-border-radius: 0px 0px 5px 5px;
+	-o-border-radius: 0px 0px 5px 5px;
+	-ms-border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px}
+.box_buttons .mybtn a{ text-align:center; width:80px; margin:0 auto}	
+.input_set{
+	display:block;
+	padding:20px;}
+.sublogin{
+	display:block;
+	width:400px;
+	margin:15px auto 0 auto;
+	text-align:right;
+	font-size:0.813em}
+.sublogin span{ margin-left:10px}			
+				
+/* 4. 內文編排
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/
+/*4.1 創意園區進駐申請*/
+.ebanner{ display:block; width:687px; margin:20px auto 15px auto}
+.epark_total{
+	display:block;
+	width:657px;
+	margin:0 auto;
+	padding: 5px 15px;
+	background:#303590}
+.epark_total li{
+	display:inline;
+	font-size:0.813em;
+	color:#FFF;
+	padding-left:50px}
+.epark_total li span{ font-size:1.25em; font-weight:bold; padding:0 8px}
+.consent{ display:block; margin-top:15px}
+.consent h4{ font-size:1.125em; line-height:25px; padding:10px 0; color:#6699CC}
+.consent p{ font-size:0.813em; line-height:25px}
+.bg_gray{ background:#EFEEEE}
+.downbtn{
+	display:block;
+	width:80px;
+	text-align:center;
+	margin:15px auto 30px auto}
+.downbtn-02, .downbtn-04{ display:inline-block; text-align:center; margin-right:15px}
+.downbtn-02{width:80px}
+.downbtn-04{ width:100px}	
+.downbtn-03{
+	display:block;
+	width:150px;
+	text-align:center;
+	margin:15px auto 30px auto}
+		
+.box_check, .box_check-02, .box_check-03, .box_check-04, .box_check-05, .box_check-06{ display:block; margin:15px auto}
+.box_check{width:200px}
+.box_check-02{ width:470px}
+.box_check-03{ width:200px}	
+.box_check-04{ width:300px}
+.box_check-05{ width:320px}
+.box_check-06{ width:450px}	
+
+.register_set, .register_set-02{ display:block; padding:25px 0}
+.register_set li, .register_set li .inset, .register_set-02 li, .register_set-02 li .inset{
+	display:inline-block;
+	margin-left:8px;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+	font-size:0.813em;
+	text-align:center}
+.register_set li, .register_set li .inset{width:135px}
+.register_set-02 li, .register_set-02 li .inset{width:235px}		
+.register_set li, .register_set-02 li{background:#E6E6E6; color:#666}	
+.register_set .inset, .register_set-02 .inset{background:#74D5FC; color:#0D5572; text-shadow:1px 1px 2px #F5F5F5}	
+.register_set li span, .register_set li .inset span, .register_set-02 li span, .register_set-02 li .inset span{
+	display:block;
+	width:100%;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-o-border-radius: 5px 5px 0 0;
+	-ms-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+	border-bottom:1px solid #FFF}
+.register_set li span, .register_set-02 li span{background:#CCC}
+.register_set .inset span, .register_set-02 .inset span{ background:#017FB1; color:#fff; text-shadow:none}		
+
+.register_note{ 
+    display:block; 
+	width:680px; 
+	margin:0 auto 30px auto}
+.register_note li{
+	font-size:0.813em;
+	border-bottom:1px dashed #D9D9D9;
+	padding:5px;
+	list-style:disc outside}
+				
+	
+/*4.2 APP相關訊息*/
+.headline h4{ font-size:1em; line-height:25px; margin-bottom:10px}
+.headline p{ font-size:0.813em; line-height:22px}
+.headline time, .list_news time{
+	font-size:0.75em; 
+	color:#fff; 
+	line-height:18px; 
+	background:#6699CC}
+.headline time, .list_news time{padding:1px 3px}	
+.headline img{ float:left; margin:0 15px 15px 0}
+.list_news{ padding-bottom:30px}
+.list_news li{ 
+    display:block; 
+	width:350px;
+	height:22px;
+	overflow:hidden;
+	font-size:0.813em; 
+	line-height:22px;
+	border-bottom:1px dotted #CCCCCC;
+	padding:5px 0}
+.list_news li a{ margin-left:5px}	
+.pop-01, .pop-02{
+	display: block;
+	position:absolute;
+	top:0;
+	z-index:99;
+	padding:0 8px;
+	font-size:0.75em;
+	font-weight:bold;
+	color:#FFF;
+	background:#e60012;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+	box-shadow:0 2px 5px #ccc;
+	-moz-box-shadow:0 2px 5px #999; 
+	-webkit-box-shadow:0 2px 0 #999}
+.pop-01{left:80px}
+.pop-02{left:120px}
+/*.info_writing li{ display:inline-block; margin:0 10px 15px 0; padding:0 8px 0 0}
+.info_writing span{ background:#4ED4FE; padding:0 3px; margin-right:5px; letter-spacing:1px}*/
+
+/*4.3 APP應用展示*/
+.jumpage{ 
+    display:block; 
+	float:right; 
+	width:30%;
+	padding-left:80px}
+.jumpage h4{ float:left; font-size:0.938em; line-height:30px;}
+.jumpage select{ margin:0}	
+.box_applist{ display:block; padding-top:25px}
+.box_applist h4{ float:left; width:50%; font-size:1.063em; /*padding:25px 0 0*/}
+.box_applist ul{ clear:both; margin-bottom:40px; padding-left:15px}
+.box_applist li{
+	display:block;
+	float:left;
+	width:128px;
+	height:190px;
+	overflow:hidden;
+	margin:10px 15px 15px 0;
+	border:1px solid #CCC}
+.box_applist li img{ display:block; width:81px; margin:10px auto;}
+.box_applist li h5{ display:block; width:128px; height:22px; font-size:1em; text-align:center; overflow:hidden}
+.box_applist li p{font-size:0.813em; line-height:22px; text-align:center}
+.box_applist li:hover{ background:#F6F6F6; border:1px solid #63D8FD}
+.box_applist li .items{ 
+    display:block; 
+	width:128px; 
+	background:#6699CC; 
+	color:#FFF; 
+	border-bottom:1px solid #FFF; 
+	text-align:left}
+.app_info, .appmain{ display:block; float:left}	
+.app_info{ 
+     width:140px; 
+	 padding:15px; 
+	 background:#EFEFEF; 
+	 margin:15px 25px 0 0;
+	 -webkit-border-radius: 5px;
+	 -moz-border-radius: 5px;
+	 -o-border-radius: 5px;
+	 -ms-border-radius: 5px;
+	 border-radius: 5px}
+.app_info img{ 
+     display:block; 
+	 width:100px; 
+	 padding:5px; 
+	 background:#FFF; 
+	 margin:0 auto;
+	 -webkit-box-shadow: 0px 0px 5px #999;
+	 -moz-box-shadow: 0px 0px 5px #999;
+	 -o-box-shadow: 0px 0px 5px #999;
+	 -ms-box-shadow: 0px 0px 5px #999;
+	 box-shadow: 0px 0px 5px #999}
+.app_info a>img{
+	 width:120px;
+	 background:none;
+	 -webkit-box-shadow:none;
+	 -moz-box-shadow:none;
+	 -o-box-shadow:none9;
+	 -ms-box-shadow:none9;
+	 box-shadow:none}	 	 
+.app_info h4, .member_right h4{ font-size:0.938em; color:#017FB1; padding:10px 0}
+.app_info p{ font-size:0.813em; line-height:22px}
+.app_info li{ border-bottom:1px dashed #999; padding-bottom:10px}
+.app_shot{
+	display:block;
+	padding:10px 0 30px 15px}	 
+.app_shot li{
+	display:inline-block;
+	width:145px;
+	height:145px;
+	border:1px solid #E3E3E3;
+	margin-right:15px;
+	padding:5px;
+	background:#FFF;
+	overflow:hidden}	
+ 
+/*4.4 API分享資源 列表頁*/
+.list_search{
+	display:block;
+	width:740px;
+	font-size:0.813em;
+	color:#616161;
+	background:#eef4ff;
+	margin-top:10px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px}
+.title_search{
+	display:block;
+	width:740px;
+	height:21px;
+	background:url(../images/bg_listsearch_en.png) no-repeat}	
+.title_search h4{ display:block; float:left; width:660px; text-indent:-9999px}
+.myform{ border-bottom:1px dashed #B9B9B9}
+#statebut{
+	display:block;
+	float:right;
+	width:80px;
+	height:21px;
+	color:#FFF}
+#statebut:hover{color:#84DAFC; cursor:pointer}	
+#class1content{ 
+    clear:both;
+	display:block;
+	width:725px;
+	margin-left:5px;
+	padding:15px 0 5px}
+#class1content label{ padding-left:15px}
+.btn_search-02{ display:inline-block; width:55px; font-size:1.125em; margin-left:15px}
+.list_search p{ clear:both; display:block; width:700px; margin:0 auto; padding:5px 0 10px 0}				
+.list_search p span{ font-weight:bold; font-size:1.25em; color:#18c2f7; padding:0 8px}
+.sequence{ font-size:0.813em; line-height:20px; text-align:right; padding-top:15px}
+.addup{ float:right; font-size:0.813em; line-height:22px; margin:10px 3px}
+.addup span{ font-size:1.125em; font-weight:bold; color:#017FB1; padding:0 10px}
+
+/*4.4 API分享資源 內頁*/
+.btn_download-01, .btn_download-02{ display:block; margin:10px 0 10px 15px}
+.btn_download-01{ width:80px}
+.btn_download-02{width:95px}
+.main_list ul{ margin:10px 0 20px}
+.main_list h4{ font-size:0.938em; line-height:25px; color:#017FB1}
+.main_list p{ font-size:0.813em; line-height:22px; padding:0 0 10px 15px}
+.list_left, .list_right, .list_left-02, .list_right-02{ display:block; float:left}
+.list_left{ width:185px; padding-left:15px; border-right:1px dashed #ccc}
+.list_right{ width:500px; padding-left:20px}
+.list_left-02, .list_right-02{width:350px; margin-top:15px}
+.list_left-02{margin-right:40px}
+
+/*4.5 技術論壇*/
+.my_table .align_forl{ text-align:left}
+.forum_list{
+	display:block;
+	padding:20px 0 10px;
+	border-bottom:1px dashed #CCCCCC}
+.forum_title{
+	display:block;
+	float:left;
+	width:590px}
+.forum_title li, .info_writing li{ 
+    display:inline-block;
+	padding-right:8px;
+	font-size:0.75em; 
+	color:#333; 
+	line-height:18px; 
+	background:#E4E4E4}
+.forum_title li{margin:16px 10px 0 0}	
+.info_writing li{margin:5px 10px 20px 0}
+.forum_title li span, .info_writing li span{ 
+    color:#F5FDFF;
+	background:#6699CC; 
+	padding:0 3px; 
+	margin-right:5px; 
+	letter-spacing:1px}
+.info_writing .pic_logo{ display: block; float:left;  vertical-align: middle; margin-right:15px}		
+	
+.forum_noun{
+	display: block;
+	float:right;
+	width:150px}	
+.forum_noun li{
+	display:inline-block;
+	width:55px;
+	color:#FFF;
+	font-size:0.813em;
+	letter-spacing:1px;
+	text-align:center;
+	margin-left:10px;
+	background: #47B5E1;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+    -moz-border-radius: 9px}
+.forum_noun li .noun_top{
+	display:block;
+	background:#017FB1;
+	font-weight:bold;
+	line-height:22px;
+	padding:3px 5px;
+	border-bottom:1px solid #FFF;
+	-webkit-border-radius: 8px 8px 0 0;
+	-moz-border-radius: 8px 8px 0 0;
+	-o-border-radius: 8px 8px 0 0;
+	-ms-border-radius: 8px 8px 0 0;
+	border-radius: 8px 8px 0 0}
+.forum_noun li .noun_down{ display:block; font-size:1.25em; padding:3px 8px}
+
+.guestbook{
+	display:block;
+	width:700px;
+	margin:15px auto;
+	padding:0 20px}
+.guestbook h4{font-size:1.125em; color:#11154a}	
+.guestbook img{ display:inline-block; padding:0 15px; vertical-align:top}
+.guest_top{ 
+    display:block; 
+	width:680px; 
+	margin:15px auto 15px auto;
+	padding:10px; 
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC}
+.guest_top h5, .guest_top p{display:block; float:left; width:50%}
+.guest_top p{ text-align:right; font-size:0.813em; line-height:22px}
+.guest_item{ display:block; padding:10px 0 10px 0; border-bottom:1px dashed #ccc}
+.guest_item img, .guest_item p{ display:block; float:left}
+.guest_item img{ width:30px; margin-right:15px}
+.guest_item p{ font-size:0.813em; line-height:22px}
+
+.accordion{
+	display:block;
+	width: 625px;
+	padding:5px 0 0 75px;
+	margin:0}
+.accordion h5{
+	font-size:0.813em;
+	color:#017FB1;
+	cursor: pointer;
+	margin:0;
+	padding:0}
+.accordion ul{ display: none; margin:5px 0; padding: 0}
+.accordion li{ display:block; width:625px; padding-bottom:5px}
+.accordion li img, .accordion li p{ display:block; float:left}
+.accordion li img{width:30px; margin:10px 15px 0 0}
+.accordion li p{ width:550px; font-size:0.813em; line-height:22px; border-bottom:1px dashed #ccc; padding:5px 0}
+.accordion li textarea{ margin:5px 0}
+	
+/*4.8 會員專區*/
+.box_member{ display:block; width:740px; /*padding-top:20px*/}
+.box_member h4{ font-size:1em; line-height:25px; color:#017FB1; padding-bottom:5px}
+.box_member .img{ display:block; width:700px; margin:10px auto 30px auto; }
+.member_left, .member_right{ display:block; float:left}
+.member_left{ width:150px; margin-right:20px}
+.member_left img{ display:block; width:100px; padding:5px; background: #FFF; border:1px solid #CCC}
+.member_left img{margin:0 auto}
+.member_right{ width:570px}
+.member_right li{padding-bottom:5px; border-bottom:1px dashed #CCC}
+.member_right p, .member_right .set_note, .box_member p{font-size:0.813em; line-height:22px}
+.btn_file{ margin:10px auto}
+.online{ color:#090; font-weight:bold}
+.offline{ color:#C33; font-weight:bold}
+.required, .required-02{ font-size:0.813em; color:#F00}
+.required{ padding-left:20px}
+.required-02{ padding-left:5px}
+.box_edit{ display:block; width:700px; margin:15px auto 30px auto}
+.box_edit h5, .box_edit h6{ line-height:25px; color:#017FB1}
+.box_edit h5{font-size:0.938em; padding:10px 0 5px 0}
+.box_edit h6{font-size:0.813em; padding:0 0 5px 35px}
+.box_edit .edit_item{padding-bottom:10px; /*border-bottom:1px dashed #CCC*/}
+.box_edit input, .box_edit select, .box_edit p, .box_edit textarea{ margin-left:28px}
+.box_edit textarea{ font-size:0.813em; line-height:22px}
+.edit_item .edit_list li{ display:block; float:left; margin-bottom:10px;}
+
+.edit_left, .edit_right{ display:block}
+.edit_left{ float:left; width:335px; border-right:1px dashed #CCC}
+.edit_right{ float:right; width:339px; padding-left:15px; /*border-left:1px dashed #CCC*/}
+.h350{ min-height:258px}
+
+.box_fck{ display:block; width:700px}
+.pot{ padding:1px 6px;
+      margin-right:10px; 
+      background:#017FB1;
+	  color:#FFF;
+     -webkit-border-radius: 15px;
+	 -moz-border-radius: 15px;
+	 -o-border-radius: 15px;
+	 -ms-border-radius: 15px;
+	 border-radius: 15px }
+
+/*4.9 搜尋結果頁*/
+.txt_search{ font-size:0.813em; padding:15px 0 5px 0;}
+.txt_search span{ font-size:1.25em; font-weight:bold; color:#C00}
+
+/*4.10 檢測設備租借*/
+.tab_container {
+	clear: left;
+	width: 100%;
+	border: 1px solid #D1D1D1;
+	border-top: none;
+	background: #fff;
+	line-height:22px}
+.tab_content { padding: 20px 20px 40px}
+.tab_content P{ font-size:0.813em; line-height:22px; padding-bottom:5px}
+.tab_content ol{ margin-left:20px}
+.tab_content li{ font-size:0.813em; list-style: decimal; padding-bottom:10px}
+.tab_content .my_tab th, .tab_content .my_tab td{ font-size:0.813em}
+
+/*4.10 網站導覽*/
+.sitemap{ display:block; padding:0 0 0 40px}
+.box_article .sitemap li{ font-size:0.938em; line-height:25px; font-weight:bold; padding-bottom:10px}
+.sitemap li ol{ display:block; padding:0 0 5px 20px}
+.sitemap li li{ font-size:0.813em; line-height:22px; padding:5px 0; border-bottom:1px dashed #999; list-style:none; font-weight:normal}									
