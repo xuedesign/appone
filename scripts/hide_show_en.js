@@ -38,9 +38,9 @@ var d=$('class1content');
 var sb=$('statebut');
 if(d.style.display=='none'){
 $D();
-sb.innerHTML='Refine your search bar';
+sb.innerHTML='Refine bar';
 }else{
 $D2();
-sb.innerHTML='Expand the search bar';
+sb.innerHTML='Expand bar';
 }
 }

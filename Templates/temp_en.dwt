@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" lang="zh-en">
+<meta name="description" content="財團法人資訊工業策進會數位教育研究所"/>
+<meta name="keywords" content="APP,API,OPENDATA,資訊工業策進會,經濟部工業局,app開發,產業轉型,分享經濟式創業"/>
+<meta name="Author" content="xuedesign studio" />
+<link rel="shortcut icon"  href="../images/favicon.ico"/>
+<link rel="icon" href="../images/favicon.ico"/>
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>網站導覽│APP線上專業服務網</title>
+<!-- TemplateEndEditable -->
+<link rel="stylesheet" href="../css/reset.css" />
+<link rel="stylesheet" href="../css/xuepage_min_en.css"/>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if IE 7]>
+	<script src="http://letskillie6.googlecode.com/svn/trunk/2/zh_TW.js"></script>
+<![endif]-->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+   <noscript><p>Your browser does not support JavaScript, but it does not affect your access to the site's content.</p></noscript>
+   <div id="wrap">
+      <div id="wrap_content" class="clearfix">
+       
+      <!-- 頁首 -->
+      <header>
+         <section class="head_top">
+             <a href="#" class="flle" title="top block" accesskey="u" tabindex='10'>:::</a>
+             <h1><a href="../en/index.html" title="home" tabindex="20">App website services online</a></h1>
+             <h2 class="hidden">In order to share the economic formula field to promote domestic entrepreneurship App industry spindle, internal facilitate exchanges between the teams share of foreign assistance App development support services to various industries, thus contributing to industrial restructuring and upgrading services.</h2>
+             <nav>
+               <!-- TemplateBeginEditable name="nav" -->
+                 <ul><!-- 網站主選單，在該單元顯示時，選項的class要加上navin -->
+                   <li><a href="../en/content/epark/park_main.html" title="Application to reside in the Innovative incubation lab" class="nav_01" tabindex="30"><h3>Application to reside</h3></a></li>
+                   <li><a href="../en/content/news/news_list.html" title="App News" class="nav_02" tabindex="40"><h3>App News</h3></a></li>
+                   <li><a href="../en/content/showapp/app_list.html" title="App's Album" class="nav_03" tabindex="50"><h3>App's Album</h3></a></li>
+                   <li><a href="../en/content/shareapi/high_list.html" title="API Sharing" class="nav_04" tabindex="60"><h3>API Sharing</h3></a></li>
+                   <li><a href="../en/content/opendata/data_list.html" title="Open Data" class="nav_05" tabindex="70"><h3>Open Data</h3></a></li>
+                   <li><a href="../en/content/forum/forum_list.html" title="Technical Forum" class="nav_06" tabindex="80"><h3>Technical Forum</h3></a></li>
+                   <li><a href="../en/content/job/job_list.html" title="Cooperative Case" class="nav_07" tabindex="90"><h3>Cooperative Case</h3></a></li>
+                 </ul>
+               <!-- TemplateEndEditable -->
+             </nav>
+             <br class="clean" />         
+         </section>
+         
+         <section class="head_down">
+             <div class="box_search">
+                  <form action="../en/search.html" method="post">  
+                    <label for="search"><span class="hidden">search</span></label>
+                    <input name="search" id="search" type="text" class="input_search" onfocus="if (this.value=='enter keyword') this.value='';" onblur="if (this.value=='') this.value='enter keyword';" value="enter keyword" />
+                    <a href="../en/search.html"  class="btn_search" title="search" tabindex="100">search</a>
+                  </form>  
+             </div>
+             <div class="subnav">
+                  <ul>
+                    <!--<li><span class="icon_member"></span><a href="sitemap.html" title="會員登入" tabindex="110">會員登入</a></li>-->
+                    <li><span class="icon_logout"></span><a href="../en/index.html" title="Logout" tabindex="120">Logout</a></li>
+                    <li><span class="icon_member"></span><a href="../en/content/member/profile.html" title="Members" tabindex="130">Members</a></li>
+                    <li><span class="icon_site"></span><a href="../en/sitemap.html" title="Sitemap" tabindex="140">Sitemap</a></li>
+                    <li><a href="../index.html" title="Chinese Edtion" class="btn_sblue" tabindex="150">Ch</a></li>
+                    <li><a href="../en/index.html" title="English Edtion" class="btn_sblue snav_in"  tabindex="160" >En</a></li>
+                  </ul>
+            </div>
+             <br class="clean" />
+         </section>
+      </header>
+      
+      
+       <!-- 中間區塊，tabindex記數由200開始 -->
+       <section id="main_content">
+           <!-- TemplateBeginEditable name="page_main" -->
+           <div id="page_main">
+           		<div class="bar_cookie">
+                  <a href="#" title="center block" accesskey="c" tabindex='200'>:::</a>
+                    Here：<a href="../../index.html" title="Home" tabindex="210">Home</a>&gt; Application to reside
+                </div>
+           	
+           </div>
+           <!-- TemplateEndEditable -->
+           
+           <aside><!--右側區塊，tabindex記數由1000開始-->
+             <div class="btn_social a2a_kit a2a_kit_size_32 a2a_default_style">
+                    <a href="#" title="right block" accesskey="r" tabindex="1000">:::</a>   
+                    <a class="a2a_button_facebook" title="分享到facebook" tabindex="1010"></a>
+                    <a class="a2a_button_twitter" title="分享到twitter" tabindex="1020"></a>
+                    <a class="a2a_button_google_plus" title="分享到google plus" tabindex="1030"></a>
+               </div>
+               
+               <ul>
+                  <li><a href="../en/rent.html" title="Leasing & rental" tabindex="1040">
+                      <img src="../images/banner_01_en.jpg" width="168" height="53" alt="Leasing & rental"></a></li>
+                  <li><a href="../en/content/epark/application.html" title="Application to reside" tabindex="1050">
+                      <img src="../images/banner_02_en.jpg" width="168" height="53" alt="Application to reside"></a></li>
+                  <li><a href="#" title="促進投資" rel="external" tabindex="1060">
+                      <img src="../images/banner_03.jpg" width="168" height="53" alt="促進投資"></a></li>
+                  <li><a href="#" title="企業輔導網" rel="external" tabindex="1070">
+                     <img src="../images/banner_04.jpg" width="168" height="53" alt="企業輔導網"></a></li>
+                  <li><a href="#" title="APP實作體驗營" rel="external" tabindex="1080">
+                     <img src="../images/banner_05.jpg" width="168" height="53" alt="APP實作體驗營"></a></li>
+                  <li><a href="#" title="Ideas Show 網路創意展" rel="external" tabindex="1090">
+                     <img src="../images/banner_06.jpg" width="168" height="53" alt="Ideas Show 網路創意展"></a></li>
+               </ul>
+           </aside>
+       </section>
+     </div> 
+   </div>
+   
+   
+   <!-- 版權列，tabindex計數由2000開始-->
+   <footer>
+     <div class="foot_content">
+       <p class="copyright">Industrial Development Bureau, Ministry of Economic Affairs &copy;2013</p>
+       <p class="footer_left">
+          <a href="http://www.moeaidb.gov.tw/" title="[open new window] Industrial Development Bureau, Ministry of Economic Affairs " tabindex="2000" rel="external">Industrial Development Bureau, Ministry of Economic Affairs </a>
+       </p>
+       <div class="footer_mid">
+          <p>Organiser：IDB, MOEA e-Learning Industry Cross-Domain Advancement Plan</br>Implementation units：IFII Digital Education Institute, DEI<br />
+             E-mail： <a href="mailto:appservice@iii.org.tw" title="contact us" tabindex="2010">appservice@iii.org.tw</a>　|　<a href="../en/private.html" title="Privacy" tabindex="2020">Privacy</a>　|　<a href="../en/disclaimer.html" title="Disclaimer" tabindex="2030">Disclaimer</a></p>
+       </div>
+       <div class="footer_right"><a href="#" title="Through this site level A + Web Content Accessibility Guidelines" tabindex="2040">
+           <img src="../images/icon_accessibility.jpg" width="88" height="31" alt="Ccessibility"></a>
+       </div>
+     </div> 
+   </footer>
+
+
+<script src="http://static.addtoany.com/menu/page.js"></script><!-- 社群分享 -->  
+<script src="../scripts/web_set.js"></script><!--綜合屬性-->
+</body>
+</html>

@@ -99,11 +99,11 @@ h1 a{
 
 .subnav a.btn_sblue{
 	padding:0 10px;
-	background:#126e93;
+	background:#4ed4fe;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
     -moz-border-radius: 10px}
-.subnav a.snav_in{ background:#4ed4fe; color:#FFF}	
+.subnav a.snav_in{ background:#126e93; color:#FFF}	
 .box_search{
 	display:block;
 	float:left;
@@ -427,16 +427,16 @@ aside li{ margin-bottom:10px}
 .ebanner{ display:block; width:687px; margin:20px auto 15px auto}
 .epark_total{
 	display:block;
-	width:657px;
+	width:677px;
 	margin:0 auto;
-	padding: 5px 15px;
+	padding: 5px;
 	background:#303590}
 .epark_total li{
 	display:inline;
 	font-size:0.813em;
 	color:#FFF;
-	padding-left:50px}
-.epark_total li span{ font-size:1.25em; font-weight:bold; padding:0 8px}
+	padding-left:10px}
+.epark_total li span{ font-size:0.938em; font-weight:bold; padding:0 3px}
 .consent{ display:block; margin-top:15px}
 .consent h4{ font-size:1.125em; line-height:25px; padding:10px 0; color:#6699CC}
 .consent p{ font-size:0.813em; line-height:25px}
@@ -474,7 +474,7 @@ aside li{ margin-bottom:10px}
     border-radius: 5px;
 	font-size:0.813em;
 	text-align:center}
-.register_set li, .register_set li .inset{width:135px}
+.register_set li, .register_set li .inset{width:135px; height:68px}
 .register_set-02 li, .register_set-02 li .inset{width:235px}		
 .register_set li, .register_set-02 li{background:#E6E6E6; color:#666}	
 .register_set .inset, .register_set-02 .inset{background:#74D5FC; color:#0D5572; text-shadow:1px 1px 2px #F5F5F5}	
@@ -522,7 +522,7 @@ aside li{ margin-bottom:10px}
 	border-bottom:1px dotted #CCCCCC;
 	padding:5px 0}
 .list_news li a{ margin-left:5px}	
-.pop-01, .pop-02{
+.pop-01, .pop-02, .pop-03, .pop-04{
 	display: block;
 	position:absolute;
 	top:0;
@@ -538,8 +538,10 @@ aside li{ margin-bottom:10px}
 	box-shadow:0 2px 5px #ccc;
 	-moz-box-shadow:0 2px 5px #999; 
 	-webkit-box-shadow:0 2px 0 #999}
-.pop-01{left:80px}
-.pop-02{left:120px}
+.pop-01{left:60px}
+.pop-02{left:70px}
+.pop-03{left:40px}
+.pop-04{left:45px}
 /*.info_writing li{ display:inline-block; margin:0 10px 15px 0; padding:0 8px 0 0}
 .info_writing span{ background:#4ED4FE; padding:0 3px; margin-right:5px; letter-spacing:1px}*/
 
@@ -548,8 +550,9 @@ aside li{ margin-bottom:10px}
     display:block; 
 	float:right; 
 	width:30%;
-	padding-left:80px}
-.jumpage h4{ float:left; font-size:0.938em; line-height:30px;}
+	padding-left:80px;
+	text-align:right}
+.jumpage h4{ float:left; font-size:0.938em; line-height:30px; padding-left:20px}
 .jumpage select{ margin:0}	
 .box_applist{ display:block; padding-top:25px}
 .box_applist h4{ float:left; width:50%; font-size:1.063em; /*padding:25px 0 0*/}
@@ -659,9 +662,10 @@ aside li{ margin-bottom:10px}
 .addup span{ font-size:1.125em; font-weight:bold; color:#017FB1; padding:0 10px}
 
 /*4.4 API分享資源 內頁*/
-.btn_download-01, .btn_download-02{ display:block; margin:10px 0 10px 15px}
+.btn_download-01, .btn_download-02, .btn_download-03{ display:block; margin:10px 0 10px 15px}
 .btn_download-01{ width:80px}
 .btn_download-02{width:95px}
+.btn_download-03{width:120px}
 .main_list ul{ margin:10px 0 20px}
 .main_list h4{ font-size:0.938em; line-height:25px; color:#017FB1}
 .main_list p{ font-size:0.813em; line-height:22px; padding:0 0 10px 15px}
@@ -680,7 +684,7 @@ aside li{ margin-bottom:10px}
 .forum_title{
 	display:block;
 	float:left;
-	width:590px}
+	width:540px}
 .forum_title li, .info_writing li{ 
     display:inline-block;
 	padding-right:8px;
@@ -701,10 +705,10 @@ aside li{ margin-bottom:10px}
 .forum_noun{
 	display: block;
 	float:right;
-	width:150px}	
+	width:200px}	
 .forum_noun li{
 	display:inline-block;
-	width:55px;
+	width:85px/*55px*/;
 	color:#FFF;
 	font-size:0.813em;
 	letter-spacing:1px;

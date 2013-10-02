@@ -99,11 +99,11 @@ h1 a{
 
 .subnav a.btn_sblue{
 	padding:0 10px;
-	background:#126e93;
+	background:#4ed4fe;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
     -moz-border-radius: 10px}
-.subnav a.snav_in{ background:#4ed4fe; color:#FFF}	
+.subnav a.snav_in{ background:#126e93; color:#FFF}	
 .box_search{
 	display:block;
 	float:left;
